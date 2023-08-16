@@ -2,64 +2,73 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Sijie Yang
     - name: Date of Birth
-      value: 14th March 1879
+      value: 28th August 1998
     - name: Languages
-      value: English, German
+      value: English, Chinese
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD Candidate in Architecture (Urban Analytics)
+      institution: National University of Singapore (NUS), Singapore
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Supervised by Prof. Filip Biljecki.
+        - Enrolled with NUS Research Scholarship (full scholarship with stipend)
+        - Expected graduation in 2027.
+
+    - title: Master Candidate in Computer and Information Technology
+      institution: University of Pennsylvania (UPenn), US
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
+        - GPA 4.0 out of 4.0.
+        - Expected graduation in 2025.
+
+    - title: Master of Science, Space Syntax
+      institution: University College London (UCL), London, the United Kingdom
+      year: 2021-2022
+      description:
+        - Graduated with Distinction.
+        - Thesis supervised by Dr. Kimon Krenz.
+        - Projects supervised by Prof. Sophia Psarra and Prof. Kayvan Karimi.
+        
+    - title: Bachelor of Architecture
+      institution: Chongqing University (CQU), Chongqing, China
+      year: 2016-2021
+      description:
+        - Top 10%; GPA 3.6 out of 4.0.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: PhD Researcher
+      institution: NUS <a href="https://ual.sg">Urban Analytics Lab</a>
+      year: 2023
       description:
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Teaching Assistant in Mathematical Foundation of Computer Science
+      institution: School of Engineering and Applied Science, Upenn
+      year: 2022-2023
+      description:
+
+    - title: Architectural and Urban Design Intern
+      institution: Lacime Architects Co., LTD, Shanghai, China
+      year: 2020-2021
+
+    - title: Research Assistant in Architectural Surveying
+      institution: Institute of Architectural History and Theory, Chongqing University, Chongqing, China 
+      year: 2019
+      description:
+
+    - title: Research Assistant in Urban Soundscape Analysis
+      institution: Key Laboratory of New Technology of Cities in Mountain Area, Chongqing University, Chongqing, China 
+      year: 2019-2020
+
+    - title: Research Assistant
+      institution: Cornell University 
+      year: 2022
 
 - title: Open Source Projects
   type: time_table

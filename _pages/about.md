@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: PhD Researcher in NUS <a href='https://ual.sg'>Urban Analytics Lab</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>SDE4, CDE</p>
+    <p>8 Architecture Dr</p>
+    <p>Singapore 117356</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
@@ -19,8 +19,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My research focuses on how new computational technologies, including computer science, GIS science, virtual reality, and the Internet of Things, can be applied to the study of the built environment, exploring the **potential relationship between the built environment and multiple social dimensions**, including the real estate economy, public health, human perception and behavior, and other social dimensions. I works on the basis of these studies to promote urban digital infrastructure and sustainable development.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+How to drive our understanding of urban environments with `street view imagery` data and `city 3D modeling` data is the focus of my work in current research activities, if you have good suggestions or interests, please feel free to contact me.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am similarly interested in how traditional built environment design can be digitally driven, such as how algorithms and data in the context of digital technological development can be used to drive analysis and evaluation in architectural and urban design. In this field, I am particularly concerned with the cultural core as well as the multi-dimensional sustainability of design.

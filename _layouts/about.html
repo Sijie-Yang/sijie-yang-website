@@ -30,16 +30,30 @@ layout: default
               cache_bust=true -%}
             {% endif -%}
             {%- if page.profile.address %}
-            <div class="address">
+            <div class="address" style="text-align: right;">
               {{ page.profile.address }}
             </div>
             {%- endif %}
           </div>
           {%- endif %}
 
-          <div class="clearfix">
+          <div class="clearfix" style="text-align: justify;">
             {{ content }}
           </div>
+
+          <!-- Social -->
+          {%- if page.social %}
+            <div class="social">
+              <div class="contact-icons">
+                {% include social.html %}
+              </div>
+
+              <div class="contact-note">
+                {{ site.contact_note }}
+              </div>
+
+            </div>
+          {%- endif %}
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
@@ -59,19 +73,7 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
 
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %}
+          
         </article>
 
 </div>
