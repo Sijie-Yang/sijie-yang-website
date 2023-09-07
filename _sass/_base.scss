@@ -4,6 +4,45 @@
 
 // Typography
 
+/* 定义一个新的类别使得总宽度是1.5/12的容器宽度 */
+.col-sm-1-5 {
+  flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
+
+/* 定义一个新的类别使得总宽度是8.5/12的容器宽度 */
+.col-sm-8-5 {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+
+.periodical {
+  font-size: 0.8em; /* 这会使其字体大小为默认大小的80% */
+}
+
+.smaller-image {
+  max-width: 50;
+  height: auto;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.article-container {
+  display: flex;
+  align-items: start; /* 从顶部开始对齐 */
+}
+
+.profile-container {
+  flex: 0 0 20%; /* 为图片和地址分配30%的宽度 */
+  margin-right: 20px; /* 右边距，为了与主内容有一定的间距 */
+}
+
+.clearfix {
+  flex: 1; /* 主内容使用剩下的70%的宽度 */
+}
+
+
+
 p,
 h1,
 h2,
@@ -26,7 +65,7 @@ hr {
 table {
   td,
   th {
-    font-size: 1rem;
+    line-height: 0.2;
   }
 
   th {
@@ -114,20 +153,15 @@ blockquote {
 
 // Profile
 
-.profile {
-  width: 100%;
 
-  .address {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
 
-    p {
-      display: inline-block;
-      margin: 0;
-    }
-  }
+.address {
+  padding-top: 20px  !important;
+  font-size: 0.7em;  /* 设置字体大小，可以根据需要调整 */
+  line-height: 0.5;  /* 设置行间距，可以根据需要调整 */
+
 }
+
 
 .profile.float-right {
   margin-left: 1rem;
@@ -302,10 +336,10 @@ blockquote {
 // Social (bottom)
 
 .social {
-  text-align: center;
+  text-align: left;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
 
     a {
       i::before {
@@ -560,7 +594,7 @@ footer.sticky-bottom {
   }
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 
     span {
       font-size: 1.5rem;
@@ -570,8 +604,8 @@ footer.sticky-bottom {
   h2.bibliography {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
+    padding-top: 0.5rem;
+    margin-top: -1rem;
     margin-bottom: -2rem;
     text-align: right;
   }
@@ -585,7 +619,7 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
-        width: 100%;
+        width: 50%;
         min-width: 80px;
         max-width: 200px;
       }
@@ -617,9 +651,11 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+        font-size: 0.9rem;
       }
 
       .author {
+        font-size: 0.9rem;
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
@@ -664,7 +700,7 @@ footer.sticky-bottom {
       }
 
       .badges {
-        padding-bottom: 0.5rem;
+        padding-bottom: 0rem;
         span {
           display: inline-block;
           color: $black-color;
@@ -679,7 +715,7 @@ footer.sticky-bottom {
       }
 
       .hidden {
-        font-size: 0.875rem;
+        font-size: 0.8rem;
         max-height: 0px;
         overflow: hidden;
         text-align: justify;

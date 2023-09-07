@@ -11,35 +11,33 @@ layout: default
           <p class="desc">{{ page.subtitle }}</p>
         </header>
 
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+        <article class="article-container">
 
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+          {% if page.profile %}
+          <div class="profile-container">
+              {%- if page.profile.image %}
+                  {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+                  {% if page.profile.image_circular %}
+                      {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle smaller-image" -%}
+                  {% else %}
+                      {%- assign profile_image_class = "img-fluid z-depth-1 rounded smaller-image" -%}
+                  {% endif %}
+                  {% include figure.html path=profile_image_path class=profile_image_class alt=page.profile.image cache_bust=true %}
               {% endif %}
-
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=page.profile.image
-              cache_bust=true -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address" style="text-align: right;">
-              {{ page.profile.address }}
-            </div>
-            {%- endif %}
+              {%- if page.profile.address %}
+              <div class="address">
+                  {{ page.profile.address }}
+              </div>
+              {%- endif %}
           </div>
-          {%- endif %}
-
-          <div class="clearfix" style="text-align: justify;">
-            {{ content }}
+          {% endif %}
+      
+          <div class="clearfix" style="text-align: justify; font-size: 0.8em;">
+              {{ content }}
           </div>
+      </article>
+      
+      
 
           <!-- Social -->
           {%- if page.social %}
@@ -57,19 +55,19 @@ layout: default
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            <h4 style="margin-top: 20px;"><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h4>
             {%- include news.html limit=true %}
           {%- endif %}
 
           <!-- Latest posts -->
           {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
+            <h4 style="margin-top: 20px;"><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h4>
             {%- include latest_posts.html %}
           {%- endif %}
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <h4 style="margin-top: 40px;"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h4>
             {%- include selected_papers.html %}
           {%- endif %}
 
