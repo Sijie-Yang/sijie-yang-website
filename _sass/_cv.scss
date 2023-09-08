@@ -33,6 +33,23 @@ a.btncv:hover {
   text-decoration: none !important;
 }
 
+.card-title {
+  font-size: 18px;  /* 以你想要的大小为准 */
+  margin-top: -5px;  /* 调整为所需的间距 */
+  margin-bottom: 10px;  /* 调整为所需的间距 */
+  padding: 0;  /* 移除任何的padding，如果有的话 */
+}
+
+h6.font-italic {
+  font-size: 14px; /*或您喜欢的其他大小*/
+}
+
+ul.items li {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1; /* 调整为适合您需求的值 */
+}
+
 /*****************************
  * CV TIME_TABLE styles
  *****************************/
@@ -60,7 +77,7 @@ i.icondepartment {
 }
 
 table.institution {
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
 }
 
 td.department {
@@ -75,6 +92,16 @@ div.container-links {
   justify-content: flex-start;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+.item, .subitem {
+  font-size: 12px;
+}
+
+.items li {
+  margin-bottom: -8px; /* 这会改变每个item之间的下边距 */
+  /* 或者使用 padding */
+  padding-bottom: -5px; /* 这会在每个item的内部底部添加空间 */
 }
 
 /*****************************

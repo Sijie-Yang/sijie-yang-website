@@ -3,10 +3,28 @@
   contents:
     - name: Full Name
       value: Sijie Yang
-    - name: Date of Birth
-      value: 28th August 1998
-    - name: Languages
-      value: English, Chinese
+    - name: Email
+      value: sijiey@u.nus.edu / sijiey@seas.upenn.edu / sijie.1.yang@outlook.com
+    - name: Tel
+      value: +65 80490438
+    - name: Address
+      value: SDE4 2nd Floor GIS Lab II, CDE, NUS, 8 Architecture Dr, Singapore 117356
+    - name: Language
+      value: English, Mandarin
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Urban Analytics
+      items: 
+        - Streetscape analytics and urban street environment evaluation based on multi-source data.
+        - Urban spatial network within social dimensions.
+        - Machine learning and GIS techniques supported urban studies.
+    - title: Architectural Analytics
+      items:
+        - Architectural space configuration within cultural contexts.
+        - Typological study of architectural space configuration.
+        - Machine learning supported architectural studies.
 
 - title: Education
   type: time_table
@@ -15,7 +33,7 @@
       institution: National University of Singapore (NUS), Singapore
       year: 2023
       description:
-        - Supervised by Prof. Filip Biljecki.
+        - Major in Urban Informatics, supervised by Prof. Filip Biljecki.
         - Enrolled with NUS Research Scholarship (full scholarship with stipend)
         - Expected graduation in 2027.
 
@@ -23,22 +41,27 @@
       institution: University of Pennsylvania (UPenn), US
       year: 2022
       description:
-        - GPA 4.0 out of 4.0.
+        - GPA 4.0/4.0.
+        - Module direction - Artificial Intelligence and Data Analytics
+        - Teaching Asistant in mathematics and algorithm design
         - Expected graduation in 2025.
 
     - title: Master of Science, Space Syntax
       institution: University College London (UCL), London, the United Kingdom
       year: 2021-2022
       description:
-        - Graduated with Distinction.
-        - Thesis supervised by Dr. Kimon Krenz.
-        - Projects supervised by Prof. Sophia Psarra and Prof. Kayvan Karimi.
+        - Graduated with Distinction (GPA 4.0/4.0).
+        - Final Thesis supervised by Dr. Kimon Krenz.
+        - Research Project supervised by Prof. Sophia Psarra and Design Project by Prof. Kayvan Karimi.
         
     - title: Bachelor of Architecture
       institution: Chongqing University (CQU), Chongqing, China
       year: 2016-2021
       description:
         - Top 10%; GPA 3.6 out of 4.0.
+        - Final Thesis supervised by Prof. Hao Long
+        - 2 times awarded International Communication Scholarship
+        - Multiple times awarded Excellent Studio Design Work
 
 - title: Experience
   type: time_table
@@ -47,60 +70,73 @@
       institution: NUS <a href="https://ual.sg">Urban Analytics Lab</a>
       year: 2023
       description:
+        - Research direction - Urban analytics
 
-    - title: Teaching Assistant in Mathematical Foundation of Computer Science
+    - title: Teaching Assistant
       institution: School of Engineering and Applied Science, Upenn
       year: 2022-2023
       description:
+        - TA in Mathematical Foundation of Computer Science (2022 Summer, 2022 Fall)
+        - TA in Introduction to Computer System (2023 Fall)
+    
+    - title: Research Assistant
+      institution: Cornell University 
+      year: 2022
+      description:
+        - Independent research supervised by Dr. Waishan Qiu
+        - Research direction - Urban streetscape perception
 
     - title: Architectural and Urban Design Intern
       institution: Lacime Architects Co., LTD, Shanghai, China
       year: 2020-2021
+      description:
+        - Main designer of a real estate sale center
+        - Assistant designer involved in multiple real estate planning and design projects
+        
 
-    - title: Research Assistant in Architectural Surveying
+    - title: Research Intern in Architectural Surveying
       institution: Institute of Architectural History and Theory, Chongqing University, Chongqing, China 
       year: 2019
       description:
+        - Team surveying on an ancient temple in Sichuan Province, supervised by Lecturer Jialong Jiang
+        - Surveyed old chinese buildings with equipments including drones and laser scanners
+        - Teniques included handdrawing, drone surveying and 3D reconstruction
 
-    - title: Research Assistant in Urban Soundscape Analysis
+    - title: Research Assistant in Soundscape Analysis
       institution: Key Laboratory of New Technology of Cities in Mountain Area, Chongqing University, Chongqing, China 
       year: 2019-2020
-
-    - title: Research Assistant
-      institution: Cornell University 
-      year: 2022
+      description:
+        - Experiment and data collection on sound-absorbing material with acoustical instrument.
+        - Wrote and published a paper about new sound-absorbing material.
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/Sijie-Yang/street_view_image_downloader">street_view_image_downloader</a>
+      year: 2023
+      description: A super-convenient street image downloader package for geo-analyst with multiple functions.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2023
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - NUS Research Scholarship
+    - year: 2022
       items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
+        - Master of Science Degree with Distinction (UCL Bartlett)
+    - year: 2021
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Bechalor of Architecture Degree (Chongqing University)
+        - Excellent Engineer Award with BArch graduation (Ministry of Education, China)
+    - year: 2020
+      items: 
+        - The 6th China Human Environment Design Academic Year Award, Honorable Mention (Tsinghua University, China)
+    - year: 2019
+      items: 
+        - The 5th CUC CUP Architecture Design International Competition, 3rd Place (Hangzhou, China)
+        - Young Designers Award, Honorable Mention (Southeast University, Nanjing, China)
+    - year: 2018
+      items: 
+        - Architecture Biennale 2018, 16th International Architecture Exhibition, Art Document Exhibition of Chinese Teachers & Students in Architecture Majors of Colleges and Universities (Venice, Italy)
+        - UC Berkeley International Exchange Scholarship (Berkeley, CA, US)
