@@ -41,7 +41,11 @@
   flex: 1; /* 主内容使用剩下的70%的宽度 */
 }
 
-
+.news-title {
+  display: block;   /* 将链接元素转换为块级元素 */
+  margin-top: -100px;  /* 调整为你想要的距离 */
+  margin-bottom: 1000px; /* 调整为你想要的距离 */
+}
 
 p,
 h1,
@@ -63,14 +67,20 @@ hr {
 }
 
 table {
-  td,
-  th {
-    line-height: 0.2;
+  td,th {
+    line-height: 1;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   th {
     font-weight: bold;
   }
+}
+
+table.table-sm td, table.table-sm th {
+  padding-top: 4px;     /* 根据需要调整这个值 */
+  padding-bottom: 4px;  /* 根据需要调整这个值 */
 }
 
 a,
