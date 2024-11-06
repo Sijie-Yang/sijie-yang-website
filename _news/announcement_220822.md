@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Published a conference paper on [13th International Space Syntax Symposium](https://www.hvl.no/en/research/conference/13sss/)
+Published a conference paper about [Configurational Comparison between Chinese Garden](https://discovery.ucl.ac.uk/id/eprint/10154624//).

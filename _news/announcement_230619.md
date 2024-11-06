@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Master thesis in UCL was published as a [journal (IJGI) paper](https://www.mdpi.com/2220-9964/12/6/249).
+Master thesis in UCL was published [Street Perception and House Prices](https://www.mdpi.com/2220-9964/12/6/249).
