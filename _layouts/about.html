@@ -13,6 +13,7 @@ layout: default
 
         <article class="article-container">
 
+          <!-- Profile -->
           {% if page.profile %}
           <div class="profile-container">
               {%- if page.profile.image %}
@@ -31,13 +32,11 @@ layout: default
               {%- endif %}
           </div>
           {% endif %}
-      
+
           <div class="clearfix" style="text-align: justify; font-size: 0.8em;">
               {{ content }}
           </div>
-      </article>
-      
-      
+        </article>
 
           <!-- Social -->
           {%- if page.social %}
@@ -52,6 +51,27 @@ layout: default
 
             </div>
           {%- endif %}
+
+         <!-- Add Featured Research Slider -->
+         {% if page.featured_research %}
+         <div class="featured-research-container">
+          <h4 style="margin-top: 20px;">featured research</h4>
+           <div class="research-slider">
+             {% for research in page.featured_research %}
+               <div class="research-slide">
+                 <a href="{{ research.link }}" target="_blank">
+                   <img src="{{ research.image | prepend: 'assets/img/' }}" 
+                        alt="{{ research.title }}"
+                        class="img-fluid z-depth-1 rounded">
+                   <div class="research-caption" style="font-size: 0.8em; padding: 1px 10px;">
+                     {{ research.title }}
+                   </div>
+                 </a>
+               </div>
+             {% endfor %}
+           </div>
+         </div>
+         {% endif %}
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
