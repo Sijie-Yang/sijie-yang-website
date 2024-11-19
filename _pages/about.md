@@ -8,6 +8,12 @@ featured_research:
   - title: "Thermal Comfort in Sight"
     image: "thermal-comfort-in-sight.png"
     link: "https://thermal-affordance.ual.sg"
+  - title: "Street Perception on Housing Price"
+    image: "street-perception-on-housing-price.png"
+    link: "https://www.researchgate.net/publication/371737031_The_Role_of_Subjective_Perceptions_and_Objective_Measurements_of_the_Urban_Environment_in_Explaining_House_Prices_in_Greater_London_A_Multi-Scale_Urban_Morphology_Analysis"
+  - title: "Spatial Configuration of Chinese Gardens"
+    image: "spatial-configuration-of-chinese-gardens.png"
+    link: "https://www.researchgate.net/publication/362762370_Cultural_impacts_on_traditional_Chinese_garden_design_A_configurational_comparison_between_traditional_Chinese_imperial_and_private_gardens_using_space_syntax"
 
 profile:
   align: right
