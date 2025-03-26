@@ -1,34 +1,33 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Chong":
+  - firstname: ["Adrian"]
+    url: https://blog.nus.edu.sg/adrianchong/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Liu":
+  - firstname: ["Pengyuan"]
+    url: https://ual.sg/author/pengyuan-liu/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Biljecki":
+  - firstname: ["Filip"]
+    url: https://filipbiljecki.com
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Qiu":
+  - firstname: ["Waishan"]
+    url: https://www.arch.hku.hk/staff/upad/qiu-waishan/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Krenz":
+  - firstname: ["Kimon"]
+    url: https://profiles.ucl.ac.uk/41688-kimon-krenz
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Li":
+  - firstname: ["Wenjing"]
+    url: https://www.linkedin.com/in/li-wenjing-4283a1207/?originalSubdomain=jp
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Psarra":
+  - firstname: ["Sophia"]
+    url: https://profiles.ucl.ac.uk/31395
 
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"Yang":
+  - firstname: ["Yufeng"]
+    url: https://www.researchgate.net/profile/Yufeng-Yang-4?ev=brs_overview
 
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+
