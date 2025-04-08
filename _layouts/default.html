@@ -16,33 +16,24 @@
     {%- include header.html %}
 
     <!-- Content -->
-    <div class="container mt-5">
+    <div class="container mt-5" role="main">
       {% if page.toc and page.toc.sidebar %}
-        {% if page.toc.sidebar == "right" %}
-        <div class="row">
-          <!-- main content area -->
-          <div class="col-sm-9">
-            {{ content }}
-          </div>
-          <!-- sidebar, which will move to the top on a small screen -->
-          <div class="col-sm-3">
-            <nav id="toc-sidebar" class="sticky-top"></nav>
-          </div>
-        </div>
-        {% else %}
         <div class="row">
           <!-- sidebar, which will move to the top on a small screen -->
-          <div class="col-sm-3">
-            <nav id="toc-sidebar" class="sticky-top"></nav>
+          <div class="col-lg-3">
+            <nav id="toc-sidebar" class="sticky-top border-start ps-3"></nav>
           </div>
           <!-- main content area -->
-          <div class="col-sm-9">
+          <div class="col-lg-9">
             {{ content }}
           </div>
         </div>
-        {% endif %}
       {% else %}
-        {{ content }}
+        <div class="row">
+            <div class="col-lg-12">
+                {{ content }}
+            </div>
+        </div>
       {% endif %}
     </div>
 

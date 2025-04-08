@@ -1127,3 +1127,15 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+.read-more-link {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+  font-size: 0.8em;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  
+  &:hover {
+    color: var(--global-hover-color);
+  }
+}
