@@ -10,7 +10,7 @@ comments: true
 {% if page._styles %}
 <!-- Page/Post style -->
 <style type="text/css">
-  {{ page._styles }}
+{% if page._styles %}{{ page._styles }}{% endif %}
 </style>
 {% endif %}
 
@@ -85,5 +85,9 @@ comments: true
       })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  {%- if site.giscus.enabled -%}
+    {% include giscus.html %}
+  {%- endif %}
 
 </div>
