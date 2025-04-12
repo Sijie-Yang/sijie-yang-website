@@ -1,0 +1,131 @@
+{% assign pdf_path = include.path %}
+{% assign scale = include.scale | default: 1.5 %}
+{% assign canvas_id = include.id | default: "pdfCanvas" %}
+
+<div class="pdf-viewer">
+  <div class="pdf-controls">
+    <button onclick="prevPage_{{ canvas_id }}()" class="page-btn">←</button>
+    <span id="pageNum-{{ canvas_id }}">1</span> / <span id="pageCount-{{ canvas_id }}">0</span>
+    <button onclick="nextPage_{{ canvas_id }}()" class="page-btn">→</button>
+  </div>
+  <canvas id="{{ canvas_id }}"></canvas>
+</div>
+
+<script>
+  // Initialize PDF.js if not already loaded
+  if (typeof pdfjsLib === 'undefined') {
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+    document.head.appendChild(script);
+  }
+
+  // Wait for PDF.js to load
+  function waitForPdfJs(callback) {
+    if (typeof pdfjsLib !== 'undefined') {
+      callback();
+    } else {
+      setTimeout(() => waitForPdfJs(callback), 100);
+    }
+  }
+
+  waitForPdfJs(() => {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    
+    let pdfDoc = null;
+    let pageNum = 1;
+    let pageRendering = false;
+    let pageNumPending = null;
+    const canvas = document.getElementById('{{ canvas_id }}');
+    const ctx = canvas.getContext('2d');
+
+    // Load the PDF
+    pdfjsLib.getDocument('{{ pdf_path }}').promise.then(function(pdf) {
+      pdfDoc = pdf;
+      document.getElementById('pageCount-{{ canvas_id }}').textContent = pdf.numPages;
+      renderPage(pageNum);
+    });
+
+    function renderPage(num) {
+      pageRendering = true;
+      pdfDoc.getPage(num).then(function(page) {
+        const viewport = page.getViewport({scale: {{ scale }} });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        const renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+
+        const renderTask = page.render(renderContext);
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          if (pageNumPending !== null) {
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+      document.getElementById('pageNum-{{ canvas_id }}').textContent = num;
+    }
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    window[`prevPage_{{ canvas_id }}`] = function() {
+      if (pageNum <= 1) return;
+      pageNum--;
+      queueRenderPage(pageNum);
+    };
+
+    window[`nextPage_{{ canvas_id }}`] = function() {
+      if (pageNum >= pdfDoc.numPages) return;
+      pageNum++;
+      queueRenderPage(pageNum);
+    };
+
+    // Add keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') {
+        window[`prevPage_{{ canvas_id }}`]();
+      } else if (e.key === 'ArrowRight') {
+        window[`nextPage_{{ canvas_id }}`]();
+      }
+    });
+  });
+</script>
+
+<style>
+.pdf-viewer {
+  margin: 20px 0;
+  text-align: center;
+}
+.pdf-controls {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.page-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.page-btn:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+canvas {
+  border: 1px solid #ddd;
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+</style> 
