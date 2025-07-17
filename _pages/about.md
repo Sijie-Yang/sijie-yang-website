@@ -36,7 +36,7 @@ How to drive our understanding of urban environments with `multi-source urban da
 
 I am similarly interested in how traditional built environment design can be digitally driven, such as how algorithms and data in the context of digital technological development can be used to drive analysis and evaluation in architectural and urban design. In this field, I am particularly concerned with the cultural core as well as the multi-dimensional sustainability of design. -->
 
-I am a PhD student at Urban Analysis Lab, Department of Architecture, National University of Singapore, where my PhD supervisor is Prof. Filip Biljecki. I hold MSc in Space Syntax from University College London and Bachelor of Architecture from Chongqing University. In addition, I am a computer science master's student at the School of Engineering and Applied Science, University of Pennsylvania.
+I am a PhD student at Urban Analytics Lab, Department of Architecture, National University of Singapore, where my PhD supervisor is Prof. Filip Biljecki. I hold MSc in Space Syntax from University College London and Bachelor of Architecture from Chongqing University. In addition, I am a computer science master's student at the School of Engineering and Applied Science, University of Pennsylvania.
 
 My research explores the integration of new computational technologies, including Computer Science and GIScience, with the study of the built environment. I aim to advance knowledge in four key areas:
 
