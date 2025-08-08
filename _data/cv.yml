@@ -1,35 +1,8 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Sijie Yang
-    - name: Email
-      value: sijiey@u.nus.edu / sijiey@seas.upenn.edu / sijie.1.yang@outlook.com
-    - name: Tel
-      value: +65 80490438
-    - name: Address
-      value: SDE4 2nd Floor GIS Lab II, CDE, NUS, 8 Architecture Dr, Singapore 117356
-    - name: Language
-      value: English, Mandarin
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Urban Analytics
-      items: 
-        - Streetscape analytics and urban street environment evaluation based on multi-source data.
-        - Urban spatial network within social dimensions.
-        - Machine learning and GIS techniques supported urban studies.
-    - title: Architectural Analytics
-      items:
-        - Architectural space configuration within cultural contexts.
-        - Typological study of architectural space configuration.
-        - Machine learning supported architectural studies.
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD Candidate in Architecture (Urban Analytics)
+    - title: PhD Candidate (GeoAI, Urban Data Science)
       institution: National University of Singapore (NUS), Singapore
       year: 2023
       description:
@@ -37,18 +10,18 @@
         - Enrolled with NUS Research Scholarship (full scholarship with stipend)
         - Expected graduation in 2027.
 
-    - title: Master Candidate in Computer and Information Technology
+    - title: Master of Computer and Information Technology
       institution: University of Pennsylvania (UPenn), US
-      year: 2022
+      year: 2022-2025
       description:
         - GPA 4.0/4.0.
         - Module direction - Artificial Intelligence and Data Analytics
         - Teaching Asistant in mathematics and algorithm design
         - Expected graduation in 2025.
 
-    - title: Master of Science, Space Syntax
+    - title: Master of Science (Space Syntax, Urban Data Science)
       institution: University College London (UCL), London, the United Kingdom
-      year: 2021-2022
+      year: 2021-2023
       description:
         - Graduated with Distinction (GPA 4.0/4.0).
         - Final Thesis supervised by Dr. Kimon Krenz.
@@ -109,12 +82,7 @@
         - Experiment and data collection on sound-absorbing material with acoustical instrument.
         - Wrote and published a paper about new sound-absorbing material.
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/Sijie-Yang/street_view_image_downloader">street_view_image_downloader</a>
-      year: 2023
-      description: A super-convenient street image downloader package for geo-analyst with multiple functions.
+
 
 - title: Honors and Awards
   type: time_table
@@ -140,3 +108,26 @@
       items: 
         - Architecture Biennale 2018, 16th International Architecture Exhibition, Art Document Exhibition of Chinese Teachers & Students in Architecture Majors of Colleges and Universities (Venice, Italy)
         - UC Berkeley International Exchange Scholarship (Berkeley, CA, US)
+
+- title: Speeches and Presentations
+  type: time_table
+  contents:
+    - year: 2025
+      items: 
+        - "<strong>Aug 7, 2025</strong>: Research Talk: London-Singapore Urban Analytics Seminar for Liveable Cities, Department of Architecture, NUS, Singapore<br>
+          &nbsp;&nbsp;<em>Title:</em> \"Unifying and Quantifying Urban Comfort\"<br>
+          &nbsp;&nbsp;<em>With:</em> Assoc Prof Stephen Law, Assoc Prof Zara Shabrina, Dr Jin Rui, Dr. Filip Biljecki, Winston Yap, Xiucheng Liang, Zicheng Fan"
+          
+        - "<strong>Aug 7, 2025</strong>: Research Talk: SCULAB Seminar (remote), South China Agricultural University, Guangzhou, China<br>
+          &nbsp;&nbsp;<em>Title:</em> \"Perception- and Behavior-Based Analysis of the Built Environment: From Building to Urban Scale\"<br>
+          &nbsp;&nbsp;<em>With:</em> Assoc Prof Chongxian Chen"
+          
+        - "<strong>Jul 14, 2025</strong>: Research Talk: PhD Candidate Oral Qualifying Examination, Department of Architecture, NUS, Singapore<br>
+          &nbsp;&nbsp;<em>Title:</em> \"Unifying and Quantifying Urban Comfort\"<br>
+          &nbsp;&nbsp;<em>With:</em> Dr. Filip Biljecki (supervisor), Assoc Prof Yuan Lai (Tsinghua University), Dr. Yu Qian Ang, Assoc Prof Rudi Stouffs"
+          
+        - "<strong>Jun 25, 2025</strong>: Research Talk and Session Chair: CUPUM Computational Urban Planning and Urban Management (CUPUM) 2025, UCL East, London, UK<br>
+          
+    - year: 2024
+      items:
+        - "<strong>Nov 15, 2024</strong>: Research Talk and Symposium Committee Chair: Graduate Research Symposium, Department of Architecture, NUS, Singapore<br>

@@ -47,7 +47,7 @@ h6.font-italic {
 ul.items li {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1; /* 调整为适合您需求的值 */
+  line-height: 1.1;
 }
 
 /*****************************
@@ -80,8 +80,12 @@ table.institution {
   margin-bottom: 0.1rem;
 }
 
+td.institution {
+  font-size: 0.75rem;
+}
+
 td.department {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 div.container-links {
@@ -99,9 +103,48 @@ div.container-links {
 }
 
 .items li {
-  margin-bottom: -8px; /* 这会改变每个item之间的下边距 */
-  /* 或者使用 padding */
-  padding-bottom: -5px; /* 这会在每个item的内部底部添加空间 */
+  display: inline;
+  list-style: none;
+}
+
+.items li:not(:last-child):after {
+  content: "•";
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-muted-text-color);
+  border-radius: 50%;
+  padding: 1px 2px;
+  margin: 0 0.15rem;
+  font-size: 0.6em;
+  display: inline-block;
+  line-height: 1;
+}
+
+.items {
+  margin: 0.2rem 0;
+  padding-left: 1.5rem;
+  line-height: 1.1;
+}
+
+/* Awards section - override inline display for block list */
+a[id="Honors and Awards"] + .card .items li {
+  display: list-item !important;
+  list-style-type: disc;
+  margin-bottom: 0.2rem;
+}
+
+a[id="Honors and Awards"] + .card .items li:not(:last-child):after {
+  content: none !important;
+}
+
+/* Speeches and Presentations section - override inline display for block list */
+a[id="Speeches and Presentations"] + .card .items li {
+  display: list-item !important;
+  list-style-type: disc;
+  margin-bottom: 0.2rem;
+}
+
+a[id="Speeches and Presentations"] + .card .items li:not(:last-child):after {
+  content: none !important;
 }
 
 /*****************************
@@ -293,3 +336,92 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+/* CV time table layout - floating year display */
+.cv-item-with-floating-year {
+  position: relative;
+}
+
+.cv-floating-year {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  text-align: right;
+  z-index: 10;
+  background: rgba(var(--global-card-bg-color-rgb), 0.9);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  backdrop-filter: blur(2px);
+}
+
+.cv-main-content {
+  width: 100%;
+  /* No padding - content can extend under the floating year */
+}
+
+.cv-year-text {
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: var(--global-muted-text-color);
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: block;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+}
+
+.cv-location-text {
+  font-size: 0.7rem;
+  color: var(--global-muted-text-color);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cv-location-text i {
+  font-size: 0.6rem;
+  margin-right: 0.2rem;
+  opacity: 0.7;
+}
+
+/* CV title styling - same size as institution but bold */
+.cv-main-content h6.title {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.cv-main-content table.institution {
+  margin-top: 0.1rem;
+}
+
+/* Reduce spacing between CV subsections */
+.cv .list-group-item {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom-width: 1px;
+}
+
+.cv .list-group-item:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cv-main-content {
+    padding-top: 2.5rem; /* Push content down on small screens */
+  }
+  
+  .cv-floating-year {
+    position: relative;
+    top: auto;
+    right: auto;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    backdrop-filter: none;
+  }
+}
