@@ -147,6 +147,17 @@ a[id="Speeches and Presentations"] + .card .items li:not(:last-child):after {
   content: none !important;
 }
 
+/* Academic Service section - override inline display for block list */
+a[id="Academic Service"] + .card .items li {
+  display: list-item !important;
+  list-style-type: disc;
+  margin-bottom: 0.2rem;
+}
+
+a[id="Academic Service"] + .card .items li:not(:last-child):after {
+  content: none !important;
+}
+
 /*****************************
  * CV MAP styles
  *****************************/
