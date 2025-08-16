@@ -87,9 +87,12 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2025
+      items: 
+        - <a href="https://cde.nus.edu.sg/arch/award/tan-cheng-siong-research-scholarship/">Tan Cheng Siong Research Scholarship</a>
     - year: 2023
       items: 
-        - NUS Research Scholarship
+        - <a href="https://ual.sg/opportunities/ads/phd-nus/">NUS Research Scholarship</a>
     - year: 2022
       items: 
         - Master of Science Degree with Distinction (UCL Bartlett)
