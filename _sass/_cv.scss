@@ -158,6 +158,39 @@ a[id="Academic Service"] + .card .items li:not(:last-child):after {
   content: none !important;
 }
 
+/* Publications section - override inline display for block list */
+a[id="Publications"] + .card .items li {
+  display: list-item !important;
+  list-style-type: disc;
+  margin-bottom: 0.2rem;
+}
+
+a[id="Publications"] + .card .items li:not(:last-child):after {
+  content: none !important;
+}
+
+/* Funding section - override inline display for block list */
+a[id="Funding"] + .card .items li {
+  display: list-item !important;
+  list-style-type: disc;
+  margin-bottom: 0.2rem;
+}
+
+a[id="Funding"] + .card .items li:not(:last-child):after {
+  content: none !important;
+}
+
+/* Academic References section - override inline display for block list */
+a[id="Academic References"] + .card .items li {
+  display: list-item !important;
+  list-style-type: disc;
+  margin-bottom: 0.2rem;
+}
+
+a[id="Academic References"] + .card .items li:not(:last-child):after {
+  content: none !important;
+}
+
 /*****************************
  * CV MAP styles
  *****************************/

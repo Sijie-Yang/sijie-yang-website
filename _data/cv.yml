@@ -128,6 +128,33 @@
       items:
         - "<strong>Nov 15, 2024</strong>: Research Talk and Symposium Committee Chair: Graduate Research Symposium, Department of Architecture, NUS, Singapore"
 
+- title: Publications
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - "<strong>Yang, S.</strong>, Chong, A., Liu, P., & Biljecki, F. (2025). Thermal Comfort in Sight: Thermal Affordance and its Visual Assessment for Sustainable Streetscape Design. <em>Building and Environment</em>. <a href='http://dx.doi.org/10.1016/j.buildenv.2025.112569' target='_blank'>DOI</a> | <a href='https://arxiv.org/pdf/2410.11887' target='_blank'>PDF</a>"
+        - "<strong>Yang, S.</strong>, Lei, B., & Biljecki, F. (2025). Urban Comfort Assessment in the Era of Digital Planning: A Multidimensional, Data-driven, and AI-assisted Framework. In <em>19th International Conference on Computational Urban Planning and Urban Management (CUPUM 2025)</em>. UCL East, London, UK. <a href='https://arxiv.org/abs/2508.16057' target='_blank'>URL</a> | <a href='https://arxiv.org/pdf/2508.16057' target='_blank'>PDF</a>"
+    
+    - year: 2023
+      items:
+        - "<strong>Yang, S.</strong>, Krenz, K., Qiu, W., & Li, W. (2023). The Role of Subjective Perceptions and Objective Measurements of the Urban Environment in Explaining House Prices in Greater London: A Multi-Scale Urban Morphology Analysis. <em>ISPRS International Journal of Geo-Information</em>, 12(6), 249. <a href='https://www.mdpi.com/2220-9964/12/6/249' target='_blank'>DOI</a> | <a href='https://www.mdpi.com/2220-9964/12/6/249/pdf' target='_blank'>PDF</a>"
+    
+    - year: 2022
+      items:
+        - "Xu, X., Qiu, W., Li, W., Huang, D., Li, X., & <strong>Yang, S.</strong> (2022). Comparing satellite image and GIS data classified local climate zones to assess urban heat island: A case study of Guangzhou. <em>Frontiers in Environmental Science</em>, 10. <a href='https://www.frontiersin.org/articles/10.3389/fenvs.2022.1029445/full' target='_blank'>DOI</a> | <a href='https://www.frontiersin.org/articles/10.3389/fenvs.2022.1029445/pdf' target='_blank'>PDF</a>"
+        - "<strong>Yang, S.</strong>, & Yang, Y. (2022). Cultural impacts on traditional Chinese garden design: A configurational comparison between traditional Chinese imperial and private gardens using space syntax. In <em>Proceedings of the 13th International Space Syntax Symposium</em> (p. 414). <a href='https://discovery.ucl.ac.uk/id/eprint/10154624/' target='_blank'>URL</a> | <a href='https://discovery.ucl.ac.uk/id/eprint/10154624/1/414-Cultural%20impacts%20on%20traditional%20Chinese%20garden%20design%20%282%29.pdf' target='_blank'>PDF</a>"
+        - "<strong>Yang, S.</strong>, & Psarra, S. (2022). The social impact of atrium space in multilevel buildings: An analysis of university libraries using space syntax. <em>Available at SSRN 4249348</em>. <a href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4249348' target='_blank'>URL</a> | <a href='https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4249348_code5470471.pdf?abstractid=4249348&mirid=1' target='_blank'>PDF</a>"
+
+- title: Funding
+  type: time_table
+  contents:
+    - year: 2023-2027
+      items:
+        - "NUS Research Scholarship (NUSGS-CDE DO IS AY22&L GRSUR0600042), National University of Singapore"
+        - "Participating in research project: Large-scale 3D Geospatial Data for Urban Analytics, National University of Singapore Start Up Grant R-295-000-171-133"
+        - "Participating in research project: Multi-scale Digital Twins for the Urban Environment: From Heartbeats to Cities, Singapore Ministry of Education Academic Research Fund Tier 1"
+
 - title: Academic Service
   type: time_table
   contents:
@@ -141,3 +168,12 @@
     - year: 2024
       items:
         - "Peer Reviewer for <em>Computational Urban Science</em> (Springer), Editor: Yuhao Kang<br>"
+
+- title: Academic References
+  type: time_table
+  contents:
+    - year: 
+      items:
+        - "<strong>Prof. Filip Biljecki</strong>, Department of Architecture, National University of Singapore • Email: filip@nus.edu.sg • Research: 3D city models, urban analytics, GeoAI"
+        - "<strong>Prof. Sophia Psarra</strong>, The Bartlett School of Architecture, University College London • Email: s.psarra@ucl.ac.uk • Research: Space syntax, architectural morphology, urban design"
+        - "<strong>Dr. Kimon Krenz</strong>, The Bartlett School of Architecture, University College London • Email: k.krenz@ucl.ac.uk • Research: Urban morphology, housing studies, spatial analysis"
