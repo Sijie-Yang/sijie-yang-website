@@ -9,3 +9,6 @@ _site
 Gemfile.lock
 vendor
 
+# Obsidian vault files
+.obsidian/
+
