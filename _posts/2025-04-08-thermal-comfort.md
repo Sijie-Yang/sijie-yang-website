@@ -2,9 +2,10 @@
 layout: post
 title: Thermal Comfort in Sight
 date: 2025-04-08
+description: Thermal affordance and its visual assessment
 categories: research
 tags: [SVI, perception, urban comfort, urban planning, Singapore]
-thumbnail: /assets/img/250408/fig10_result_VATA mapping.png
+thumbnail: /assets/img/publication_preview/Yang et al-2025_Thermal Comfort.gif
 ---
 
 ## Related Links
