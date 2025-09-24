@@ -135,6 +135,7 @@ nav_order: 4
   .partnership-link {
     margin-top: 0.5rem;
     margin-bottom: 0;
+    text-align: center;
   }
 
   .partnership-link a {
@@ -146,6 +147,8 @@ nav_order: 4
     border-radius: 15px;
     transition: all 0.2s ease;
     display: inline-block;
+    white-space: nowrap;
+    min-width: fit-content;
   }
 
   .partnership-link a:hover {
