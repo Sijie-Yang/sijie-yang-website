@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Formally graduated with Distinction from [University College London](https://en.wikipedia.org/wiki/University_College_London).
+Formally graduated from MSc Space Syntax with Distinction from [University College London](https://en.wikipedia.org/wiki/University_College_London).

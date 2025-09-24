@@ -5,14 +5,17 @@ permalink: /
 subtitle: PhD Researcher in NUS <a href='https://ual.sg'>Urban Analytics Lab</a>
 
 featured_research:
+  - title: "Variation of Urban Comfort Potential"
+    image: "about/urban-comfort-potential.png"
+    link: "https://github.com/Sijie-Yang/Urban-Comfort-Potential"
   - title: "Thermal Comfort in Sight"
-    image: "thermal-comfort-in-sight.png"
+    image: "about/thermal-comfort-in-sight.png"
     link: "https://thermal-affordance.ual.sg"
   - title: "Street Perception on Housing Price"
-    image: "street-perception-on-housing-price.png"
+    image: "about/street-perception-on-housing-price.png"
     link: "https://www.researchgate.net/publication/371737031_The_Role_of_Subjective_Perceptions_and_Objective_Measurements_of_the_Urban_Environment_in_Explaining_House_Prices_in_Greater_London_A_Multi-Scale_Urban_Morphology_Analysis"
   - title: "Spatial Configuration of Chinese Gardens"
-    image: "spatial-configuration-of-chinese-gardens.png"
+    image: "about/spatial-configuration-of-chinese-gardens.png"
     link: "https://www.researchgate.net/publication/362762370_Cultural_impacts_on_traditional_Chinese_garden_design_A_configurational_comparison_between_traditional_Chinese_imperial_and_private_gardens_using_space_syntax"
 
 profile:
@@ -44,3 +47,11 @@ My research explores the integration of new computational technologies, includin
 - **Urban Data** Utilizing multi-source urban data to analyze and address complex urban challenges, to uncover insights into the interactions between the built environment and urban dynamics.
 - **Urban Comfort** Focusing on subjective, human-centered perceptions of comfort in urban spaces, to evaluate and enhance the sensory and experiential dimensions of urban environments.
 - **Architectural Systems** Conducting micro-scale investigations into architectural systems, including spatial configurations, building information systems, and sustainable green building solutions.
+
+I am also actively exploring cutting-edge computational methods to advance urban science:
+
+- **Foundation Models:** Leveraging large language and vision models for geospatial reasoning.
+- **AI Agents:** Developing autonomous systems for urban planning and science discovery tasks.
+- **World Models:** Learning dynamic representations of urban systems for predictive understanding.
+- **Reinforcement Learning:** Enabling adaptive and optimized urban decision-making.
+- **Spatiotemporal Modeling:** Capturing complex geographic patterns across scales and time.

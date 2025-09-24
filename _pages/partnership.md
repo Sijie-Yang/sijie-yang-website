@@ -1,7 +1,7 @@
 ---
 layout: page
-title: partnership
-permalink: /partnership/
+title: partnerships
+permalink: /partnerships/
 description: Entrepreneurial ventures and strategic collaborations that bridge technology and innovation.
 nav: true
 nav_order: 4

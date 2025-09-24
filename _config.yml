@@ -122,9 +122,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: urban e-perception # blog_name will be displayed in your blog page
+blog_name: City Experience + AI # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: understand people's city experience in a digital way
+blog_description: Exploring urban environments through spatial intelligence
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -171,7 +171,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 6 # leave blank to include all the news in the `_news` folder
+  limit: 12 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
@@ -257,8 +257,8 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
-display_categories: ['blockquotes'] # these categories will be displayed on the front page of your blog
+display_tags: ['perception', 'cognition', 'urban comfort', 'urban planning'] # these tags will be displayed on the front page of your blog
+display_categories: ['research', 'discussion'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

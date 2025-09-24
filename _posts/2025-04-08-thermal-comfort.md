@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Thermal Comfort in Sight: Thermal Affordance and its Visual Assessment for Sustainable Streetscape Design"
+title: Thermal Comfort in Sight
 date: 2025-04-08
 categories: research
-tags: [urban design, urban planning, perception, human-centric GeoAI, sustainability, heat mitigation, thermal comfort, machine learning, street view imagery, urban heat island, climate change]
+tags: [SVI, perception, urban comfort, urban planning, Singapore]
 thumbnail: /assets/img/250408/fig10_result_VATA mapping.png
 ---
 

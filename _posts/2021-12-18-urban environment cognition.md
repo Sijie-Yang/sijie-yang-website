@@ -4,7 +4,7 @@ title: The salient mode and hidden mode of urban environment cognition and devel
 date: 2021-12-18 09:00:00+0000
 description: Discussion on Alan Penn’s cognitive mechanism of human community
 tags: cognition
-categories: urban
+categories: discussion
 giscus_comments: true
 related_posts: false
 related_publications: 
