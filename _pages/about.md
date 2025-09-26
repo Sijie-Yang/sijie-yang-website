@@ -55,3 +55,4 @@ I am also actively exploring cutting-edge computational methods to advance urban
 - **World Models:** Learning dynamic representations of urban systems for predictive understanding.
 - **Reinforcement Learning:** Enabling adaptive and optimized urban decision-making.
 - **Spatiotemporal Modeling:** Capturing complex geographic patterns across scales and time.
+
