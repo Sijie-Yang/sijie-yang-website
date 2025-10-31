@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First-principle-based systematic thinking is more important than ever
-date: 2025-11-01 10:00:00+0000
+date: 2025-10-31 10:00:00+0800
 description: Why understanding systems from first principles matters more in the age of AI
 tags: [AI, urban science, systems thinking, first principles]
 categories: discussion

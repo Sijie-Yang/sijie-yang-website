@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Everyone gets anxiety about networking
-date: 2025-11-02 10:00:00+0000
+date: 2025-10-31 10:00:00+0800
 description: Why networking makes us uncomfortable and what to do about it
 tags: [career, research, networking, academia]
 categories: discussion

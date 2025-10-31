@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's left for urban scientists in the age of AI?
-date: 2025-10-31 10:00:00+0000
+date: 2025-10-31 10:00:00+0800
 description: Reflections on the evolving role of urban researchers in an AI-driven world
 tags: [AI, urban science, career, research]
 categories: discussion
