@@ -5,7 +5,10 @@ permalink: /
 subtitle: PhD Researcher in NUS <a href='https://ual.sg'>Urban Analytics Lab</a>
 
 featured_research:
-  - title: "Variation of Urban Comfort Potential"
+  - title: "Reasoning Is All You Need for Urban Planning AI"
+    image: "about/reasoning-is-all-you-need.png"
+    link: "https://arxiv.org/abs/2511.05375"
+  - title: "Computational Urban Comfort Indexing"
     image: "about/urban-comfort-potential.png"
     link: "https://github.com/Sijie-Yang/Urban-Comfort-Potential"
   - title: "Thermal Comfort in Sight"

@@ -7,7 +7,6 @@ importance: 1
 category: design
 year: 2019
 ---
-
 {% include pdf-viewer.html path="/assets/design/portfolio/Sijie Yang_Portfolio_Project_3.pdf" scale=1.5 %}
 
 ## Introduction
@@ -17,7 +16,7 @@ A Memory Factory for Living Community based on Abandoned Factories
 
 **Advisor: Yang Zhenjing**
 
-**Teammate of Original Project: Yang Han**
+* **Teammate of Original Project: Yang Han**
 
 Individual Design Development based on Collaborative Studio Work with Yang Han
 
@@ -46,6 +45,3 @@ Internet community is replacing the living community to serve as a public sphere
 ### [2] Memory Factory as a kind of Medium - Reconstruct Physical Community through Community Imagination Construction
 
 This project explores to reconstruct the local physical community based on the imagined community theory. Through the community imagination construction, physical community is expected to be built within a series of mechanical processes. Each mechanical process in the imagination construction is based on Production, Transportation, Exchange and Storage of citizens' individual memory.
-
-
-
