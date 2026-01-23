@@ -1,0 +1,100 @@
+# Gallery events
+# Each event can contain multiple photos
+# Format:
+# events:
+#   - date: "YYYY-MM-DD"
+#     title: "Event title"
+#     category: "conference" # or "meeting", "personal", etc.
+#     images:
+#       - image: "filename1.jpg"
+#         caption: "Description 1"
+#       - image: "filename2.jpg"
+#         caption: "Description 2"
+#
+# Example with multiple photos in one event:
+#   - date: "2026-01-26"
+#     title: "Conference Presentation"
+#     category: "conference"
+#     images:
+#       - image: "conference1.jpg"
+#         caption: "Presenting my research"
+#       - image: "conference2.jpg"
+#         caption: "Q&A session"
+#       - image: "conference3.jpg"
+#         caption: "Networking with colleagues"
+
+events:
+  - date: "2026-01-22"
+    title: "Meeting with Prof. Yuan Lai from THU"
+    category: "meeting"
+    images:
+      - image: "260122_1.jpg"
+        caption: "in front of NUS logo in UTown"
+      - image: "260122_4.jpg"
+        caption: "in front of NUS logo in UTown, left to right: Xiucheng, Yuan Lai, Filip, Sijie, Zicheng"
+      - image: "260122_2.jpg"
+        caption: "The Royals Bistro, enjoy humburgers and pastas"
+      - image: "260122_3.jpg"
+        caption: "The Royals Bistro"
+      - image: "260122_5.jpg"
+        caption: "Research discussion"
+  - date: "2026-01-20"
+    title: "Urban Analytics Lab group barbecue"
+    category: "personal"
+    images:
+      - image: "260120_1.jpg"
+        caption: "Barbecue at Kent Vale residence, just after the rain"
+      - image: "260120_2.jpg"
+        caption: "Barbecue, left to right: Sijie, Florian, Zicheng"
+      - image: "260120_3.jpg"
+        caption: "Charcoal fire"
+      - image: "260120_4.jpg"
+        caption: "Roasting chicken wings and vegetables"
+      - image: "260120_5.jpg"
+        caption: "Barbecue in the rain"
+      - image: "260120_6.jpg"
+        caption: "Group photo"
+      - image: "260120_7.jpg"
+        caption: "Group photo"
+  - date: "2026-01-13"
+    title: "Farewell party for Weipeng from HKU"
+    category: "personal"
+    images:
+      - image: "260113_1.jpg"
+        caption: "Left to right: Winston, Xiucheng, Zicheng, Kun, Jing, Haoxi, Sijie, Weipeng, Florian, Jussi, Maxim, Matias"
+  - date: "2025-12-02"
+    title: "Farewell with Jiatong from THU"
+    category: "personal"
+    images:
+      - image: "251202_1.HEIC"
+        caption: "Left to right: Sijie, Kun, Jiatong, Zicheng, Weipeng, Jing, Jussi, Youlong"
+  - date: "2025-11-11"
+    title: "Winston graduation party"
+    category: "personal"
+    images:
+      - image: "251111_1.jpg"
+        caption: "Left to right: Zicheng, Jing, Yixin, Youlong, Sijie, Jussi, Weipeng, Jiatong, Filip, Kun, Winston, Arbaham, Matias"
+  - date: "2025-11-04"
+    title: "Farewell with Yang Chen from Nanjing Normal University"
+    category: "personal"
+    images:
+      - image: "251104_1.jpg"
+        caption: "Left to right: Weipeng, Yixin, Jiatong, Yang, Kun, Sijie, Pengyuan, Xiucheng"
+  - date: "2025-10-29"
+    title: "Farewell with our first PhD Dr. Lei"
+    category: "personal"
+    images:
+      - image: "251029_1.jpg"
+        caption: "Left to right: Sijie, Weipeng, Zicheng, Youlong, Winston, Yixin, Yang, Binyu, Jiatong, Matias, Kun, Jing, Xiucheng"
+  - date: "2025-10-14"
+    title: "Binyu graduation party"
+    category: "personal"
+    images:
+      - image: "251014_1.jpeg"
+        caption: "Left to right: Xiucheng, Matias, Arbaham, Binyu, Filip, Sijie, Yixin, Jiatong, Kun, Jing, Yang, Youlong, Adrian, Eddie, Winston, Jussi, Chaewon"
+  - date: "2025-06-24"
+    title: "Group meeting at CUPUM 2025 in London"
+    category: "personal"
+    images:
+      - image: "250624_1.jpg"
+        caption: "Right to left: Pengyuan, Haixiao, Zicheng, Siyu, Yixin, Sijie, Youlong, Xiucheng, Winston, Winston's wife, Senqi, Sifan, Pengyuan's wife"
