@@ -24,6 +24,16 @@
 #         caption: "Networking with colleagues"
 
 events:
+  - date: "2026-01-26"
+    title: "AAAI Conference in Singapore"
+    category: "meeting"
+    images:
+      - image: "260126_1.jpeg"
+        caption: "with students from groups of Prof Tan Yigitcanlar, Prof Steven Jige Quan, Prof Yuan Lai"
+      - image: "260126_2.jpg"
+        caption: "with AAAI logo"
+      - image: "260126_3.jpg"
+        caption: "AAAI poster session with Filip"
   - date: "2026-01-22"
     title: "Meeting with Prof. Yuan Lai from THU"
     category: "meeting"
