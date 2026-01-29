@@ -159,11 +159,6 @@ external_sources:
 # -----------------------------------------------------------------------------
 
 collections:
-  news:
-    defaults:
-      layout: post
-    output: true
-    permalink: /news/:path/
   projects:
     output: true
     permalink: /projects/:path/
@@ -171,7 +166,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 12 # leave blank to include all the news in the `_news` folder
+  limit: 12 # number of news items to show on homepage (leave blank to show all)
 
 latest_posts:
   enabled: true

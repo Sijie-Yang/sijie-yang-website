@@ -1,9 +1,9 @@
           <div class="news">
-            {% if site.news != blank -%}
-            {%- assign news_size = site.news | size -%}
+            {% if site.data.news != blank -%}
+            {%- assign news = site.data.news | sort: "date" | reverse -%}
+            {%- assign news_size = news | size -%}
             <div class="table-responsive" {% if include.limit and site.announcements.scrollable and news_size > 3 %}style="max-height: 60vw"{% endif %}>
               <table class="table table-sm table-borderless custom-spacing">
-              {%- assign news = site.news | reverse -%}
               {% if include.limit and site.announcements.limit %}
               {% assign news_limit = site.announcements.limit %}
               {% else %}
@@ -13,11 +13,7 @@
                 <tr>
                   <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
                   <td>
-                    {% if item.inline -%}
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%}
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %}
+                    {{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip | emojify }}
                   </td>
                 </tr>
               {%- endfor %}

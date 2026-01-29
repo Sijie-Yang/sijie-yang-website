@@ -1,0 +1,61 @@
+# News entries (newest first in display; list in chronological order here)
+# Format:
+#   - date: "YYYY-MM-DD"
+#     content: "Markdown content with [links](url)"
+
+- date: "2026-01-26"
+  content: "Presented poster [Reasoning is All You Need for Urban Planning AI](https://arxiv.org/abs/2511.05375) in AAAI 2026 [AI4UP workshop](https://ai-for-urban-planning.github.io/AAAI26-workshop/)."
+
+- date: "2026-01-22"
+  content: "Reported research progress to my PhD thesis examiner [Assoc. Prof. Yuan Lai](https://www.arch.tsinghua.edu.cn/info/FUrban%20Planning%20and%20Design/2133) from Tsinghua University."
+
+- date: "2025-12-12"
+  content: "Presented my PhD research at NUS-Tsinghua Workshop in Sanya, China"
+
+- date: "2025-11-17"
+  content: "Research [Reasoning is All You Need for Urban Planning AI](https://arxiv.org/abs/2511.05375) accepted by AAAI 2026 [AI4UP workshop](https://ai-for-urban-planning.github.io/AAAI26-workshop/)."
+
+- date: "2025-10-03"
+  content: "Awarded the [Tan Cheng Siong Research Scholarship](https://cde.nus.edu.sg/arch/award/tan-cheng-siong-research-scholarship/) in NUS."
+
+- date: "2025-09-22"
+  content: "Github of latest research about [Computational Urban Comfort Indexing](https://github.com/Sijie-Yang/Urban-Comfort-Potential) released."
+
+- date: "2025-09-15"
+  content: "Shared academic research remotely with [Shanghai AI Lab](https://www.shlab.org.cn)."
+
+- date: "2025-08-07"
+  content: "Shared academic research remotely with [SCULAB](https://www.scurbanlab.com)."
+
+- date: "2025-07-14"
+  content: "Successfully passed the oral examination and became a [PhD candidate](https://www.linkedin.com/posts/urban-analytics-lab_congratulations-to-our-sijie-yang-on-passing-activity-7351520513183113218-JMp0?utm_source=share&utm_medium=member_desktop&rcm=ACoAACEKmFMB1BWWGxoqxQlpJmEiKgv3AELBC5k)."
+
+- date: "2025-06-24"
+  content: "Presented [urban comfort research](https://arxiv.org/abs/2508.16057) at [CUPUM 2025](https://www.ucl.ac.uk/bartlett/casa/about/cupum-2025), UCL East, London."
+
+- date: "2025-06-15"
+  content: "Introducing an Open-Source Platform for Streetscape Perception Research [SP-Survey](https://github.com/Sijie-Yang/Streetscape-Perception-Survey/)"
+
+- date: "2025-05-31"
+  content: "Formally graduated from Master of Computer and Information Technology from [UPenn](https://www.upenn.edu)."
+
+- date: "2025-01-22"
+  content: "[Thermal Comfort in Sight](http://dx.doi.org/10.1016/j.buildenv.2025.112569) was available online in Q1 Journal [*Building and Environment*](https://www.sciencedirect.com/journal/building-and-environment)."
+
+- date: "2024-11-17"
+  content: "Latest research work was published as a preprint online: [Thermal Comfort in Sight](https://arxiv.org/abs/2410.11887)"
+
+- date: "2023-08-11"
+  content: "Enrolled in NUS [Urban Analytics Lab](https://ual.sg/) as a PhD researcher."
+
+- date: "2023-07-07"
+  content: "Formally graduated from MSc Space Syntax with Distinction from [University College London](https://en.wikipedia.org/wiki/University_College_London)."
+
+- date: "2023-06-19"
+  content: "Master thesis in UCL was published [Street Perception and House Prices](https://www.mdpi.com/2220-9964/12/6/249)."
+
+- date: "2023-03-22"
+  content: "Offered with full research scholarship by [National University of Singapore](https://en.wikipedia.org/wiki/National_University_of_Singapore)."
+
+- date: "2022-08-22"
+  content: "Published a conference paper about [Configurational Comparison between Chinese Garden](https://discovery.ucl.ac.uk/id/eprint/10154624/)."
