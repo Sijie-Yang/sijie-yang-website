@@ -37,6 +37,9 @@ social: true  # includes social icons at the bottom of the page
 gallery:
   enabled: true
   limit: 6  # number of photos to show in the homepage slider
+visitor_stats:
+  enabled: true
+  clustrmaps_id: "1nyyOJb7b55gP6A0FHu0hqVMx8UblfG5QshzfKzRDhI"
 ---
 <!-- My research focuses on how new computational technologies, including computer science and GIScience, can be applied to the study of the built environment, exploring the **potential relationship between the built environment and multiple social dimensions**, including the real estate economy, public health, human perception and behavior, and other social dimensions. I works on the basis of these studies to promote urban digital planning and sustainable development.
 

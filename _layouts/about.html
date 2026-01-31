@@ -292,6 +292,19 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
 
+          <!-- Visitor Statistics -->
+          {% if page.visitor_stats.enabled %}
+          <div class="visitor-stats-container" style="margin-top: 40px;">
+            <h4>visitor statistics</h4>
+            <div class="visitor-stats-content" style="display: flex; justify-content: center; margin-top: 15px;">
+              <!-- ClustrMaps Map Widget -->
+              <div class="visitor-map">
+                <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=1nyyOJb7b55gP6A0FHu0hqVMx8UblfG5QshzfKzRDhI&cl=ffffff&w=a"></script>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+
           
         </article>
 
