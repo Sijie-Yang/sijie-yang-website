@@ -24,6 +24,18 @@
 #         caption: "Networking with colleagues"
 
 events:
+  - date: "2026-01-30"
+    title: "Visited Mr. Tan Cheng Siong as a NUS DoA Tan Cheng Siong Scholarship recipient"
+    category: "personal"
+    images:
+      - image: "260130_1.jpg"
+        caption: "group photo of NUS Tan Cheng Siong Scholarship recipients"
+      - image: "260130_2.jpg"
+        caption: "Mr. Tan Cheng Siong sharing his experience and insights about urban development in Singapore and China"
+      - image: "260130_3.jpg"
+        caption: "Mr. Tan Cheng Siong sharing his life journey with pictures"
+      - image: "260130_4.jpg"
+        caption: "Mr. Tan Cheng Siong sharing his urban planning insights"
   - date: "2026-01-26"
     title: "AAAI Conference in Singapore"
     category: "meeting"
