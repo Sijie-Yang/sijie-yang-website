@@ -60,9 +60,10 @@ layout: default
              {% for research in page.featured_research %}
                <div class="research-slide">
                  <a href="{{ research.link }}" target="_blank">
-                   <img src="{{ research.image | prepend: 'assets/img/' }}" 
-                        alt="{{ research.title }}"
-                        class="img-fluid z-depth-1 rounded">
+                  <img src="{{ research.image | prepend: 'assets/img/' }}" 
+                       alt="{{ research.title }}"
+                       class="img-fluid z-depth-1 rounded"
+                       loading="lazy" decoding="async">
                    <div class="research-caption" style="font-size: 0.8em; padding: 1px 10px;">
                      {{ research.title }}
                    </div>
@@ -83,9 +84,10 @@ layout: default
              {% for event in sorted_events limit: gallery_limit %}
                {% assign first_photo = event.images[0] %}
                <div class="gallery-slide" onclick="openEventGalleryHome({{ forloop.index0 }})">
-                 <img src="{{ first_photo.image | prepend: 'assets/img/gallery/' }}" 
-                      alt="{{ event.title }}"
-                      class="img-fluid z-depth-1 rounded">
+                <img src="{{ first_photo.image | prepend: 'assets/img/gallery/' }}" 
+                     alt="{{ event.title }}"
+                     class="img-fluid z-depth-1 rounded"
+                     loading="lazy" decoding="async">
                  <div class="gallery-caption" style="font-size: 0.8em; padding: 1px 10px; line-height: 1.3; color: white;">
                    <div style="color: white; display: block;">{{ event.title }}</div>
                    <div style="font-size: 0.7em; opacity: 0.9; line-height: 1.1; color: white; margin-top: 1px;">
@@ -299,7 +301,7 @@ layout: default
             <div class="visitor-stats-content" style="display: flex; justify-content: center; margin-top: 15px;">
               <!-- ClustrMaps Widget -->
               <div class="visitor-map">
-                <a href="https://clustrmaps.com/site/1c94c" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=73c1e3&w=450&t=tt&d=1nyyOJb7b55gP6A0FHu0hqVMx8UblfG5QshzfKzRDhI&co=ffffff&ct=808080" /></a>
+                <a href="https://clustrmaps.com/site/1c94c" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=73c1e3&w=450&t=tt&d=1nyyOJb7b55gP6A0FHu0hqVMx8UblfG5QshzfKzRDhI&co=ffffff&ct=808080" loading="lazy" decoding="async" /></a>
               </div>
             </div>
           </div>
