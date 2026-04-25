@@ -24,6 +24,26 @@
 #         caption: "Networking with colleagues"
 
 events:
+  - date: "2026-04-24"
+    title: "Celebrating Dr Li Wenpei's PhD graduation dinner"
+    category: "personal"
+    images:
+      - image: "260424_1.jpg"
+        caption: "Celebrating Dr Li Wenpei's doctoral graduation with the Urban Analytics Lab"
+      - image: "260424_2.jpg"
+        caption: "PhD graduation - Dr Li Wenpei, supervised by Prof Rudi Stouffs"
+  - date: "2026-04-23"
+    title: "Party with friends from Prof Heng's group"
+    category: "personal"
+    images:
+      - image: "260423_1.jpg"
+        caption: "Party with Prof Heng's group; invited by Xinyi Wang"
+  - date: "2026-04-22"
+    title: "Lab group photo with visitors from National Cheng Kung University (成功大學)"
+    category: "meeting"
+    images:
+      - image: "260422_1.jpg"
+        caption: "Urban Analytics Lab group photo when friends from National Cheng Kung University, Taiwan visited"
   - date: "2026-01-30"
     title: "Visited Mr. Tan Cheng Siong as a NUS DoA Tan Cheng Siong Scholarship recipient"
     category: "personal"
