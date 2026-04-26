@@ -23,7 +23,7 @@ featured_research:
 
 profile:
   align: right
-  image: profile.jpg
+  image: profile_2026.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>SDE4, CDE</p>
