@@ -5,6 +5,9 @@ permalink: /
 subtitle: PhD Researcher in NUS <a href='https://ual.sg'>Urban Analytics Lab</a>
 
 featured_research:
+  - title: "SP-Survey - Urban Perception Survey Platform"
+    image: "about/sp-survey-urban-perception-survey-platform.png"
+    link: "https://github.com/Sijie-Yang/SP-Survey"
   - title: "Reasoning Is All You Need for Urban Planning AI"
     image: "about/reasoning-is-all-you-need.png"
     link: "https://arxiv.org/abs/2511.05375"
