@@ -24,6 +24,20 @@
 #         caption: "Networking with colleagues"
 
 events:
+  - date: "2026-05-05"
+    title: "Celebration dinner for Matias's Assistant Professorship"
+    category: "personal"
+    images:
+      - image: "260505_2.jpg"
+        caption: "Group photo of UAL members at dinner celebrating Matias's Assistant Professor position"
+      - image: "260505_3.jpg"
+        caption: "Group photo of UAL members at dinner celebrating Matias's Assistant Professor position"
+  - date: "2026-05-05"
+    title: "UAL members experience Grab/WeRide autonomous vehicle in Singapore"
+    category: "personal"
+    images:
+      - image: "260505_1.jpg"
+        caption: "Group photo of UAL members to experience Grab/WeRide autonomous vehicle in Singapore"
   - date: "2026-04-24"
     title: "Celebrating Dr Li Wenpei's PhD graduation dinner"
     category: "personal"
