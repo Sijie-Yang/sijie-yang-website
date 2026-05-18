@@ -24,6 +24,20 @@
 #         caption: "Networking with colleagues"
 
 events:
+  - date: "2026-05-19"
+    title: "Lab group dinner for Filip's 2026 Gill Memorial Award from Royal Geographical Society"
+    category: "personal"
+    images:
+      - image: "260519_1.jpg"
+        caption: "Group dinner at South & East restaurant"
+      - image: "260519_2.jpg"
+        caption: "Group dinner at South & East restaurant"
+  - date: "2026-05-15"
+    title: "Lab group dinner for Haoxi farewell"
+    category: "personal"
+    images:
+      - image: "260515_1.jpg"
+        caption: "Group dinner at Le Shan restaurant"
   - date: "2026-05-05"
     title: "Celebration dinner for Matias's Assistant Professorship"
     category: "personal"
