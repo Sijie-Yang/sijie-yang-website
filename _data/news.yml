@@ -3,6 +3,9 @@
 #   - date: "YYYY-MM-DD"
 #     content: "Markdown content with [links](url)"
 
+- date: "2026-06-11"
+  content: "Presented [StreetRAG-Index]() poster at [15th Space Syntax Symposium](https://sss15malaysia.utm.my)."
+
 - date: "2026-05-09"
   content: "Paper [StreetRAG-Index]() accepted at [15th Space Syntax Symposium](https://sss15malaysia.utm.my)."
 
@@ -31,6 +34,9 @@
   content: "Shared academic research remotely with [Shanghai AI Lab](https://www.shlab.org.cn)."
 
 - date: "2025-08-07"
+  content: "Gave research talk on urban comfort at London–Singapore Urban Analytics Seminar, NUS."
+
+- date: "2025-08-07"
   content: "Shared academic research remotely with [SCULAB](https://www.scurbanlab.com)."
 
 - date: "2025-07-14"
@@ -43,7 +49,7 @@
   content: "Introducing an Open-Source Platform for Streetscape Perception Research [SP-Survey](https://github.com/Sijie-Yang/Streetscape-Perception-Survey/)"
 
 - date: "2025-05-31"
-  content: "Formally graduated from Master of Computer and Information Technology from [UPenn](https://www.upenn.edu)."
+  content: "Graduated from [Master of Computer and Information Technology](https://www.cis.upenn.edu/mcit/) at UPenn."
 
 - date: "2025-01-22"
   content: "[Thermal Comfort in Sight](http://dx.doi.org/10.1016/j.buildenv.2025.112569) was available online in Q1 Journal [*Building and Environment*](https://www.sciencedirect.com/journal/building-and-environment)."

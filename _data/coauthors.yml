@@ -10,6 +10,10 @@
   - firstname: ["Filip"]
     url: https://filipbiljecki.com
 
+"Fan":
+  - firstname: ["Zicheng"]
+    url: https://ual.sg/author/zicheng-fan/
+
 "Qiu":
   - firstname: ["Waishan"]
     url: https://www.arch.hku.hk/staff/upad/qiu-waishan/
@@ -17,6 +21,10 @@
 "Krenz":
   - firstname: ["Kimon"]
     url: https://profiles.ucl.ac.uk/41688-kimon-krenz
+
+"Law":
+  - firstname: ["Stephen"]
+    url: https://profiles.ucl.ac.uk/21695-stephen-law
 
 "Li":
   - firstname: ["Wenjing"]
