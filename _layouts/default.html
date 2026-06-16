@@ -21,7 +21,11 @@
         <div class="row">
           <!-- sidebar, which will move to the top on a small screen -->
           <div class="col-lg-3">
-            <nav id="toc-sidebar" class="sticky-top border-start ps-3"></nav>
+            <nav id="toc-sidebar" class="sticky-top border-start ps-3">
+              {% if page.layout == 'cv' and site.data.cv %}
+                {% include cv_sidebar_toc.html %}
+              {% endif %}
+            </nav>
           </div>
           <!-- main content area -->
           <div class="col-lg-9">

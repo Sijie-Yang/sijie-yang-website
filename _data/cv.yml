@@ -1,145 +1,222 @@
 
 - title: Education
+  title_zh: 教育
   type: time_table
   contents:
     - title: PhD Candidate (GeoAI, Urban Data Science)
+      title_zh: 博士研究生（GeoAI、城市数据科学）
       institution: National University of Singapore (NUS), Singapore
+      institution_zh: 新加坡国立大学（NUS），新加坡
       year: 2023
       description:
         - Major in Urban Informatics, supervised by Prof. Filip Biljecki.
         - Enrolled with NUS Research Scholarship (full scholarship with stipend)
         - Expected graduation in 2027.
+      description_zh:
+        - 城市信息学专业，导师 Filip Biljecki 教授
+        - 获 NUS 研究奖学金录取（全额学费与生活补贴）
+        - 预计 2027 年毕业
 
     - title: Master of Computer and Information Technology
+      title_zh: 计算机与信息技术硕士
       institution: University of Pennsylvania (UPenn), US
+      institution_zh: 宾夕法尼亚大学（UPenn），美国
       year: 2022-2025
       description:
         - GPA 4.0/4.0.
         - Module direction - Artificial Intelligence and Data Analytics
         - Teaching Asistant in mathematics, algorithm design, and computer architecture
         - Expected graduation in 2025
+      description_zh:
+        - GPA 4.0/4.0
+        - 方向：人工智能与数据分析
+        - 担任数学、算法设计、计算机体系结构课程助教
+        - 2025 年毕业
 
     - title: Master of Science (Space Syntax, Urban Data Science)
+      title_zh: 理学硕士（空间句法、城市数据科学）
       institution: University College London (UCL), London, the United Kingdom
+      institution_zh: 伦敦大学学院（UCL），英国伦敦
       year: 2021-2023
       description:
         - Graduated with Distinction (GPA 4.0/4.0).
         - Final Thesis supervised by Dr. Kimon Krenz.
         - Research Project supervised by Prof. Sophia Psarra and Design Project by Prof. Kayvan Karimi.
-        
+      description_zh:
+        - 以 Distinction 毕业（GPA 4.0/4.0）
+        - 毕业论文导师：Kimon Krenz 博士
+        - 研究项目导师：Sophia Psarra 教授；设计项目导师：Kayvan Karimi 教授
+
     - title: Bachelor of Architecture
+      title_zh: 建筑学学士
       institution: Chongqing University (CQU), Chongqing, China
+      institution_zh: 重庆大学（CQU），中国重庆
       year: 2016-2021
       description:
         - Top 10%; GPA 3.6 out of 4.0.
         - Final Thesis supervised by Prof. Hao Long
         - 2 times awarded International Communication Scholarship
         - Multiple times awarded Excellent Studio Design Work
+      description_zh:
+        - 前 10%；GPA 3.6/4.0
+        - 毕业论文导师：龙浩 教授
+        - 两次获 International Communication Scholarship
+        - 多次获 Excellent Studio Design Work
 
 - title: Experience
+  title_zh: 经历
   type: time_table
   contents:
     - title: PhD Researcher
+      title_zh: 博士研究员
       institution: NUS <a href="https://ual.sg">Urban Analytics Lab</a>
+      institution_zh: 新加坡国立大学 <a href="https://ual.sg">Urban Analytics Lab</a>
       year: 2023
       description:
         - Research direction - Urban analytics
+      description_zh:
+        - 研究方向：城市分析
 
     - title: Teaching Assistant
+      title_zh: 助教
       institution: School of Engineering and Applied Science, Upenn
+      institution_zh: 宾夕法尼亚大学工程与应用科学学院
       year: 2022-2023
       description:
         - TA in Mathematical Foundation of Computer Science (2022 Summer, 2022 Fall)
         - TA in Introduction to Computer System (2023 Fall)
-    
+      description_zh:
+        - 计算机科学数学基础课程助教（2022 夏、2022 秋）
+        - 计算机系统导论课程助教（2023 秋）
+
     - title: Research Assistant
-      institution: Cornell University 
+      title_zh: 研究助理
+      institution: Cornell University
+      institution_zh: 康奈尔大学
       year: 2022
       description:
         - Independent research supervised by Dr. Waishan Qiu
         - Research direction - Urban streetscape perception
+      description_zh:
+        - 在 Waishan Qiu 博士指导下独立研究
+        - 研究方向：城市街景感知
 
     - title: Architectural and Urban Design Intern
+      title_zh: 建筑与城市设计实习生
       institution: Lacime Architects Co., LTD, Shanghai, China
+      institution_zh: Lacime Architects Co., LTD，中国上海
       year: 2020-2021
       description:
         - Main designer of a real estate sale center
         - Assistant designer involved in multiple real estate planning and design projects
-        
+      description_zh:
+        - 某地产销售中心主创设计师
+        - 参与多个地产规划与设计项目的辅助设计
 
     - title: Research Intern in Architectural Surveying
-      institution: Institute of Architectural History and Theory, Chongqing University, Chongqing, China 
+      title_zh: 建筑测绘研究实习生
+      institution: Institute of Architectural History and Theory, Chongqing University, Chongqing, China
+      institution_zh: 重庆大学建筑历史与理论研究所，中国重庆
       year: 2019
       description:
         - Team surveying on an ancient temple in Sichuan Province, supervised by Lecturer Jialong Jiang
         - Surveyed old chinese buildings with equipments including drones and laser scanners
         - Teniques included handdrawing, drone surveying and 3D reconstruction
+      description_zh:
+        - 在姜嘉龙讲师指导下参与四川省某古庙团队测绘
+        - 使用无人机、激光扫描仪等设备测绘古建
+        - 技术包括手绘、无人机测绘与三维重建
 
     - title: Research Assistant in Soundscape Analysis
-      institution: Key Laboratory of New Technology of Cities in Mountain Area, Chongqing University, Chongqing, China 
+      title_zh: 声景分析研究助理
+      institution: Key Laboratory of New Technology of Cities in Mountain Area, Chongqing University, Chongqing, China
+      institution_zh: 重庆大学山地城镇建设新技术教育部重点实验室，中国重庆
       year: 2019-2020
       description:
         - Experiment and data collection on sound-absorbing material with acoustical instrument.
         - Wrote and published a paper about new sound-absorbing material.
-
-
+      description_zh:
+        - 使用声学仪器开展吸声材料实验与数据采集
+        - 撰写并发表吸声新材料相关论文
 
 - title: Honors and Awards
+  title_zh: 荣誉与奖项
   type: time_table
   contents:
     - year: 2025
-      items: 
+      items:
         - <a href="https://cde.nus.edu.sg/arch/award/tan-cheng-siong-research-scholarship/">Tan Cheng Siong Research Scholarship</a>
+      items_zh:
+        - <a href="https://cde.nus.edu.sg/arch/award/tan-cheng-siong-research-scholarship/">陈庆祥研究奖学金（Tan Cheng Siong Research Scholarship）</a>
     - year: 2023
-      items: 
+      items:
         - <a href="https://ual.sg/opportunities/ads/phd-nus/">NUS Research Scholarship</a>
+      items_zh:
+        - <a href="https://ual.sg/opportunities/ads/phd-nus/">新加坡国立大学研究奖学金（NUS Research Scholarship）</a>
     - year: 2022
-      items: 
+      items:
         - Master of Science Degree with Distinction (UCL Bartlett)
+      items_zh:
+        - 伦敦大学学院 Bartlett 建筑学院理学硕士学位（Distinction）
     - year: 2021
-      items: 
+      items:
         - Bechalor of Architecture Degree (Chongqing University)
         - Excellent Engineer Award with BArch graduation (Ministry of Education, China)
+      items_zh:
+        - 重庆大学建筑学学士学位
+        - 教育部优秀工程师（建筑学毕业）
     - year: 2020
-      items: 
+      items:
         - The 6th China Human Environment Design Academic Year Award, Honorable Mention (Tsinghua University, China)
+      items_zh:
+        - 第六届中国人居环境设计学年奖 Honorable Mention（清华大学）
     - year: 2019
-      items: 
+      items:
         - The 5th CUC CUP Architecture Design International Competition, 3rd Place (Hangzhou, China)
         - Young Designers Award, Honorable Mention (Southeast University, Nanjing, China)
+      items_zh:
+        - 第五届 CUC CUP 国际建筑设计竞赛三等奖（杭州）
+        - Young Designers Award Honorable Mention（东南大学，南京）
     - year: 2018
-      items: 
+      items:
         - Architecture Biennale 2018, 16th International Architecture Exhibition, Art Document Exhibition of Chinese Teachers & Students in Architecture Majors of Colleges and Universities (Venice, Italy)
         - UC Berkeley International Exchange Scholarship (Berkeley, CA, US)
+      items_zh:
+        - 2018 建筑双年展：第 16 届威尼斯国际建筑展中国高校建筑学专业师生作品展（威尼斯）
+        - 加州大学伯克利分校国际交流奖学金（Berkeley, CA, US）
 
 - title: Speeches and Presentations
+  title_zh: 演讲与报告
   type: time_table
   contents:
     - year: 2025
-      items: 
+      items:
         - "<strong>Aug 7, 2025</strong>: Research Talk: London-Singapore Urban Analytics Seminar for Liveable Cities, Department of Architecture, NUS, Singapore<br>&nbsp;&nbsp;<em>Title:</em> \"Unifying and Quantifying Urban Comfort\"<br>&nbsp;&nbsp;<em>With:</em> Assoc Prof Stephen Law, Assoc Prof Zara Shabrina, Dr Jin Rui, Dr. Filip Biljecki, Winston Yap, Xiucheng Liang, Zicheng Fan"
-          
         - "<strong>Aug 7, 2025</strong>: Research Talk: SCULAB Seminar (remote), South China Agricultural University, Guangzhou, China<br>&nbsp;&nbsp;<em>Title:</em> \"Perception- and Behavior-Based Analysis of the Built Environment: From Building to Urban Scale\"<br>&nbsp;&nbsp;<em>With:</em> Assoc Prof Chongxian Chen"
-          
         - "<strong>Jul 14, 2025</strong>: Research Talk: PhD Candidate Oral Qualifying Examination, Department of Architecture, NUS, Singapore<br>&nbsp;&nbsp;<em>Title:</em> \"Unifying and Quantifying Urban Comfort\"<br>&nbsp;&nbsp;<em>With:</em> Dr. Filip Biljecki (supervisor), Assoc Prof Yuan Lai (Tsinghua University), Dr. Yu Qian Ang, Assoc Prof Rudi Stouffs"
-          
         - "<strong>Jun 25, 2025</strong>: Research Talk and Session Chair: CUPUM Computational Urban Planning and Urban Management (CUPUM) 2025, UCL East, London, UK"
+      items_zh:
+        - "<strong>2025年8月7日</strong>：研究报告——London-Singapore Urban Analytics Seminar for Liveable Cities，新加坡国立大学建筑系<br>&nbsp;&nbsp;<em>题目：</em> Unifying and Quantifying Urban Comfort<br>&nbsp;&nbsp;<em>与会：</em> Stephen Law 副教授、Zara Shabrina 副教授、Jin Rui 博士、Filip Biljecki 博士、Winston Yap、梁修成、Zicheng Fan"
+        - "<strong>2025年8月7日</strong>：研究报告（远程）——SCULAB 研讨会，华南农业大学，广州<br>&nbsp;&nbsp;<em>题目：</em> Perception- and Behavior-Based Analysis of the Built Environment: From Building to Urban Scale<br>&nbsp;&nbsp;<em>与会：</em> 陈崇贤 副教授"
+        - "<strong>2025年7月14日</strong>：研究报告——博士候选人资格考试口试，新加坡国立大学建筑系<br>&nbsp;&nbsp;<em>题目：</em> Unifying and Quantifying Urban Comfort<br>&nbsp;&nbsp;<em>与会：</em> Filip Biljecki 博士（导师）、 Yuan Lai 副教授（清华大学）、Yu Qian Ang 博士、Rudi Stouffs 副教授"
+        - "<strong>2025年6月25日</strong>：研究报告与分论坛主持——CUPUM 2025 计算性城市规划与管理国际会议，UCL East，伦敦"
     - year: 2024
       items:
         - "<strong>Nov 15, 2024</strong>: Research Talk and Symposium Committee Chair: Graduate Research Symposium, Department of Architecture, NUS, Singapore"
+      items_zh:
+        - "<strong>2024年11月15日</strong>：研究报告与研讨会主席——研究生研究研讨会，新加坡国立大学建筑系"
 
 - title: Publications
+  title_zh: 发表论文
   type: time_table
   contents:
     - year: 2025
       items:
         - "<strong>Yang, S.</strong>, Chong, A., Liu, P., & Biljecki, F. (2025). Thermal Comfort in Sight: Thermal Affordance and its Visual Assessment for Sustainable Streetscape Design. <em>Building and Environment</em>. <a href='http://dx.doi.org/10.1016/j.buildenv.2025.112569' target='_blank'>DOI</a> | <a href='https://arxiv.org/pdf/2410.11887' target='_blank'>PDF</a>"
         - "<strong>Yang, S.</strong>, Lei, B., & Biljecki, F. (2025). Urban Comfort Assessment in the Era of Digital Planning: A Multidimensional, Data-driven, and AI-assisted Framework. In <em>19th International Conference on Computational Urban Planning and Urban Management (CUPUM 2025)</em>. UCL East, London, UK. <a href='https://arxiv.org/abs/2508.16057' target='_blank'>URL</a> | <a href='https://arxiv.org/pdf/2508.16057' target='_blank'>PDF</a>"
-    
     - year: 2023
       items:
         - "<strong>Yang, S.</strong>, Krenz, K., Qiu, W., & Li, W. (2023). The Role of Subjective Perceptions and Objective Measurements of the Urban Environment in Explaining House Prices in Greater London: A Multi-Scale Urban Morphology Analysis. <em>ISPRS International Journal of Geo-Information</em>, 12(6), 249. <a href='https://www.mdpi.com/2220-9964/12/6/249' target='_blank'>DOI</a> | <a href='https://www.mdpi.com/2220-9964/12/6/249/pdf' target='_blank'>PDF</a>"
-    
     - year: 2022
       items:
         - "Xu, X., Qiu, W., Li, W., Huang, D., Li, X., & <strong>Yang, S.</strong> (2022). Comparing satellite image and GIS data classified local climate zones to assess urban heat island: A case study of Guangzhou. <em>Frontiers in Environmental Science</em>, 10. <a href='https://www.frontiersin.org/articles/10.3389/fenvs.2022.1029445/full' target='_blank'>DOI</a> | <a href='https://www.frontiersin.org/articles/10.3389/fenvs.2022.1029445/pdf' target='_blank'>PDF</a>"
@@ -147,6 +224,7 @@
         - "<strong>Yang, S.</strong>, & Psarra, S. (2022). The social impact of atrium space in multilevel buildings: An analysis of university libraries using space syntax. <em>Available at SSRN 4249348</em>. <a href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4249348' target='_blank'>URL</a> | <a href='https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4249348_code5470471.pdf?abstractid=4249348&mirid=1' target='_blank'>PDF</a>"
 
 - title: Funding
+  title_zh: 资助
   type: time_table
   contents:
     - year: 2023-2027
@@ -154,8 +232,13 @@
         - "NUS Research Scholarship (NUSGS-CDE DO IS AY22&L GRSUR0600042), National University of Singapore"
         - "Participating in research project: Large-scale 3D Geospatial Data for Urban Analytics, National University of Singapore Start Up Grant R-295-000-171-133"
         - "Participating in research project: Multi-scale Digital Twins for the Urban Environment: From Heartbeats to Cities, Singapore Ministry of Education Academic Research Fund Tier 1"
+      items_zh:
+        - "新加坡国立大学研究奖学金（NUSGS-CDE DO IS AY22&L GRSUR0600042）"
+        - "参与研究项目：Large-scale 3D Geospatial Data for Urban Analytics（NUS Start Up Grant R-295-000-171-133）"
+        - "参与研究项目：Multi-scale Digital Twins for the Urban Environment: From Heartbeats to Cities（新加坡教育部 Academic Research Fund Tier 1）"
 
 - title: Academic Service
+  title_zh: 学术服务
   type: time_table
   contents:
     - year: 2025
@@ -165,15 +248,28 @@
         - "Peer Reviewer for <em>Building and Environment</em> (Elsevier), Editor: Monika Woloszyn<br>"
         - "Peer Reviewer for <em>Urban Informatics</em> (Springer), Editor: Wenzhong Shi<br>"
         - "Peer Reviewer for <em>Stochastic Environmental Research and Risk Assessment</em> (Springer), Editor: Dionissios Τ. Hristopulos<br>"
+      items_zh:
+        - "<em>Landscape and Urban Planning</em>（Elsevier）审稿人，编辑：Filip Biljecki<br>"
+        - "<em>Humanities and Social Sciences Communications</em>（Nature Portfolio）审稿人，编辑：Waishan Qiu<br>"
+        - "<em>Building and Environment</em>（Elsevier）审稿人，编辑：Monika Woloszyn<br>"
+        - "<em>Urban Informatics</em>（Springer）审稿人，编辑：Wenzhong Shi<br>"
+        - "<em>Stochastic Environmental Research and Risk Assessment</em>（Springer）审稿人，编辑：Dionissios Τ. Hristopulos<br>"
     - year: 2024
       items:
         - "Peer Reviewer for <em>Computational Urban Science</em> (Springer), Editor: Yuhao Kang<br>"
+      items_zh:
+        - "<em>Computational Urban Science</em>（Springer）审稿人，编辑：Yuhao Kang<br>"
 
 - title: Academic References
+  title_zh: 学术推荐人
   type: time_table
   contents:
-    - year: 
+    - year:
       items:
         - "<strong>Prof. Filip Biljecki</strong>, Department of Architecture, National University of Singapore • Email: filip@nus.edu.sg • Research: 3D city models, urban analytics, GeoAI"
         - "<strong>Prof. Sophia Psarra</strong>, The Bartlett School of Architecture, University College London • Email: s.psarra@ucl.ac.uk • Research: Space syntax, architectural morphology, urban design"
         - "<strong>Dr. Kimon Krenz</strong>, The Bartlett School of Architecture, University College London • Email: k.krenz@ucl.ac.uk • Research: Urban morphology, housing studies, spatial analysis"
+      items_zh:
+        - "<strong>Filip Biljecki 教授</strong>，新加坡国立大学建筑系 • 邮箱：filip@nus.edu.sg • 研究方向：三维城市模型、城市分析、GeoAI"
+        - "<strong>Sophia Psarra 教授</strong>，伦敦大学学院 Bartlett 建筑学院 • 邮箱：s.psarra@ucl.ac.uk • 研究方向：空间句法、建筑形态、城市设计"
+        - "<strong>Kimon Krenz 博士</strong>，伦敦大学学院 Bartlett 建筑学院 • 邮箱：k.krenz@ucl.ac.uk • 研究方向：城市形态、住房研究、空间分析"

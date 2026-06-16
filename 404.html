@@ -2,8 +2,13 @@
 layout: page
 permalink: /404.html
 title: "Page not found"
+title_zh: "页面未找到"
 description: "Looks like there has been a mistake. Nothing exists here."
+description_zh: "似乎出了点问题，这里什么都没有。"
+bilingual: true
+default_lang: en
 redirect: true
 ---
 
-<p>You will be redirected to the main page within 3 seconds. If not redirected, please go back to the <a href="{{ site.baseurl }}/">home page</a>.</p>
+<p class="lang-content" data-lang="en">You will be redirected to the main page within 3 seconds. If not redirected, please go back to the <a href="{{ site.baseurl }}/">home page</a>.</p>
+<p class="lang-content" data-lang="zh">将在 3 秒内跳转到主页。若未自动跳转，请返回<a href="{{ site.baseurl }}/">首页</a>。</p>

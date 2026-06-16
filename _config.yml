@@ -107,6 +107,8 @@ zotero_username: # your zotero username
 
 contact_note: >
   If you share an interest in these topics, I am open to further discussions and collaborations. Please feel free to contact me or <a href="https://koalendar.com/e/meet-with-sijie" target="_blank" rel="noopener noreferrer" style="color: var(--global-theme-color); text-decoration: none; border-bottom: 1px solid transparent; transition: all 0.2s ease;">📅 schedule a meeting →</a>
+contact_note_zh: >
+  若您对这些议题感兴趣，欢迎进一步交流与合作。请随时联系我，或 <a href="https://koalendar.com/e/meet-with-sijie" target="_blank" rel="noopener noreferrer" style="color: var(--global-theme-color); text-decoration: none; border-bottom: 1px solid transparent; transition: all 0.2s ease;">📅 预约会面 →</a>
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -122,9 +124,12 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: City Experience + AI # blog_name will be displayed in your blog page
+blog_name: City Experience × Intelligence # blog_name will be displayed in your blog page
+blog_name_zh: 城市体验 × 智能
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: Exploring urban environments through spatial intelligence
+blog_nav_title_zh: 博客
+blog_description: Making urban life legible to machines — and governable by design.
+blog_description_zh: 让城市生活对机器可读——并以设计使其可治理。
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -182,6 +187,7 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
+  math_engine: mathjax
   syntax_highlighter_opts:
     css_class: 'highlight'
     span:
@@ -252,8 +258,12 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['perception', 'cognition', 'urban comfort', 'urban planning'] # these tags will be displayed on the front page of your blog
-display_categories: ['research', 'discussion'] # these categories will be displayed on the front page of your blog
+display_tags: ['AI', 'agents', 'GeoAI', 'urban science', 'urban comfort', 'perception', 'cognition', 'SVI', 'career', 'academia', 'PhD', 'systems thinking']
+display_categories: ['research', 'discussion', 'reflection']
+
+bilingual:
+  enabled: true
+  default_lang: en
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

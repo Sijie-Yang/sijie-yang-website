@@ -1,0 +1,5 @@
+{% if include.post.description_zh %}
+<span class="lang-content lang-inline" data-lang="en">{{ include.post.description }}</span><span class="lang-content lang-inline" data-lang="zh">{{ include.post.description_zh }}</span>
+{% elsif include.post.description %}
+{{ include.post.description }}
+{% endif %}

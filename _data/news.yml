@@ -2,72 +2,100 @@
 # Format:
 #   - date: "YYYY-MM-DD"
 #     content: "Markdown content with [links](url)"
+#     content_zh: "Chinese translation with preserved [links](url)"
+
+- date: "2026-06-13"
+  content: "New preprint [City Landscape In Sight](https://arxiv.org/abs/2606.15198), window view imagery perception research with [Chucai Peng](https://www.researchgate.net/profile/Chucai-Peng)."
+  content_zh: "新预印本 [City Landscape In Sight](https://arxiv.org/abs/2606.15198)，与 [彭楚才](https://www.researchgate.net/profile/Chucai-Peng) 合作的窗景影像感知研究。"
 
 - date: "2026-06-11"
   content: "Presented [StreetRAG-Index]() poster at [15th Space Syntax Symposium](https://sss15malaysia.utm.my)."
+  content_zh: "在 [第15届空间句法研讨会](https://sss15malaysia.utm.my) 展示 [StreetRAG-Index]() 海报。"
 
 - date: "2026-05-09"
   content: "Paper [StreetRAG-Index]() accepted at [15th Space Syntax Symposium](https://sss15malaysia.utm.my)."
+  content_zh: "论文 [StreetRAG-Index]() 被 [第15届空间句法研讨会](https://sss15malaysia.utm.my) 接收。"
 
 - date: "2026-01-30"
   content: "Visited Mr. Tan Cheng Siong and exchange ideas about future urban development in Singapore and China."
+  content_zh: "拜访陈成雄先生，就新加坡与中国未来城市发展交流想法。"
 
 - date: "2026-01-26"
   content: "Presented poster [Reasoning is All You Need for Urban Planning AI](https://arxiv.org/abs/2511.05375) in AAAI 2026 [AI4UP workshop](https://ai-for-urban-planning.github.io/AAAI26-workshop/)."
+  content_zh: "在 AAAI 2026 [AI4UP 研讨会](https://ai-for-urban-planning.github.io/AAAI26-workshop/) 展示海报 [Reasoning is All You Need for Urban Planning AI](https://arxiv.org/abs/2511.05375)。"
 
 - date: "2026-01-22"
   content: "Reported research progress to my PhD thesis examiner [Assoc. Prof. Yuan Lai](https://www.arch.tsinghua.edu.cn/info/FUrban%20Planning%20and%20Design/2133) from Tsinghua University."
+  content_zh: "向博士论文考核人、清华大学 [赖源副教授](https://www.arch.tsinghua.edu.cn/info/FUrban%20Planning%20and%20Design/2133) 汇报研究进展。"
 
 - date: "2025-12-12"
   content: "Presented my PhD research at NUS-Tsinghua Workshop in Sanya, China"
+  content_zh: "在中国三亚的 NUS-清华研讨会上展示博士研究。"
 
 - date: "2025-11-17"
   content: "Research [Reasoning is All You Need for Urban Planning AI](https://arxiv.org/abs/2511.05375) accepted by AAAI 2026 [AI4UP workshop](https://ai-for-urban-planning.github.io/AAAI26-workshop/)."
+  content_zh: "研究 [Reasoning is All You Need for Urban Planning AI](https://arxiv.org/abs/2511.05375) 被 AAAI 2026 [AI4UP 研讨会](https://ai-for-urban-planning.github.io/AAAI26-workshop/) 接收。"
 
 - date: "2025-10-03"
   content: "Awarded the [Tan Cheng Siong Research Scholarship](https://cde.nus.edu.sg/arch/award/tan-cheng-siong-research-scholarship/) in NUS."
+  content_zh: "获颁 NUS [陈成雄研究奖学金](https://cde.nus.edu.sg/arch/award/tan-cheng-siong-research-scholarship/)。"
 
 - date: "2025-09-22"
   content: "Github of latest research about [Computational Urban Comfort Indexing](https://github.com/Sijie-Yang/Urban-Comfort-Potential) released."
+  content_zh: "最新研究 [计算城市舒适指数](https://github.com/Sijie-Yang/Urban-Comfort-Potential) 的 GitHub 仓库已发布。"
 
 - date: "2025-09-15"
   content: "Shared academic research remotely with [Shanghai AI Lab](https://www.shlab.org.cn)."
+  content_zh: "与 [上海人工智能实验室](https://www.shlab.org.cn) 远程分享学术研究。"
 
 - date: "2025-08-07"
   content: "Gave research talk on urban comfort at London–Singapore Urban Analytics Seminar, NUS."
+  content_zh: "在 NUS 伦敦—新加坡城市分析研讨会上作城市舒适研究报告。"
 
 - date: "2025-08-07"
   content: "Shared academic research remotely with [SCULAB](https://www.scurbanlab.com)."
+  content_zh: "与 [SCULAB](https://www.scurbanlab.com) 远程分享学术研究。"
 
 - date: "2025-07-14"
   content: "Successfully passed the oral examination and became a [PhD candidate](https://www.linkedin.com/posts/urban-analytics-lab_congratulations-to-our-sijie-yang-on-passing-activity-7351520513183113218-JMp0?utm_source=share&utm_medium=member_desktop&rcm=ACoAACEKmFMB1BWWGxoqxQlpJmEiKgv3AELBC5k)."
+  content_zh: "顺利通过口试，成为 [博士候选人](https://www.linkedin.com/posts/urban-analytics-lab_congratulations-to-our-sijie-yang-on-passing-activity-7351520513183113218-JMp0?utm_source=share&utm_medium=member_desktop&rcm=ACoAACEKmFMB1BWWGxoqxQlpJmEiKgv3AELBC5k)。"
 
 - date: "2025-06-24"
   content: "Presented [urban comfort research](https://arxiv.org/abs/2508.16057) at [CUPUM 2025](https://www.ucl.ac.uk/bartlett/casa/about/cupum-2025), UCL East, London."
+  content_zh: "在伦敦 UCL East 的 [CUPUM 2025](https://www.ucl.ac.uk/bartlett/casa/about/cupum-2025) 展示 [城市舒适研究](https://arxiv.org/abs/2508.16057)。"
 
 - date: "2025-06-15"
   content: "Introducing an Open-Source Platform for Streetscape Perception Research [SP-Survey](https://github.com/Sijie-Yang/Streetscape-Perception-Survey/)"
+  content_zh: "推出街景感知研究开源平台 [SP-Survey](https://github.com/Sijie-Yang/Streetscape-Perception-Survey/)。"
 
 - date: "2025-05-31"
   content: "Graduated from [Master of Computer and Information Technology](https://www.cis.upenn.edu/mcit/) at UPenn."
+  content_zh: "毕业于宾夕法尼亚大学 [计算机与信息技术硕士](https://www.cis.upenn.edu/mcit/) 项目。"
 
 - date: "2025-01-22"
   content: "[Thermal Comfort in Sight](http://dx.doi.org/10.1016/j.buildenv.2025.112569) was available online in Q1 Journal [*Building and Environment*](https://www.sciencedirect.com/journal/building-and-environment)."
+  content_zh: "[Thermal Comfort in Sight](http://dx.doi.org/10.1016/j.buildenv.2025.112569) 在 Q1 期刊 [*Building and Environment*](https://www.sciencedirect.com/journal/building-and-environment) 上线。"
 
 - date: "2024-11-17"
   content: "Latest research work was published as a preprint online: [Thermal Comfort in Sight](https://arxiv.org/abs/2410.11887)"
+  content_zh: "最新研究工作以预印本形式上线：[Thermal Comfort in Sight](https://arxiv.org/abs/2410.11887)。"
 
 - date: "2023-08-11"
   content: "Enrolled in NUS [Urban Analytics Lab](https://ual.sg/) as a PhD researcher."
+  content_zh: "以博士研究员身份加入 NUS [城市分析实验室](https://ual.sg/)。"
 
 - date: "2023-07-07"
   content: "Formally graduated from MSc Space Syntax with Distinction from [University College London](https://en.wikipedia.org/wiki/University_College_London)."
+  content_zh: "正式毕业于 [伦敦大学学院](https://en.wikipedia.org/wiki/University_College_London) 空间句法硕士（优异）。"
 
 - date: "2023-06-19"
   content: "Master thesis in UCL was published [Street Perception and House Prices](https://www.mdpi.com/2220-9964/12/6/249)."
+  content_zh: "UCL 硕士论文已发表：[Street Perception and House Prices](https://www.mdpi.com/2220-9964/12/6/249)。"
 
 - date: "2023-03-22"
   content: "Offered with full research scholarship by [National University of Singapore](https://en.wikipedia.org/wiki/National_University_of_Singapore)."
+  content_zh: "获 [新加坡国立大学](https://en.wikipedia.org/wiki/National_University_of_Singapore) 全额研究奖学金录取。"
 
 - date: "2022-08-22"
   content: "Published a conference paper about [Configurational Comparison between Chinese Garden](https://discovery.ucl.ac.uk/id/eprint/10154624/)."
+  content_zh: "发表会议论文 [中国园林的配置比较](https://discovery.ucl.ac.uk/id/eprint/10154624/)。"

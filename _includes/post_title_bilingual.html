@@ -1,0 +1,5 @@
+{% if include.post.title_zh %}
+<span class="lang-content lang-inline" data-lang="en">{{ include.post.title_en | default: include.post.title }}</span><span class="lang-content lang-inline" data-lang="zh">{{ include.post.title_zh }}</span>
+{% else %}
+{{ include.post.title }}
+{% endif %}

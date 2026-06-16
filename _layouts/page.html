@@ -5,18 +5,40 @@ layout: default
         <div class="post">
 
           <header class="post-header">
+            {% if page.bilingual %}
+            {% if page.title_zh %}
+            <h1 class="post-title lang-content" data-lang="en">{{ page.title }}</h1>
+            <h1 class="post-title lang-content" data-lang="zh">{{ page.title_zh }}</h1>
+            {% else %}
             <h1 class="post-title">{{ page.title }}</h1>
+            {% endif %}
+            {% if page.description and page.description_zh %}
+            <p class="post-description lang-content" data-lang="en">{{ page.description }}</p>
+            <p class="post-description lang-content" data-lang="zh">{{ page.description_zh }}</p>
+            {% elsif page.description %}
             <p class="post-description">{{ page.description }}</p>
+            {% endif %}
+            {% else %}
+            <h1 class="post-title">{{ page.title }}</h1>
+            {% if page.description %}<p class="post-description">{{ page.description }}</p>{% endif %}
+            {% endif %}
             {% if page.year %}<p class="post-year"><strong>{{ page.year }}</strong></p>{% endif %}
           </header>
 
           <article>
+            {% if page.pdf %}
+            {% include pdf-viewer.html path=page.pdf scale=page.pdf_scale %}
+            {% endif %}
+            {% if page.bilingual and page.content_zh %}
+            <div class="lang-content" data-lang="en">{{ content }}</div>
+            <div class="lang-content" data-lang="zh">{{ page.content_zh | markdownify }}</div>
+            {% else %}
             {{ content }}
+            {% endif %}
           </article>
 
           {%- if page.related_publications != null and page.related_publications.size > 0 -%}
           {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
-          <h2>References</h2>
           <div class="publications">
             {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
           </div>

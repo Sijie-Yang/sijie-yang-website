@@ -1,0 +1,15 @@
+<ul class="nav flex-column cv-toc">
+  {% for entry in site.data.cv %}
+    {% assign section_id = entry.title | slugify %}
+    <li class="nav-item">
+      <a class="nav-link" href="#{{ section_id }}">
+        {% if site.bilingual.enabled and entry.title_zh %}
+        <span class="lang-content lang-inline" data-lang="en">{{ entry.title }}</span>
+        <span class="lang-content lang-inline" data-lang="zh">{{ entry.title_zh }}</span>
+        {% else %}
+        {{ entry.title }}
+        {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

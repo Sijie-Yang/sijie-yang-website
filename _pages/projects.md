@@ -1,32 +1,45 @@
 ---
 layout: page
 title: projects
+title_zh: 项目
 permalink: /projects/
 description: A showcase of my research and design work across various domains.
+description_zh: 涵盖研究与设计领域的项目展示。
+bilingual: true
+default_lang: en
 nav: true
 nav_order: 3
 display_categories: [research, design]
+category_labels_zh:
+  research: 研究
+  design: 设计
 horizontal: false
 ---
 
 <!-- pages/projects.md -->
 <div class="projects">
-  <!-- Category filter buttons -->
   <div class="category-filter">
-    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn active" data-category="all">
+      <span class="lang-content lang-inline" data-lang="en">All</span>
+      <span class="lang-content lang-inline" data-lang="zh">全部</span>
+    </button>
     {%- for category in page.display_categories %}
-    <button class="filter-btn" data-category="{{ category }}">{{ category | capitalize }}</button>
+    <button class="filter-btn" data-category="{{ category }}">
+      <span class="lang-content lang-inline" data-lang="en">{{ category | capitalize }}</span>
+      <span class="lang-content lang-inline" data-lang="zh">{{ page.category_labels_zh[category] }}</span>
+    </button>
     {%- endfor %}
   </div>
 
   {%- if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
   {%- for category in page.display_categories %}
   <div class="category-section" data-category="{{ category }}">
-    <h2 class="category">{{ category }}</h2>
+    <h2 class="category">
+      <span class="lang-content lang-inline" data-lang="en">{{ category }}</span>
+      <span class="lang-content lang-inline" data-lang="zh">{{ page.category_labels_zh[category] }}</span>
+    </h2>
     {%- assign categorized_projects = site.projects | where: "category", category -%}
     {%- assign sorted_projects = categorized_projects | sort: "year" | reverse %}
-    <!-- Generate cards for each project -->
     {% if page.horizontal -%}
     <div class="container">
       <div class="row row-cols-2">
@@ -46,9 +59,7 @@ horizontal: false
   {% endfor %}
 
   {%- else -%}
-  <!-- Display projects without categories -->
   {%- assign sorted_projects = site.projects | sort: "year" | reverse -%}
-  <!-- Generate cards for each project -->
   {% if page.horizontal -%}
   <div class="container">
     <div class="row row-cols-2">
@@ -74,7 +85,7 @@ horizontal: false
     padding-left: 0;
   }
   
-  .filter-btn {
+  .projects .filter-btn {
     margin: 0 0.25rem 0.25rem 0;
     text-transform: lowercase;
     float: left;
@@ -82,17 +93,26 @@ horizontal: false
     font-size: 0.65rem;
     line-height: 1.2;
     border-radius: 0.2rem;
-    border: 1px solid transparent;
+    border: 1px solid var(--global-theme-color);
     cursor: pointer;
-    background-color: #2798BA;
-    border-color: #2798BA;
-    color: #ffffff;
+    background-color: transparent;
+    color: var(--global-theme-color);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   }
-  
-  .filter-btn.active {
-    background-color: #000000;
-    border-color: #000000;
-    color: #ffffff;
+
+  .projects .filter-btn:hover {
+    background-color: rgba(38, 152, 186, 0.12);
+  }
+
+  .projects .filter-btn.active {
+    background-color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: var(--global-hover-text-color);
+  }
+
+  .projects .filter-btn.active:hover {
+    background-color: var(--global-hover-color);
+    border-color: var(--global-hover-color);
   }
   
   .category-section {
@@ -108,24 +128,19 @@ horizontal: false
     
     filterButtons.forEach(button => {
       button.addEventListener('click', function() {
-        // Remove active class from all buttons
         filterButtons.forEach(btn => btn.classList.remove('active'));
-        // Add active class to clicked button
         this.classList.add('active');
         
         const selectedCategory = this.dataset.category;
         
         if (selectedCategory === 'all') {
-          // Show all category sections
           categorySections.forEach(section => {
             section.style.display = 'block';
           });
         } else {
-          // Hide all sections first
           categorySections.forEach(section => {
             section.style.display = 'none';
           });
-          // Show only the selected category
           const selectedSection = document.querySelector(`.category-section[data-category="${selectedCategory}"]`);
           if (selectedSection) {
             selectedSection.style.display = 'block';

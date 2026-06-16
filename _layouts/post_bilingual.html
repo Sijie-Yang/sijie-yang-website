@@ -6,7 +6,6 @@ comments: true
 {%- assign year = page.date | date: "%Y" -%}
 {%- assign tags = page.tags | join: "" -%}
 {%- assign categories = page.categories | join: "" -%}
-{%- assign default_lang = page.default_lang | default: "zh" -%}
 
 {% if page._styles %}
 <style type="text/css">
@@ -14,42 +13,17 @@ comments: true
 </style>
 {% endif %}
 
-<style>
-  /* Match projects page filter button style (All / Research / Design) */
-  .post .category-filter {
-    text-align: left;
-    margin-bottom: 1rem;
-    padding-left: 0;
-    overflow: auto;
-  }
-  .post .category-filter .filter-btn {
-    margin: 0 0.25rem 0.25rem 0;
-    text-transform: lowercase;
-    float: left;
-    padding: 0.25rem 0.75rem;
-    font-size: 0.65rem;
-    line-height: 1.2;
-    border-radius: 0.2rem;
-    border: 1px solid transparent;
-    cursor: pointer;
-    background-color: #2798BA;
-    border-color: #2798BA;
-    color: #ffffff;
-  }
-  .post .category-filter .filter-btn.active {
-    background-color: #000000;
-    border-color: #000000;
-    color: #ffffff;
-  }
-  .lang-content { display: none; }
-  .lang-content.active { display: block; }
-</style>
-
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title" id="post-title-zh" data-lang="zh">{{ page.title_zh }}</h1>
-    <h1 class="post-title lang-content" id="post-title-en" data-lang="en" style="display: none;">{{ page.title_en }}</h1>
+    <h1 class="post-title lang-content" data-lang="zh">{{ page.title_zh }}</h1>
+    <h1 class="post-title lang-content" data-lang="en">{{ page.title_en | default: page.title }}</h1>
+    {% if page.description and page.description_zh %}
+    <p class="post-description lang-content" data-lang="en">{{ page.description }}</p>
+    <p class="post-description lang-content" data-lang="zh">{{ page.description_zh }}</p>
+    {% elsif page.description %}
+    <p class="post-description">{{ page.description }}</p>
+    {% endif %}
     <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{%- if page.author -%} • {{ page.author }}{%- endif -%}{%- if page.meta -%} • {{ page.meta }}{%- endif -%}</p>
     <p class="post-tags">
       <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fas fa-calendar fa-sm"></i> {{ year }} </a>
@@ -68,10 +42,6 @@ comments: true
           {% endfor -%}
       {% endif %}
     </p>
-    <div class="category-filter">
-      <button type="button" class="filter-btn" data-lang="en" data-category="en" aria-pressed="false">english</button>
-      <button type="button" class="filter-btn active" data-lang="zh" data-category="zh" aria-pressed="true">中文</button>
-    </div>
   </header>
 
   <article class="post-content">
@@ -81,10 +51,10 @@ comments: true
     </div>
     <hr>
     {% endif %}
-    <div id="content-zh" class="lang-content markdown-content {% if default_lang == 'zh' %}active{% endif %}">
+    <div id="content-zh" class="lang-content markdown-content" data-lang="zh">
       {{ page.content_zh | markdownify }}
     </div>
-    <div id="content-en" class="lang-content markdown-content {% if default_lang == 'en' %}active{% endif %}">
+    <div id="content-en" class="lang-content markdown-content" data-lang="en">
       {{ page.content_en | markdownify }}
     </div>
   </article>
@@ -120,47 +90,4 @@ comments: true
     {% include giscus.html %}
   {%- endif %}
 
-  <script>
-  (function() {
-    var defaultLang = '{{ default_lang }}';
-    var titleZh = document.getElementById('post-title-zh');
-    var titleEn = document.getElementById('post-title-en');
-    var contentZh = document.getElementById('content-zh');
-    var contentEn = document.getElementById('content-en');
-    if (defaultLang === 'en') {
-      titleZh.classList.remove('active');
-      titleZh.style.display = 'none';
-      titleEn.style.display = 'block';
-    } else {
-      titleEn.style.display = 'none';
-    }
-
-    function setLang(lang) {
-      var isZh = (lang === 'zh');
-      titleZh.style.display = isZh ? 'block' : 'none';
-      titleEn.style.display = isZh ? 'none' : 'block';
-      contentZh.classList.toggle('active', isZh);
-      contentEn.classList.toggle('active', !isZh);
-      document.querySelectorAll('.category-filter .filter-btn').forEach(function(btn) {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-        btn.setAttribute('aria-pressed', btn.getAttribute('data-lang') === lang ? 'true' : 'false');
-      });
-      try { localStorage.setItem('post-lang', lang); } catch (e) {}
-    }
-
-    document.querySelectorAll('.category-filter .filter-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        setLang(this.getAttribute('data-lang'));
-      });
-    });
-
-    try {
-      var saved = localStorage.getItem('post-lang');
-      if (saved && (saved === 'zh' || saved === 'en')) setLang(saved);
-      else setLang(defaultLang);
-    } catch (e) {
-      setLang(defaultLang);
-    }
-  })();
-  </script>
 </div>

@@ -14,6 +14,9 @@
 {% if page.toc and page.toc.sidebar %}
   <!-- Sidebar Table of Contents -->
   <script defer src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js"></script>
+  {% if page.layout == 'cv' %}
+  <script defer src="{{ '/assets/js/cv_toc.js' | relative_url | bust_file_cache }}"></script>
+  {% endif %}
 {% endif %}
 
   <!-- Bootstrap Table -->
@@ -21,5 +24,6 @@
 
   <!-- Load Common JS -->
   <script src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
+  <script defer src="{{ '/assets/js/lang_switcher.js' | relative_url | bust_file_cache }}"></script>
   <script defer src="{{ '/assets/js/common.js' | relative_url | bust_file_cache }}"></script>
   <script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>

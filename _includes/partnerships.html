@@ -1,0 +1,84 @@
+<div class="partnerships">
+  <div class="intro-section">
+    <p class="lead lang-content" data-lang="en">{{ site.data.partnerships.intro_en }}</p>
+    <p class="lead lang-content" data-lang="zh">{{ site.data.partnerships.intro_zh }}</p>
+  </div>
+
+  <div class="partnership-grid">
+    {% for item in site.data.partnerships.items %}
+    <div class="partnership-item">
+      <div class="logo-container">
+        <img src="{{ item.logo }}" alt="{{ item.title }} Logo" class="partnership-logo">
+      </div>
+      <h3 class="partnership-title">{{ item.title }}</h3>
+      <p class="partnership-description lang-content" data-lang="en">{{ item.description_en }}</p>
+      <p class="partnership-description lang-content" data-lang="zh">{{ item.description_zh }}</p>
+      {% if item.link %}
+      <p class="partnership-link">
+        <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">
+          <span class="lang-content lang-inline" data-lang="en">{{ item.link_label_en }}</span>
+          <span class="lang-content lang-inline" data-lang="zh">{{ item.link_label_zh }}</span>
+        </a>
+      </p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="collaboration-section">
+    <h2 class="lang-content" data-lang="en">{{ site.data.partnerships.collaboration_title_en }}</h2>
+    <h2 class="lang-content" data-lang="zh">{{ site.data.partnerships.collaboration_title_zh }}</h2>
+    <p class="lang-content" data-lang="en">{{ site.data.partnerships.collaboration_intro_en }}</p>
+    <p class="lang-content" data-lang="zh">{{ site.data.partnerships.collaboration_intro_zh }}</p>
+    <ul>
+      {% for area in site.data.partnerships.collaboration_areas %}
+      <li>
+        <strong><span class="lang-content lang-inline" data-lang="en">{{ area.label_en }}</span><span class="lang-content lang-inline" data-lang="zh">{{ area.label_zh }}</span>:</strong>
+        <span class="lang-content lang-inline" data-lang="en">{{ area.text_en }}</span>
+        <span class="lang-content lang-inline" data-lang="zh">{{ area.text_zh }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="lang-content" data-lang="en">{{ site.data.partnerships.collaboration_outro_en | markdownify }}</div>
+    <div class="lang-content" data-lang="zh">{{ site.data.partnerships.collaboration_outro_zh | markdownify }}</div>
+  </div>
+</div>
+
+<style>
+  .partnerships { max-width: 1000px; margin: 0 auto; }
+  .intro-section { margin-bottom: 3rem; }
+  .lead { font-size: 1.1rem; color: var(--global-text-color-light); line-height: 1.6; }
+  .partnership-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+    margin-bottom: 3rem; max-width: 1000px; margin-left: auto; margin-right: auto;
+  }
+  .partnership-item { text-align: center; transition: transform 0.2s ease; }
+  .partnership-item:hover { transform: translateY(-5px); }
+  .logo-container { margin-bottom: 0.75rem; }
+  .partnership-logo {
+    max-height: 80px; max-width: 100%; object-fit: contain;
+    filter: grayscale(10%); transition: filter 0.2s ease, transform 0.2s ease;
+  }
+  .partnership-item:hover .partnership-logo { filter: grayscale(0%); transform: scale(1.05); }
+  .partnership-title { font-size: 1.1rem; font-weight: normal; color: var(--global-text-color); margin: 0.75rem 0 0.5rem 0; }
+  .partnership-description { font-size: 0.85rem; line-height: 1.4; color: var(--global-text-color-light); margin: 0; }
+  .partnership-link { margin-top: 0.5rem; margin-bottom: 0; text-align: center; }
+  .partnership-link a {
+    font-size: 0.85rem; color: var(--global-theme-color); text-decoration: none;
+    border: 1px solid var(--global-theme-color); padding: 0.3rem 0.8rem; border-radius: 15px;
+    transition: all 0.2s ease; display: inline-block; white-space: nowrap; min-width: fit-content;
+  }
+  .partnership-link a:hover { background-color: var(--global-theme-color); color: white; transform: translateY(-1px); }
+  .collaboration-section {
+    background: var(--global-bg-color); border: 1px solid var(--global-divider-color);
+    border-radius: 8px; padding: 2rem; margin-top: 3rem;
+  }
+  .collaboration-section h2 { color: var(--global-theme-color); margin-bottom: 1rem; }
+  .collaboration-section ul { margin: 1rem 0; }
+  .collaboration-section li { margin-bottom: 0.5rem; }
+  .collaboration-section .lang-content p { margin: 0; }
+  @media (max-width: 1000px) { .partnership-grid { grid-template-columns: repeat(3, 1fr); max-width: 800px; } }
+  @media (max-width: 768px) { .partnership-grid { grid-template-columns: repeat(2, 1fr); max-width: 500px; gap: 1.5rem; } }
+  @media (max-width: 480px) { .partnership-grid { grid-template-columns: 1fr; max-width: 280px; } }
+  html[data-theme="dark"] .collaboration-section { background: var(--global-card-bg-color); border-color: var(--global-divider-color); }
+</style>

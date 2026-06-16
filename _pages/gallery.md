@@ -1,8 +1,12 @@
 ---
 layout: page
 title: gallery
+title_zh: 相册
 permalink: /gallery/
 description: Photos from conferences, meetings, and personal moments.
+description_zh: 会议、交流与生活的影像记录。
+bilingual: true
+default_lang: en
 nav: true
 nav_order: 4
 ---
@@ -16,19 +20,25 @@ nav_order: 4
     {%- assign image_path = first_photo.image | prepend: 'assets/img/gallery/' -%}
     <div class="gallery-event-card" data-event-index="{{ forloop.index0 }}" onclick="openEventGallery({{ forloop.index0 }})" data-category="{{ event.category | default: 'general' }}">
       <div class="gallery-item">
-        {% include figure.html path=image_path class="img-fluid z-depth-1 rounded" alt=first_photo.caption zoomable=false cache_bust=true %}
+        <img
+          src="{{ image_path | relative_url | bust_file_cache }}"
+          alt="{{ first_photo.caption | default: event.title | escape }}"
+          class="gallery-thumb"
+          {% if forloop.index <= 9 %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+          decoding="async"
+        >
         <div class="event-card-overlay">
           <div class="event-card-info">
-            <h4 class="event-card-title">{{ event.title }}</h4>
+            <h4 class="event-card-title">{% if event.title_zh %}<span class="lang-content lang-inline" data-lang="en">{{ event.title }}</span><span class="lang-content lang-inline" data-lang="zh">{{ event.title_zh }}</span>{% else %}{{ event.title }}{% endif %}</h4>
             <div class="event-card-date">
-              {%- assign event_date = event.date | date: "%b %d, %Y" -%}
-              <i class="fas fa-calendar-alt"></i> {{ event_date }}
+              <span><i class="fas fa-calendar-alt"></i> {{ event.date | date: "%b %d, %Y" }}</span>
+              {% if event.images.size > 1 %}
+              <span class="event-card-photo-count">
+                <i class="fas fa-images"></i>
+                <span class="lang-content lang-inline" data-lang="en">{{ event.images.size }} photos</span><span class="lang-content lang-inline" data-lang="zh">{{ event.images.size }} 张照片</span>
+              </span>
+              {% endif %}
             </div>
-            {% if event.images.size > 1 %}
-            <div class="photo-count-badge">
-              <i class="fas fa-images"></i> {{ event.images.size }} photos
-            </div>
-            {% endif %}
           </div>
         </div>
       </div>
@@ -63,14 +73,18 @@ nav_order: 4
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
-    height: 100%;
-  }
-  
-  .gallery-item img {
-    width: 100%;
     height: 300px;
+    background: var(--global-divider-color);
+  }
+
+  .gallery-item img,
+  .gallery-item .gallery-thumb {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 0 !important;
+    box-shadow: none !important;
   }
   
   .event-card-overlay {
@@ -101,32 +115,21 @@ nav_order: 4
     color: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+    margin-bottom: 0;
   }
   
   .event-card-date i {
     font-size: 0.9em;
     opacity: 0.8;
   }
-  
-  .photo-count-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 0.4rem 0.6rem;
-    border-radius: 0.5rem;
-    font-size: 0.8em;
-    display: flex;
+
+  .event-card-photo-count {
+    display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    z-index: 5;
-  }
-  
-  .photo-count-badge i {
-    font-size: 0.9em;
+    gap: 0.35rem;
   }
   
   @media (max-width: 768px) {
@@ -135,8 +138,12 @@ nav_order: 4
       gap: 1rem;
     }
     
-    .gallery-item img {
+    .gallery-item {
       height: 250px;
+    }
+    
+    .gallery-item img {
+      height: 100%;
     }
     
     .event-card-title {
@@ -200,9 +207,12 @@ nav_order: 4
   
   .carousel-image-wrapper {
     width: 100%;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: var(--global-divider-color);
+    border-radius: 0.5rem;
   }
   
   .carousel-container img {
@@ -210,6 +220,11 @@ nav_order: 4
     max-height: 70vh;
     object-fit: contain;
     border-radius: 0.5rem;
+    transition: opacity 0.2s ease;
+  }
+
+  .carousel-container img.is-loading {
+    opacity: 0.4;
   }
   
   .carousel-btn {
@@ -273,25 +288,43 @@ nav_order: 4
   let eventsData = [
     {%- for event in sorted_events -%}
     {
-      title: "{{ event.title }}",
+      title_en: {{ event.title | jsonify }},
+      title_zh: {{ event.title_zh | default: event.title | jsonify }},
       date: "{{ event.date }}",
       images: [
         {%- for photo in event.images -%}
         {
           image: "{{ photo.image | prepend: 'assets/img/gallery/' | relative_url }}",
-          caption: "{{ photo.caption | default: '' }}"
+          caption_en: {{ photo.caption | default: '' | jsonify }},
+          caption_zh: {{ photo.caption_zh | default: photo.caption | default: '' | jsonify }}
         }{% unless forloop.last %},{% endunless %}
         {%- endfor -%}
       ]
     }{% unless forloop.last %},{% endunless %}
     {%- endfor -%}
   ];
+
+  function getGalleryLang() {
+    try {
+      var saved = localStorage.getItem('site-lang');
+      if (saved === 'zh' || saved === 'en') return saved;
+    } catch (e) {}
+    return document.documentElement.lang === 'zh-CN' ? 'zh' : 'en';
+  }
+
+  function eventTitle(event) {
+    return getGalleryLang() === 'zh' ? event.title_zh : event.title_en;
+  }
+
+  function photoCaption(photo) {
+    return getGalleryLang() === 'zh' ? (photo.caption_zh || photo.caption_en) : photo.caption_en;
+  }
   
   function openEventGallery(eventIndex) {
     currentEventIndex = eventIndex;
     currentPhotoIndex = 0;
     const event = eventsData[eventIndex];
-    document.getElementById('eventGalleryModalLabel').textContent = event.title;
+    document.getElementById('eventGalleryModalLabel').textContent = eventTitle(event);
     updatePhoto();
     $('#eventGalleryModal').modal('show');
   }
@@ -309,11 +342,26 @@ nav_order: 4
     if (currentEventIndex === -1) return;
     const event = eventsData[currentEventIndex];
     const photo = event.images[currentPhotoIndex];
-    document.getElementById('eventGalleryImage').src = photo.image;
-    document.getElementById('eventGalleryImage').alt = photo.caption || event.title;
+    const img = document.getElementById('eventGalleryImage');
+    img.classList.add('is-loading');
+    img.onload = function() {
+      img.classList.remove('is-loading');
+    };
+    img.src = photo.image;
+    if (img.complete) {
+      img.classList.remove('is-loading');
+    }
+    img.alt = photoCaption(photo) || eventTitle(event);
     document.getElementById('photoCounter').textContent = `${currentPhotoIndex + 1} / ${event.images.length}`;
-    document.getElementById('photoCaption').textContent = photo.caption || '';
+    document.getElementById('photoCaption').textContent = photoCaption(photo) || '';
   }
+
+  document.addEventListener('site-lang-change', function() {
+    if (currentEventIndex === -1) return;
+    const event = eventsData[currentEventIndex];
+    document.getElementById('eventGalleryModalLabel').textContent = eventTitle(event);
+    updatePhoto();
+  });
   
   // Keyboard navigation
   document.addEventListener('keydown', function(e) {

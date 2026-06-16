@@ -1,7 +1,6 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
     {% for content in entry.contents %}
       <li class="list-group-item cv-item-with-floating-year">
-        <!-- Floating year in top right -->
         {% if content.year %}
           <div class="cv-floating-year">
             <span class="cv-year-text">{{ content.year }}</span>
@@ -10,23 +9,36 @@
             {% endif %}
           </div>
         {% endif %}
-        
-        <!-- Main content takes full width -->
+
         <div class="cv-main-content">
             {% if content.title %}
-            <h6 class="title font-weight-bold">{{content.title}}</h6>
+            <h6 class="title font-weight-bold">
+              {% if site.bilingual.enabled and content.title_zh %}
+              <span class="lang-content" data-lang="en">{{ content.title }}</span>
+              <span class="lang-content" data-lang="zh">{{ content.title_zh }}</span>
+              {% else %}
+              {{ content.title }}
+              {% endif %}
+            </h6>
             {% endif %}
             {% if content.department or content.institution %}
             <table class="table-cv institution">
             <tbody>
               {% if content.institution %}
               <tr>
-                <td class="institution">{{content.institution}}</td>
+                <td class="institution">
+                  {% if site.bilingual.enabled and content.institution_zh %}
+                  <span class="lang-content" data-lang="en">{{ content.institution }}</span>
+                  <span class="lang-content" data-lang="zh">{{ content.institution_zh }}</span>
+                  {% else %}
+                  {{ content.institution }}
+                  {% endif %}
+                </td>
               </tr>
               {% endif %}
               {% if content.department %}
               <tr>
-                <td class="department">{{content.department}}</td>
+                <td class="department">{{ content.department }}</td>
               </tr>
               {% endif %}
             </tbody>
@@ -47,7 +59,13 @@
                       {% endfor %}
                       </ul>
                     {% else %}
+                      {% assign desc_zh = content.description_zh[forloop.index0] %}
+                      {% if site.bilingual.enabled and desc_zh %}
+                      <span class="lang-content lang-inline item" data-lang="en">{{ item }}</span>
+                      <span class="lang-content lang-inline item" data-lang="zh">{{ desc_zh }}</span>
+                      {% else %}
                       <span class="item">{{ item }}</span>
+                      {% endif %}
                     {% endif %}
                   </li>
                 {% endfor %}
@@ -65,7 +83,13 @@
                       {% endfor %}
                       </ul>
                     {% else %}
+                      {% assign item_zh = content.items_zh[forloop.index0] %}
+                      {% if site.bilingual.enabled and item_zh %}
+                      <span class="lang-content item" data-lang="en">{{ item }}</span>
+                      <span class="lang-content item" data-lang="zh">{{ item_zh }}</span>
+                      {% else %}
                       <span class="item">{{ item }}</span>
+                      {% endif %}
                     {% endif %}
                   </li>
                 {% endfor %}

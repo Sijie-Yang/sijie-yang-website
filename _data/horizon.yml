@@ -1,0 +1,113 @@
+tagline: Making urban life legible to machines — and governable by design.
+tagline_zh: 让城市生活对机器可读——并通过设计可治理。
+
+intro: >
+  This is a **direction map**, not a deadline list. Cities are experienced by billions of partial
+  observers every day — yet most urban intelligence still looks *at* the city from above, not
+  *from within* it. The work ahead is to close that gap: turn lived experience into spatial
+  intelligence, and spatial intelligence into decisions that shape the built environment.
+
+intro_zh: >
+  这是一张**方向地图**，不是交付时间表。城市每天被数以亿计的局部观察者体验着——但大多数城市智能仍从
+  *上方俯视*城市，而非*从内部*理解城市。接下来的工作，是弥合这一鸿沟：把生活体验转化为空间智能，
+  再把空间智能转化为塑造建成环境的决策。
+
+note: Direction evolves. The problems do not.
+note_zh: 路径会变，问题不会。
+
+phases:
+  - id: now
+    index: "01"
+    title: Now
+    title_zh: 当下
+    subtitle: Measuring what cities feel like
+    subtitle_zh: 测量城市的感受
+    items:
+      - title: City in Sight
+        title_zh: 城市在眼前
+        text: Window and street as sensors — mapping urban visual experience where people actually live and move.
+        text_zh: 以窗户和街道为传感器——绘制人们真实生活与移动中的城市视觉体验。
+        link: /projects/research_city_in_sight/
+      - title: Thermal Affordance
+        title_zh: 热舒适可供性
+        text: Reading thermal comfort from the visible streetscape — linking form, imagery, and felt experience.
+        text_zh: 从可见街景解读热舒适——连接形态、影像与身体感受。
+        link: /projects/research_thermal_affordance/
+      - title: Urban Comfort Intelligence
+        title_zh: 城市舒适智能
+        text: Toward one integrated, spatial field of urban comfort — subjective, measurable, and scalable.
+        text_zh: 走向统一、可度量的城市舒适空间场——主观、可测、可扩展。
+        link: /projects/research_urban_comfort_intelligence/
+
+  - id: building
+    index: "02"
+    title: Building
+    title_zh: 构建中
+    subtitle: Assembling the intelligence stack
+    subtitle_zh: 组装智能技术栈
+    items:
+      - title: Agentic Urban Science
+        title_zh: 智能体城市科学
+        text: Autonomous agents for planning and discovery — reasoning over geospatial context, not just retrieving it.
+        text_zh: 面向规划与科学发现的自主智能体——对地理空间语境进行推理，而非仅做检索。
+        link: /projects/research_agentic_urban_planning/
+      - title: Urban Foundation Models
+        title_zh: 城市基础模型
+        text: Geospatial LLMs and vision models as the cognitive substrate — a general layer for city-scale reasoning.
+        text_zh: 地理空间大语言模型与视觉模型作为认知基底——城市尺度推理的通用层。
+      - title: Urban Digital Twins
+        title_zh: 城市数字孪生
+        text: Living twins that fuse imagery, perception, and environment — models that update as the city changes.
+        text_zh: 融合影像、感知与环境的活孪生——随城市变化而更新的模型。
+      - title: Perception Infrastructure
+        title_zh: 感知基础设施
+        text: SP-Survey and allied platforms — human perception as reproducible, deployable urban infrastructure.
+        text_zh: SP-Survey 及相关平台——将人类感知变成可复现、可部署的城市基础设施。
+        link: https://github.com/Sijie-Yang/SP-Survey
+        external: true
+      - title: PhD Thesis
+        title_zh: 博士论文
+        text: "Unifying and Quantifying Urban Comfort — the doctoral arc that binds perception, environment, and intelligence."
+        text_zh: 《统一与量化城市舒适》——连接感知、环境与智能的博士研究主线。
+        link: /publications/
+      - title: CityExperienceAI
+        title_zh: CityExperienceAI
+        text: Research translated into impact — spatial intelligence for government, industry, and everyday urban life.
+        text_zh: 研究转化为影响力——面向政府、产业与日常城市生活的空间智能。
+        link: /partnerships/
+
+  - id: imagining
+    index: "03"
+    title: Imagining
+    title_zh: 展望
+    subtitle: Where the stack must lead
+    subtitle_zh: 技术栈的终局方向
+    items:
+      - title: City World Models
+        title_zh: 城市世界模型
+        text: Dynamic models of how cities feel, flow, and respond — predictive intelligence, not static maps.
+        text_zh: 刻画城市如何感受、流动与响应的动态模型——预测性智能，而非静态地图。
+      - title: Embodied Intelligence
+        title_zh: 具身智能
+        text: Agents and robots in built space — urban intelligence that perceives, navigates, and acts in the physical world.
+        text_zh: 建成环境中的智能体与机器人——在物理世界中感知、导航与行动的城市智能。
+      - title: Legible Urban Life
+        title_zh: 可读的城市生活
+        text: Lived experience made machine-readable at city scale — the interface between people, cities, and autonomous systems.
+        text_zh: 城市尺度上可读的生活体验——人、城市与自主系统之间的接口。
+      - title: Governable by Design
+        title_zh: 设计即可治理
+        text: From sensing to shaping — closing the loop so urban intelligence changes what we plan, build, and inhabit.
+        text_zh: 从感知到塑造——闭合回路，让城市智能改变我们规划、建造与居住的方式。
+
+footer: >
+  Building toward any of these layers?
+  **[Get in touch](mailto:sijiey@u.nus.edu)** ·
+  [projects](/projects/) ·
+  [blog](/blog/)
+
+footer_zh: >
+  想参与其中任何一层？
+  **[联系我](mailto:sijiey@u.nus.edu)** ·
+  [项目](/projects/) ·
+  [博客](/blog/)

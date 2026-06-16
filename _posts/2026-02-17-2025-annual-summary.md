@@ -5,8 +5,9 @@ title_zh: 2025 年度总结
 title_en: 2025 Annual Summary
 date: 2026-02-17
 description: A reflection on research milestones, publications, and academic growth in 2025.
-tags: [annual, summary, PhD, research]
-categories: summary
+description_zh: 对 2025 年研究里程碑、发表与学术成长的回顾。
+tags: [PhD]
+categories: reflection
 permalink: /blog/2026/2025-annual-summary/
 giscus_comments: true
 related_posts: false

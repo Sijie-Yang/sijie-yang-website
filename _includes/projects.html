@@ -13,8 +13,22 @@
           alt="project thumbnail" -%}
         {%- endif %}
         <div class="card-body">
-          <h2 class="card-title">{{ project.title }}</h2>
-          <p class="card-text">{{ project.description }}</p>
+          <h2 class="card-title">
+            {% if project.title_zh %}
+            <span class="lang-content lang-inline" data-lang="en">{{ project.title }}</span>
+            <span class="lang-content lang-inline" data-lang="zh">{{ project.title_zh }}</span>
+            {% else %}
+            {{ project.title }}
+            {% endif %}
+          </h2>
+          <p class="card-text">
+            {% if project.description_zh %}
+            <span class="lang-content" data-lang="en">{{ project.description }}</span>
+            <span class="lang-content" data-lang="zh">{{ project.description_zh }}</span>
+            {% else %}
+            {{ project.description }}
+            {% endif %}
+          </p>
           {% if project.year %}<p class="card-year"><strong>{{ project.year }}</strong></p>{% endif %}
           <div class="row ml-1 mr-1 p-0">
             {%- if project.github -%}

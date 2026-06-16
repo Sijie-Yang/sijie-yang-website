@@ -10,8 +10,8 @@ $(document).ready(function() {
   });
   $('a').removeClass('waves-effect waves-light');
 
-  // bootstrap-toc
-  if($('#toc-sidebar').length){
+  // bootstrap-toc (skip when CV sidebar is pre-rendered)
+  if ($('#toc-sidebar').length && !$('#toc-sidebar .cv-toc').length) {
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
     Toc.init($myNav);
@@ -20,6 +20,9 @@ $(document).ready(function() {
       offset: 80
     });
   }
+
+  // CV section sidebar: custom scroll highlight (bootstrap scrollspy misses bottom sections)
+  // handled by cv_toc.js
 
   // add css to jupyter notebooks
   const cssLink = document.createElement("link");
@@ -47,9 +50,8 @@ $(document).ready(function() {
     }
   });
 
-  // Initialize Bootstrap Table of Contents (TOC)
-  // Check if the toc-sidebar element exists
-  if ($('#toc-sidebar').length) {
+  // Initialize Bootstrap Table of Contents (TOC) for pages without pre-rendered CV nav
+  if ($('#toc-sidebar').length && !$('#toc-sidebar .cv-toc').length) {
     // Find the main content area to generate the TOC from
     // Adjust the selector ('article') if your CV content is in a different container
     var mainContent = $('article'); 

@@ -13,13 +13,23 @@
                 <tr>
                   <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
                   <td>
+                    {% if item.content_zh %}
+                    <span class="lang-content" data-lang="en">{{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip | emojify }}</span>
+                    <span class="lang-content" data-lang="zh">{{ item.content_zh | markdownify | remove: '<p>' | remove: '</p>' | strip | emojify }}</span>
+                    {% else %}
                     {{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip | emojify }}
+                    {% endif %}
                   </td>
                 </tr>
               {%- endfor %}
               </table>
             </div>
           {%- else -%}
+            {% if site.bilingual.enabled %}
+            <p class="lang-content" data-lang="en">No news so far...</p>
+            <p class="lang-content" data-lang="zh">暂无动态...</p>
+            {% else %}
             <p>No news so far...</p>
+            {% endif %}
           {%- endif %}
           </div>

@@ -40,12 +40,13 @@
               {%- for page in site.pages -%}
                 {% if page.permalink == '/' %}
                   {% assign about_title = page.title %}
+                  {% assign about_title_zh = page.title_zh %}
                 {% endif %}
               {% endfor %}
 
               <!-- About -->
               <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
+                <a class="nav-link" href="{{ '/' | relative_url }}">{% if site.bilingual.enabled and about_title_zh %}<span class="lang-content lang-inline" data-lang="en">{{ about_title }}</span><span class="lang-content lang-inline" data-lang="zh">{{ about_title_zh }}</span>{% else %}{{ about_title }}{% endif %}
                   {%- if page.permalink == '/' -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -54,7 +55,7 @@
               {% if site.blog_nav_title %}
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
+                <a class="nav-link" href="{{ '/blog/' | relative_url }}">{% if site.bilingual.enabled and site.blog_nav_title_zh %}<span class="lang-content lang-inline" data-lang="en">{{ site.blog_nav_title }}</span><span class="lang-content lang-inline" data-lang="zh">{{ site.blog_nav_title_zh }}</span>{% else %}{{ site.blog_nav_title }}{% endif %}
                   {%- if page.url contains 'blog' -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -85,7 +86,7 @@
               </li>
               {%- else %}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
+                <a class="nav-link" href="{{ p.url | relative_url }}">{% if site.bilingual.enabled and p.title_zh %}<span class="lang-content lang-inline" data-lang="en">{{ p.title }}</span><span class="lang-content lang-inline" data-lang="zh">{{ p.title_zh }}</span>{% else %}{{ p.title }}{% endif %}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -94,6 +95,13 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+              {%- if site.bilingual.enabled -%}
+              <li class="nav-item lang-switch-nav">
+                <a class="nav-link lang-switch-btn-nav lang-switch-first" href="#" data-lang="en" aria-pressed="false" role="button">EN</a>
+                <span class="lang-switch-divider" aria-hidden="true">|</span>
+                <a class="nav-link lang-switch-btn-nav lang-switch-last" href="#" data-lang="zh" aria-pressed="false" role="button">中文</a>
+              </li>
+              {%- endif %}
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->

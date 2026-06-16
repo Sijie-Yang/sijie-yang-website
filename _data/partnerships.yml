@@ -1,0 +1,59 @@
+intro_en: >
+  Beyond academic research, I am passionate about translating innovative ideas into real-world impact
+  through entrepreneurship and strategic partnerships. Here are some of the ventures and collaborations
+  I've been involved in.
+
+intro_zh: >
+  除学术研究外，我也致力于将创新想法转化为真实世界的影响——通过创业与战略合作实现研究落地。
+  以下是我参与的部分项目与合作。
+
+items:
+  - title: CityExperienceAI
+    logo: /assets/img/partnerships/CityExperienceAI.png
+    description_en: A spatial intelligence analytics company serving government (G), business (B), and consumer (C) sectors.
+    description_zh: 面向政府（G）、企业（B）与消费者（C）的空间智能分析公司。
+
+  - title: reArch Lab
+    logo: /assets/img/partnerships/reArch Lab.png
+    description_en: An educational consulting agency focused on helping architecture and planning students transition into AI-assisted data analysis.
+    description_zh: 帮助建筑与规划学生转向 AI 辅助数据分析的教育咨询机构。
+
+  - title: reUrban Community
+    logo: /assets/img/partnerships/reUrban Community.png
+    description_en: A research community focused on urban transformations in the digital age.
+    description_zh: 关注数字时代城市转型的研究社群。
+    link: https://www.notion.so/reUrban-Community-25e2f119ce3d80388d05f88f9daca148?source=copy_link
+    link_label_en: Join Notion Community
+    link_label_zh: 加入 Notion 社群
+
+  - title: JIEnv Studio
+    logo: /assets/img/partnerships/JIEnv Studio.png
+    description_en: Environmental design studio specializing in sustainable architecture and urban planning solutions.
+    description_zh: 专注可持续建筑与城市规划解决方案的环境设计工作室。
+
+collaboration_title_en: Open to Collaboration
+collaboration_title_zh: 欢迎合作
+
+collaboration_intro_en: "I'm always interested in exploring new partnerships and collaborative opportunities, especially in:"
+collaboration_intro_zh: 我始终欢迎新的合作与交流机会，尤其关注以下方向：
+
+collaboration_areas:
+  - label_en: Urban Technology
+    label_zh: 城市科技
+    text_en: Smart city solutions and urban analytics platforms
+    text_zh: 智慧城市解决方案与城市分析平台
+  - label_en: PropTech
+    label_zh: 地产科技
+    text_en: Real estate technology and spatial intelligence applications
+    text_zh: 房地产科技与空间智能应用
+  - label_en: AI/ML
+    label_zh: 人工智能
+    text_en: Machine learning applications in built environment analysis
+    text_zh: 机器学习在建成环境分析中的应用
+  - label_en: Research Translation
+    label_zh: 研究转化
+    text_en: Bridging academic research with industry applications
+    text_zh: 连接学术研究与产业应用
+
+collaboration_outro_en: 'Feel free to <a href="mailto:sijiey@u.nus.edu">reach out</a> if you''re interested in collaborating!'
+collaboration_outro_zh: '如有合作意向，欢迎<a href="mailto:sijiey@u.nus.edu">联系我</a>。'
