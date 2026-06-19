@@ -1,7 +1,7 @@
 ---
 ---
 <!-- _layouts/bib.html -->
-      <div class="row">
+      <div class="row" data-pub-group="{% if entry.selected %}selected{% else %}collaboration{% endif %}">
         <div class="col-sm-1-5 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
@@ -73,7 +73,7 @@
             {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
           {%- endif -%}
           {%- if author_is_self -%}
-            <em>{{author_first_clean}} {{author_last_clean}}{% if author_marker != "" %}<sup>{{author_marker}}</sup>{% endif %}</em>
+            <a href="{{ '/' | relative_url }}" class="author-self-link">{{author_first_clean}} {{author_last_clean}}{% if author_marker != "" %}<sup>{{author_marker}}</sup>{% endif %}</a>
           {%- else -%}
             {%- if coauthor_url -%}
               <a href="{{coauthor_url}}">{{author_first_clean}} {{author_last_clean}}{% if author_marker != "" %}<sup>{{author_marker}}</sup>{% endif %}</a>

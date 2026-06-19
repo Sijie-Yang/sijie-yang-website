@@ -1037,11 +1037,23 @@ footer.sticky-bottom {
       .author {
         font-size: 0.9rem;
         a {
+          color: var(--global-theme-color);
           border-bottom: 1px dashed var(--global-theme-color);
 
           &:hover {
             border-bottom-style: solid;
             text-decoration: none;
+          }
+        }
+
+        a.author-self-link {
+          color: var(--global-self-author-color);
+          font-weight: 500;
+          border-bottom: 1px solid var(--global-self-author-color);
+
+          &:hover {
+            color: var(--global-hover-color);
+            border-bottom-color: var(--global-hover-color);
           }
         }
 
