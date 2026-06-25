@@ -345,10 +345,10 @@ layout: default
           {% if page.visitor_stats.enabled %}
           <div class="visitor-stats-container" style="margin-top: 40px;">
             <h4>{% if page.bilingual %}<span class="lang-content lang-inline" data-lang="en">visitor statistics</span><span class="lang-content lang-inline" data-lang="zh">访问统计</span>{% else %}visitor statistics{% endif %}</h4>
-            <div class="visitor-stats-content" style="display: flex; justify-content: center; margin-top: 15px;">
-              <!-- ClustrMaps Widget -->
-              <div class="visitor-map">
-                <a href="https://clustrmaps.com/site/1c94c" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=73c1e3&w=450&t=tt&d=1nyyOJb7b55gP6A0FHu0hqVMx8UblfG5QshzfKzRDhI&co=ffffff&ct=808080" loading="lazy" decoding="async" /></a>
+            <div class="visitor-stats-content" style="display: flex; justify-content: center; margin-top: 15px; width: 100%;">
+              <!-- MapMyVisitors Widget -->
+              <div class="visitor-map" style="width: 100%; max-width: 450px; min-width: 300px;">
+                <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d={{ page.visitor_stats.mapmyvisitors_id }}&cl=ffffff&w={{ page.visitor_stats.mapmyvisitors_width | default: 450 }}"></script>
               </div>
             </div>
           </div>

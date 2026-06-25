@@ -56,7 +56,9 @@ gallery:
   limit: 6  # number of photos to show in the homepage slider
 visitor_stats:
   enabled: true
-  clustrmaps_id: "1nyyOJb7b55gP6A0FHu0hqVMx8UblfG5QshzfKzRDhI"
+  mapmyvisitors_id: "kdR7F513LrSHgmwxHxBwpMNJZMhrY_WfEYEw-_c2014"
+  mapmyvisitors_width: 450
+  mapmyvisitors_stats_url: "https://mapmyvisitors.com/web/1c280"
 
 content_zh: |
   我是杨斯捷（Sijie Yang，See-jay Yahng），新加坡国立大学建筑系 Urban Analytics Lab 博士研究生，导师为 Filip Biljecki 教授。我拥有伦敦大学学院 Space Syntax 硕士学位与重庆大学建筑学学士学位，并就读于宾夕法尼亚大学工程与应用科学学院计算机科学硕士项目。
