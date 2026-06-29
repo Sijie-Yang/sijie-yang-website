@@ -1,0 +1,13 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+
+    A(["2025: PhD Candidate<br/>Urban Comfort thesis"]):::core
+
+    A ==> R1["Thermal Affordance<br/>published"]:::main
+    A ==> R2["Social media<br/>comfort analysis"]:::main
+    A ==> R3["SP-Survey<br/>platform"]:::main
+
+    R1 & R2 & R3 -.-> E["CUPUM · Tsinghua · AAAI"]:::sub
+    E -.-> O(["2026: expand framework<br/>& unified datasets"]):::sub

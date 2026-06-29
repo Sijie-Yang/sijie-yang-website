@@ -1,0 +1,21 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["AI commoditizes<br/>technical analysis"]):::core
+    A1["models · reports · data"]:::sub
+    B(["Human edge"]):::core
+
+    A ==> A1 -.-> B
+
+    B --> H1["Context"]:::main
+    B --> H2["Framing"]:::main
+    B --> H3["Validation"]:::main
+
+    H1 --> h1["why · for whom"]:::sub
+    H2 --> h2["which questions"]:::sub
+    H3 --> h3["check reality"]:::sub
+
+    h1 & h2 & h3 ==> C(["Ask · Translate · Focus<br/>on what AI cannot answer"]):::goal

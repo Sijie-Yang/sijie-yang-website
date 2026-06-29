@@ -1,0 +1,14 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+
+    A(["Built environment<br/>shapes shared cognition"]):::core
+
+    A ==> B["Salient mode<br/><i>symbolic · visible</i>"]:::main
+    A ==> C["Hidden mode<br/><i>spatial · unnoticed</i>"]:::main
+
+    B --> B1["landmarks · meaning"]:::sub
+    C --> C1["layout · co-presence"]:::sub
+
+    B1 & C1 ==> D(["Two paths to<br/>urban evolution"]):::core

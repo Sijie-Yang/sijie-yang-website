@@ -1,0 +1,15 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["AI optimizes systems<br/>but does not understand them"]):::core
+
+    A ==> B["First principles<br/><i>what is fundamentally true?</i>"]:::main
+    A ==> C["Systems thinking<br/><i>how do parts connect?</i>"]:::main
+
+    B --> B1["decompose to root causes"]:::sub
+    C --> C1["map feedback loops"]:::sub
+
+    B1 & C1 ==> D(["Question the objective<br/>before optimizing"]):::goal
