@@ -1,0 +1,17 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["Networking =<br/>value exchange"]):::core
+
+    A ==> V1["Info · Capability"]:::main
+    A ==> V2["Resource · Reputation"]:::main
+
+    V1 & V2 -.-> B(["Anxiety =<br/>unclear exchange"]):::core
+
+    B ==> C["Make explicit"]:::main
+    B ==> C1["state ask & offer"]:::sub
+
+    C & C1 ==> D(["Build capability<br/>& reputation"]):::goal

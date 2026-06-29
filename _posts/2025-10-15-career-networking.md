@@ -3,7 +3,7 @@ layout: post_bilingual
 title: Everyone gets anxiety about networking
 title_zh: 人人都会对社交焦虑
 title_en: Everyone gets anxiety about networking
-date: 2025-10-31 10:00:00+0800
+date: 2025-10-15 10:00:00+0800
 description: Why networking makes us uncomfortable and what to do about it
 description_zh: 为何社交让我们不自在，以及如何应对
 tags: [career, academia]
@@ -12,6 +12,12 @@ giscus_comments: true
 related_posts: false
 default_lang: en
 content_zh: |
+  <p align="center"><img src="/assets/img/blog/career-networking-framework.svg" alt="Networking Framework" /></p>
+
+  <p align="center"><em>Core idea: networking is value exchange — anxiety comes from unclear exchange; make it explicit.</em></p>
+
+  ---
+
   来谈一件很少有人愿意承认的事：社交让大多数人焦虑。我讨厌它，你可能也讨厌。然而我们 constantly 被告知它对职业成功 essential，尤其在 academia 与 research。
 
   我一直在想为何 networking 如此 uncomfortable，我认为我 figured it out：问题不在 networking 本身——在于 unclear value exchange。
@@ -193,6 +199,12 @@ content_zh: |
 
   *你如何看待 networking？Explicit value exchange helpful or off-putting？欢迎分享。*
 content_en: |
+  <p align="center"><img src="/assets/img/blog/career-networking-framework.svg" alt="Networking Framework" /></p>
+
+  <p align="center"><em>Core idea: networking is value exchange — anxiety comes from unclear exchange; make it explicit.</em></p>
+
+  ---
+
   Let's talk about something nobody likes to admit: networking makes most of us anxious. I hate it. You probably hate it too. And yet, we're constantly told it's essential for career success, especially in academia and research.
 
   I've been thinking about why networking feels so uncomfortable, and I think I've figured it out. It's not networking itself that's the problem—it's unclear value exchange.

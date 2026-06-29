@@ -12,6 +12,12 @@ giscus_comments: true
 related_posts: false
 default_lang: en
 content_zh: |
+  <p align="center"><img src="/assets/img/blog/scholar-close-loop-framework.svg" alt="Scholar Close-Loop Framework" /></p>
+
+  <p align="center"><em>Core idea: learning → research (center) → service → social — a closed loop.</em></p>
+
+  ---
+
   许多人认为学者享有令人艳羡的生活方式：日程相对自由、议程看似自主、不受固定工时、明确 KPI 或持续外部监督的约束。在某种程度上，这种印象并非谬误。学术工作者——尤其是博士生、博士后与高校教师——往往拥有更大的自主权。也正因为如此，我一直觉得有一个类比极为贴切：**学者本质上就是自己的 CEO。**
 
   这一隐喻之所以成立，是因为学者实际上在经营一家以自身为核心的小型企业。他们必须自行决定研究方向、分配时间、筛选机会，并承担选择的后果。外界赋予他们的是自由——但自由从来不等同于轻松。它更像一种更高阶的责任：你可能不会被严密管理，但必须对最终产出负责；你可以按自己的节奏生活，但必须为自己的停滞付出代价。
@@ -139,6 +145,12 @@ content_zh: |
 
   **这就是完整闭环：** 学习产生问题 → 研究驱动产出 → 服务提供支持 → 社交放大影响 → 归档沉淀经验 → 下一轮学习开始。每个项目不是孤立任务，而是该系统一次完整迭代的载体。当你将每个研究项目视为再运行一次闭环的机会，学术生活便不再是一堆零散职责，而成为自我强化的成长引擎。
 content_en: |
+  <p align="center"><img src="/assets/img/blog/scholar-close-loop-framework.svg" alt="Scholar Close-Loop Framework" /></p>
+
+  <p align="center"><em>Core idea: learning → research (center) → service → social — a closed loop.</em></p>
+
+  ---
+
   Many people see scholars as enjoying an enviable lifestyle: relatively free schedules, seemingly self-directed agendas, unconstrained by the fixed working hours, explicit KPIs, or constant external supervision that characterize many other professions. To a degree, this perception is not wrong. Academic workers—especially PhD students, postdocs, and university faculty—do tend to have greater autonomy. And precisely because of this, there is an analogy I have always found remarkably fitting: **a scholar is essentially their own CEO.**
 
   This metaphor is apt because scholars are, in essence, running a small enterprise centered on themselves. They must decide their own research directions, allocate their own time, screen their own opportunities, and bear the consequences of their own choices. What the outside world grants them is freedom—but freedom has never been synonymous with ease. It is more like a higher-order responsibility: you may not be tightly managed, but you must be accountable for the final output; you may live at your own pace, but you must pay the price for your own stagnation.

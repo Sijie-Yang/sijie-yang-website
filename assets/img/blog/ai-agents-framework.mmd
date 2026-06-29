@@ -1,0 +1,15 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["From Q&A tool<br/>to autonomous agent"]):::core
+
+    A ==> B["Scale & continuity"]:::main
+    A ==> C["Pursue goals<br/>autonomously"]:::main
+
+    B --> B1["monitor · detect"]:::sub
+    C --> C1["plan · iterate · tools"]:::sub
+
+    B1 & C1 ==> D(["Humans still frame,<br/>validate & interpret"]):::goal

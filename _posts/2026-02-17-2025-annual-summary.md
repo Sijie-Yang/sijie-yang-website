@@ -13,6 +13,12 @@ giscus_comments: true
 related_posts: false
 default_lang: zh
 content_zh: |
+  <p align="center"><img src="/assets/img/blog/2025-annual-summary-framework.svg" alt="2025 Annual Summary Framework" /></p>
+
+  <p align="center"><em>Core idea: PhD Candidate milestone → three research threads → 2026 expansion.</em></p>
+
+  ---
+
   2025年是我博士研究的开局之年，也是成果开始陆续落地、真正体会博士阶段出版与合作的一年。这一年里，最值得铭记的莫过于通过博士候选人资格考试（Qualifying Examination），正式成为 PhD Candidate。衷心感谢导师 Assis Prof Filip Biljecki 以及委员会成员：Assoc Prof Yuan Lai（清华大学建筑学院）、Assis Prof Yu Qian Ang（建成环境学院）、Assoc Prof Rudi Stouffs。我的课题 **Unifying and Quantifying Urban Comfort** 旨在运用 AI 时代的新算法与模型，对城市舒适度进行概念整合与量化，以支持数据驱动的城市评估与规划。
 
   **Thermal Affordance 与 Thermal Comfort in Sight**
@@ -56,6 +62,12 @@ content_zh: |
 
   2025 是既有思考又有产出的一年，我在学术发表与身份认同上都在稳步进入学界。2026 年，我将更主动地参与学术活动、推进研究贡献，为领域尽一份力。
 content_en: |
+  <p align="center"><img src="/assets/img/blog/2025-annual-summary-framework.svg" alt="2025 Annual Summary Framework" /></p>
+
+  <p align="center"><em>Core idea: PhD Candidate milestone → three research threads → 2026 expansion.</em></p>
+
+  ---
+
   2025 was the opening year of my PhD—a year when results began to land and I truly experienced what it means to publish and collaborate as a doctoral researcher. The highlight was passing the Qualifying Examination and becoming a formal PhD Candidate. I am grateful to my supervisor Assis Prof Filip Biljecki and the committee: Assoc Prof Yuan Lai (School of Architecture, Tsinghua University), Assis Prof Yu Qian Ang (School of Design and Environment), and Assoc Prof Rudi Stouffs. My thesis, **Unifying and Quantifying Urban Comfort**, aims to integrate and quantify the concept of urban comfort using state-of-the-art algorithms and models in the AI era, to support data-driven urban assessment and planning.
 
   **Thermal Affordance and Thermal Comfort in Sight**

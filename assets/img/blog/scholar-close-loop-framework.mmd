@@ -1,0 +1,15 @@
+flowchart TB
+    classDef core fill:#276749,color:#fff,stroke:#22543d,stroke-width:3px
+    classDef node fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+
+    L["Learning<br/><i>input</i>"]:::node
+    R(["Research<br/><i>center</i>"]):::core
+    S["Service<br/><i>platform</i>"]:::node
+    O["Social<br/><i>amplifier</i>"]:::node
+
+    L --> R --> S --> O --> L
+
+    L -.-> L1["methods · tools"]:::sub
+    S -.-> S1["teaching · admin"]:::sub
+    O -.-> O1["collaboration · visibility"]:::sub

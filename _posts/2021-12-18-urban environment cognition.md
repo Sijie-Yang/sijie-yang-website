@@ -13,6 +13,12 @@ related_posts: false
 related_publications:
 default_lang: en
 content_zh: |
+  <p align="center"><img src="/assets/img/blog/urban-environment-cognition-framework.svg" alt="Urban Environment Cognition Framework" /></p>
+
+  <p align="center"><em>Core idea: built environment shapes cognition — salient (symbolic) vs hidden (spatial) modes.</em></p>
+
+  ---
+
   在 Penn 2018 年关于城市环境共享认知的研究中，他提出建成环境是人类社群认知机制的一部分，并参与社会演化（Penn, 2018）。基于这一观点，他进一步指出：人类在体验物质世界时建构意义，而这些意义会在社群成员与建成环境共同生活的过程中，于所有成员的心智中得以重构（Penn, 2018）。换言之，建成环境通过强化个体对物质环境的认知，以"意义"为纽带增强社会凝聚力。
 
   一方面，我们可以将 Penn 所提出的"意义"理解为建成环境的象征性特征。这类象征性特征通常在一个区域内具有高度影响力与代表性，并最终通过强化个体对场所的认知来巩固社群联结。从城市尺度看，典型案例如巴黎的埃菲尔铁塔、凯旋门及历史轴线，如图 1 所示。从微观尺度看，典型例子可能包括某居住区中唯一的茶馆、某社区内的老教堂等。这类城市环境认知可称为**显著模式（salient mode）**：由于特定的文化背景、创新的建筑形式、独特的功能等赋予其象征性，建成环境的意义总能被场所中的社群成员清晰表达、理解、讨论与传播。
@@ -51,6 +57,12 @@ content_zh: |
 
   Hillier, B., 1996. 'Can architecture cause social malaise?', in Space Is the Machine. Cambridge: Cambridge University Press. p.138-170.
 content_en: |
+  <p align="center"><img src="/assets/img/blog/urban-environment-cognition-framework.svg" alt="Urban Environment Cognition Framework" /></p>
+
+  <p align="center"><em>Core idea: built environment shapes cognition — salient (symbolic) vs hidden (spatial) modes.</em></p>
+
+  ---
+
   In Penn's study of shared cognition of urban environment in 2018, he proposed that the built environment is a part of the cognitive mechanism of the human community and contributes to social evolution (Penn, 2018). Based on his idea, he further mentioned that humans make meanings when experiencing the physical world and these meanings are reconstructed in the minds of all the community members when they live with the built environment (Penn, 2018). In other words, the built environment strengthens social solidarities through meanings, based on individuals' cognition of the physical environment.
 
   On the one hand, we may understand the "meaning" proposed by Penn as the symbolic characteristics of the built environment. Such symbolic characteristics are usually very influential and representative in a region, and ultimately strengthen the community connection by strengthening individuals' cognition of the place. From the urban scale, typical cases are like the Eiffel Tower, Arc de Triomphe and the historical axis in Paris, as shown in Fig.1. From a micro perspective, typical examples may be the only teahouse in a residential area, an old church in a neighborhood, etc. Such a kind of urban environment recognition may be named the salient mode, as the meaning of the built environment can always be clearly expressed, understood, discussed and disseminated by community members in the place because of its symbolic given by its specific cultural background, innovative architectural form, unique function, etc.

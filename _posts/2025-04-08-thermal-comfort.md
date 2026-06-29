@@ -10,6 +10,12 @@ categories: research
 tags: [perception, urban comfort, SVI]
 default_lang: en
 content_zh: |
+  <p align="center"><img src="/assets/img/blog/thermal-comfort-framework.svg" alt="Thermal Comfort Framework" /></p>
+
+  <p align="center"><em>Core idea: research gaps → Thermal Affordance → VATA → validated city-scale assessment.</em></p>
+
+  ---
+
   ## 相关链接
 
   - [论文链接](http://dx.doi.org/10.1016/j.buildenv.2025.112569)
@@ -136,6 +142,12 @@ content_zh: |
   - [项目网站与数据](https://thermal-affordance.ual.sg/)
   - [代码仓库](https://github.com/Sijie-Yang/Thermal-Affordance)
 content_en: |
+  <p align="center"><img src="/assets/img/blog/thermal-comfort-framework.svg" alt="Thermal Comfort Framework" /></p>
+
+  <p align="center"><em>Core idea: research gaps → Thermal Affordance → VATA → validated city-scale assessment.</em></p>
+
+  ---
+
   ## Related Links
 
   - [Paper Link](http://dx.doi.org/10.1016/j.buildenv.2025.112569)

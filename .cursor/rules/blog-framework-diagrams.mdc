@@ -1,0 +1,63 @@
+---
+description: Blog post framework diagram conventions (Mermaid SVG)
+globs: assets/img/blog/*-framework.mmd,assets/img/blog/*-framework.svg,_posts/*.md
+alwaysApply: false
+---
+
+# Blog Framework Diagrams
+
+Framework diagrams live in `assets/img/blog/{slug}-framework.mmd` + `.svg`. Embed at the top of both `content_zh` and `content_en` in bilingual posts.
+
+## Structure (follow existing good diagrams)
+
+Use **`flowchart TB` only** — no `flowchart LR`, no `subgraph`.
+
+Layout is **top-down with horizontal branch tiers**, like `make-profitable-framework.mmd` and `ai-asymmetric-advantage-framework.mmd`. Never a single-node-per-row chain for 3+ steps (pure vertical), and never a single horizontal chain (pure LR).
+
+```
+core (1–2 nodes, dark blue stadium)
+  ==> 2–3 sibling mains (light blue, same tier — spreads horizontally)
+    optional one sub-detail level (gray) under each main
+      ==> goal (1 node, green stadium)
+```
+
+Each parent that branches must fan out to **2–3 siblings** at the next tier before converging again.
+
+## Node classes (always define all four)
+
+```mermaid
+classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+```
+
+- **core** `(["..."])` — central thesis (1–2 nodes max)
+- **main** `["..."]` — key branches (2–3 max)
+- **sub** `["..."]` — one extra detail level only; short phrases, not lists
+- **goal** `(["..."])` — single conclusion / action
+
+## Arrows
+
+- `==>` primary flow (core → main → goal)
+- `-->` secondary / detail links
+- `-.->` optional tension or mismatch (sparingly)
+
+## Content rules
+
+- **Refined, not exhaustive** — reader grasps the idea at a glance (~4–8 nodes total)
+- **Clear hierarchy** — not a flat chain of same-weight boxes
+- **English only** in diagram text and caption (bilingual posts keep diagram in English)
+- Caption below image: one-line `Core idea: …`
+
+## Regenerate SVG after editing `.mmd`
+
+```bash
+npx @mermaid-js/mermaid-cli -i assets/img/blog/{slug}-framework.mmd -o assets/img/blog/{slug}-framework.svg -b transparent
+```
+
+## Reference examples
+
+- Two cores + branches: `make-profitable-framework.mmd`
+- One core + parallel mains: `systematic-thinking-framework.mmd`, `ai-agents-framework.mmd`
+- Core chain + tier + goal: `ai-asymmetric-advantage-framework.mmd`

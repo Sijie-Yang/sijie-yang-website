@@ -1,0 +1,20 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef tier fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["Public info processing<br/>is being commoditized"]):::core
+    B(["What stays scarce?<br/><b>Source · Decision · Allocation</b>"]):::core
+
+    A ==>|shift| B
+
+    B --> C1["Source"]:::tier
+    B --> C2["Abstraction"]:::tier
+    B --> C3["Passive intake"]:::tier
+
+    C1 --> C1d["non-public · primary"]:::sub
+    C2 --> C2d["public + judgment"]:::sub
+    C3 --> C3d["consume · don't create"]:::sub
+
+    C1d & C2d & C3d ==> D(["Move toward<br/>the decision center"]):::goal

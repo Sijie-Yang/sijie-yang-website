@@ -13,6 +13,12 @@ giscus_comments: true
 related_posts: false
 default_lang: en
 content_zh: |
+  <p align="center"><img src="/assets/img/blog/make-profitable-framework.svg" alt="GeoAI Commercial Framework" /></p>
+
+  <p align="center"><em>Core idea: urban data + AI → value chain → Urban Analytics as a Service.</em></p>
+
+  ---
+
   城市分析与地理人工智能（GeoAI）正从学术研究快速走向可规模化的商业应用。随着街景影像、遥感数据、物联网传感器与开放城市数据的持续积累，以及大模型与智能体在数据处理、模式识别与决策支持方面的能力跃升，城市空间 intelligence 正在形成一条清晰的价值链：从数据采集与融合，到指标计算与诊断，再到面向政府、企业与社区的决策服务。
 
   ## 核心商业场景
@@ -35,6 +41,12 @@ content_zh: |
 
   城市分析与 GeoAI 的商业潜力不仅在于"把论文做成软件"，更在于将复杂城市系统的理解转化为可重复、可扩展、可定价的决策支持能力。对于研究者而言，这既是学术成果社会化的路径，也是在 AI 时代重新定义自身价值的重要方向。
 content_en: |
+  <p align="center"><img src="/assets/img/blog/make-profitable-framework.svg" alt="GeoAI Commercial Framework" /></p>
+
+  <p align="center"><em>Core idea: urban data + AI → value chain → Urban Analytics as a Service.</em></p>
+
+  ---
+
   Urban analytics and geospatial artificial intelligence (GeoAI) are moving rapidly from academic research toward scalable commercial applications. As street-view imagery, remote sensing, IoT sensors, and open urban data continue to accumulate—and as large models and AI agents advance in data processing, pattern recognition, and decision support—spatial intelligence for cities is forming a clear value chain: from data collection and fusion, to metric computation and diagnostics, to decision services for government, business, and communities.
 
   ## Core commercial scenarios

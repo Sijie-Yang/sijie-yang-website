@@ -1,0 +1,16 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["Research gaps<br/>in urban OTC"]):::core
+    B(["Thermal Affordance"]):::core
+
+    A ==> B
+
+    B --> C1["SVI + perception"]:::main
+    B --> C2["Field validation"]:::main
+    B --> C3["VATA workflow"]:::main
+
+    C1 & C2 & C3 ==> D(["Validated city-scale<br/>assessment"]):::goal

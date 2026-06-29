@@ -3,7 +3,7 @@ layout: post_bilingual
 title: First-principle-based systematic thinking is more important than ever
 title_zh: 基于第一性原理的系统思维比以往任何时候都更重要
 title_en: First-principle-based systematic thinking is more important than ever
-date: 2025-10-31 10:00:00+0800
+date: 2025-08-22 10:00:00+0800
 description: Why understanding systems from first principles matters more in the age of AI
 description_zh: 为何在 AI 时代从第一性原理理解系统更为重要
 tags: [systems thinking, AI, urban science]
@@ -12,6 +12,12 @@ giscus_comments: true
 related_posts: false
 default_lang: en
 content_zh: |
+  <p align="center"><img src="/assets/img/blog/systematic-thinking-framework.svg" alt="Systematic Thinking Framework" /></p>
+
+  <p align="center"><em>Core idea: AI optimizes without understanding → first principles + systems thinking → question the objective first.</em></p>
+
+  ---
+
   我最近一直在思考埃隆·马斯克的问题解决方式。并非因为我是粉丝（尽管他的成就不可否认），而是因为他对第一性原理思维与系统层面理解的坚持，为任何在复杂领域工作的人——尤其在 AI 时代——提供了重要启示。
 
   我们生活在一个 AI 几乎可以优化任何目标的时代。交通流量？有模型。房价？能高精度预测。能耗？可实时优化。但我一直纠结于一个 uncomfortable 的真相：AI 擅长优化系统，却不擅长理解系统。
@@ -133,6 +139,12 @@ content_zh: |
 
   *你如何在工作中思考系统与第一性原理？你见过 optimisation without understanding 导致问题的例子吗？欢迎分享。*
 content_en: |
+  <p align="center"><img src="/assets/img/blog/systematic-thinking-framework.svg" alt="Systematic Thinking Framework" /></p>
+
+  <p align="center"><em>Core idea: AI optimizes without understanding → first principles + systems thinking → question the objective first.</em></p>
+
+  ---
+
   I've been thinking a lot about Elon Musk's approach to problem-solving lately. Not because I'm a fanboy (though his achievements are undeniable), but because his insistence on first-principles thinking and systems-level understanding offers a crucial lesson for anyone working in complex domains—especially in the age of AI.
 
   We live in an era where AI can optimise almost anything you throw at it. Traffic flow? There's a model for that. Housing prices? Predict them with impressive accuracy. Energy consumption? Optimise it in real-time. But here's the uncomfortable truth I've been grappling with: AI is brilliant at optimising systems, but it's terrible at understanding them.

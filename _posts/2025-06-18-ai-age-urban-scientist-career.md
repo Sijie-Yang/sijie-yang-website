@@ -3,7 +3,7 @@ layout: post_bilingual
 title: What's left for urban scientists in the age of AI?
 title_zh: AI 时代，城市研究者还能做什么？
 title_en: What's left for urban scientists in the age of AI?
-date: 2025-10-31 10:00:00+0800
+date: 2025-06-18 10:00:00+0800
 description: Reflections on the evolving role of urban researchers in an AI-driven world
 description_zh: 关于 AI 时代城市研究者角色演变的思考
 tags: [career, AI, urban science]
@@ -12,6 +12,12 @@ giscus_comments: true
 related_posts: false
 default_lang: en
 content_zh: |
+  <p align="center"><img src="/assets/img/blog/ai-age-urban-scientist-career-framework.svg" alt="Urban Scientist Career Framework" /></p>
+
+  <p align="center"><em>Core idea: AI commoditizes analysis → human edge is context, framing, and validation.</em></p>
+
+  ---
+
   我最近一直在思考这个问题。作为一名在城市研究与 AI 交叉领域工作的人，我不断听到各种变体的担忧："AI 会取代城市科学家吗？""当 AI 什么都能做时，做这些研究还有什么意义？""在 AI 时代，我还应该读城市科学方向的博士吗？"
 
   这些都是合理的问题。我们正处在一个 AI 模型可以生成城市图像、预测城市模式、分析卫星影像，甚至撰写研究论文的时代。就在上周，我测试了一个基础模型，基于城市地图、城市数据与城市图像产出全面的城市分析——这原本需要研究者花费数天才能完成。结果既令人印象深刻，也 honestly 有些不安。
@@ -162,6 +168,12 @@ content_zh: |
 
   *你在城市研究中与 AI 的经验如何？你如何看待城市科学家角色的演变？欢迎在评论中分享你的想法。*
 content_en: |
+  <p align="center"><img src="/assets/img/blog/ai-age-urban-scientist-career-framework.svg" alt="Urban Scientist Career Framework" /></p>
+
+  <p align="center"><em>Core idea: AI commoditizes analysis → human edge is context, framing, and validation.</em></p>
+
+  ---
+
   I've been thinking about this question a lot lately. As someone who works at the intersection of urban studies and AI, I keep hearing variations of the same concern: "Will AI replace urban scientists?" "What's the point of doing all the research when AI can do it all?" "Should I even pursue a PhD in urban science anymore?"
 
   These are valid questions. We're living through a moment where AI models can generate city images, predict urban patterns, analyse satellite imagery, and even write research papers. Just last week, I tested a foundation model to produce a comprehensive urban analysis based on urban maps, urban data, and urban images that would have taken a researcher days to complete. It was both impressive and, honestly, a bit unsettling.
