@@ -1,0 +1,18 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["Academic information<br/>redundancy in the AI era"]):::core
+
+    A ==> B1["Efficiency ↑<br/>processing & publishing"]:::main
+    A ==> B2["Redundancy ↑<br/>low-signal research flood"]:::main
+
+    B1 & B2 -.-> C(["Feedback loop breaking<br/>practice leads, academia lags"]):::core
+
+    C --> D1["Embodied<br/>observation"]:::main
+    C --> D2["Architecture &<br/>fidelity"]:::main
+    C --> D3["Multi-sensor<br/>digital twin"]:::main
+
+    D1 & D2 & D3 ==> E(["Physical AI urban research<br/>sensors → model → explain → emerge"]):::goal
