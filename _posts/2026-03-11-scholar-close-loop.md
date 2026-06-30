@@ -7,7 +7,7 @@ date: 2026-03-11
 description: How scholars arrange their academia life in an AI era
 description_zh: 学者如何在 AI 时代安排学术生活
 tags: [PhD, academia, AI]
-categories: reflection
+categories: discussion
 giscus_comments: true
 related_posts: false
 default_lang: en

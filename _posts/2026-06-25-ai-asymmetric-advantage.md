@@ -7,7 +7,7 @@ date: 2026-06-25
 description: What truly matters in the AI era is not whether you can use AI, but whether you can reach information sources, decision centers, and resource allocation mechanisms.
 description_zh: AI 时代真正稀缺的，不是会不会使用 AI，而是能否接近信息源头、决策中心和资源分配机制。
 tags: [AI, career, society, urban science]
-categories: reflection
+categories: discussion
 permalink: /blog/2026/ai-asymmetric-advantage/
 giscus_comments: true
 related_posts: true
