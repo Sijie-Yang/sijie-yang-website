@@ -1230,6 +1230,74 @@ html.transition *:after {
   }
 }
 
+.blog-hidden-banner {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.blog-hidden-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--global-text-color-light);
+  background: var(--global-divider-color);
+  border-radius: 3px;
+  padding: 0.1rem 0.35rem;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+
+.post-list-entry-hidden .post-list-date {
+  opacity: 0.75;
+}
+
+.blog-hidden-source {
+  font-size: 0.75rem;
+  margin: 0.15rem 0 0;
+  opacity: 0.7;
+}
+
+.blog-admin-gate-wrap {
+  max-width: 28rem;
+}
+
+.blog-admin-login label {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.blog-admin-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.blog-admin-toolbar-label {
+  font-weight: 600;
+  color: var(--global-text-color);
+}
+
+.blog-admin-toolbar-hint {
+  font-style: italic;
+}
+
+.blog-admin-logout {
+  margin-left: auto;
+}
+
+.tag-category-list .tag-category-hidden-only .blog-hidden-badge {
+  margin-left: 0.2rem;
+}
+
 progress {
   /* Positioning */
   position: fixed;

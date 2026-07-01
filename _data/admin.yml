@@ -1,0 +1,5 @@
+# Admin login for /blog/admin/ — change password_hash before deploying.
+# Generate: echo -n 'your-password' | shasum -a 256
+# Local demo password: admin-demo (change before deploying)
+password_hash: "198352b6a8078a827be267c847d39506629d3af446a3cc0bce670dd3a6b5d753"
+session_days: 30

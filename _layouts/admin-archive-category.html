@@ -1,0 +1,26 @@
+---
+layout: admin
+---
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"><i class="fas fa-tag fa-sm"></i> {{ page.title }}</h1>
+    {% if site.bilingual.enabled %}
+    <p class="post-description lang-content" data-lang="en">admin archive — all posts in this category (including hidden)</p>
+    <p class="post-description lang-content" data-lang="zh">管理员归档 — 该分类下的全部文章（含隐藏）</p>
+    {% else %}
+    <p class="post-description">admin archive — all posts in this category (including hidden)</p>
+    {% endif %}
+  </header>
+
+  <p class="mb-3">
+    <a href="{{ '/blog/admin/' | relative_url }}" class="lang-content" data-lang="en">← All posts</a>
+    <a href="{{ '/blog/admin/' | relative_url }}" class="lang-content" data-lang="zh">← 全部文章</a>
+  </p>
+
+  {% include blog_tag_category_list.html include_hidden=true %}
+
+  {% include archive_post_list.html include_hidden=true %}
+
+</div>

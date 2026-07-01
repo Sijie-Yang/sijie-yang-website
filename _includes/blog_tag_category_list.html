@@ -1,0 +1,117 @@
+{% assign include_hidden = include.include_hidden | default: false %}
+{% assign public_posts = site.posts | where_exp: "item", "item.hidden != true" %}
+{% assign hidden_posts = site.posts | where_exp: "item", "item.hidden == true" %}
+
+{% if include_hidden %}
+  {% assign tag_base = '/blog/admin/tag/' %}
+  {% assign cat_base = '/blog/admin/category/' %}
+{% else %}
+  {% assign tag_base = '/blog/tag/' %}
+  {% assign cat_base = '/blog/category/' %}
+{% endif %}
+
+{% assign extra_tags_raw = "" %}
+{% assign extra_cats_raw = "" %}
+
+{% if include_hidden %}
+  {% for post in hidden_posts %}
+    {% if post.tags %}
+      {% for tag in post.tags %}
+        {% unless site.display_tags contains tag %}
+          {% assign tag_key = tag | append: "||" %}
+          {% unless extra_tags_raw contains tag_key %}
+            {% assign extra_tags_raw = extra_tags_raw | append: tag_key %}
+          {% endunless %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+    {% if post.categories %}
+      {% for category in post.categories %}
+        {% unless site.display_categories contains category %}
+          {% assign cat_key = category | append: "||" %}
+          {% unless extra_cats_raw contains cat_key %}
+            {% assign extra_cats_raw = extra_cats_raw | append: cat_key %}
+          {% endunless %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign extra_tags = extra_tags_raw | split: "||" %}
+{% assign extra_cats = extra_cats_raw | split: "||" %}
+
+{% assign show_list = false %}
+{% if site.display_tags.size > 0 or site.display_categories.size > 0 %}
+  {% assign show_list = true %}
+{% endif %}
+{% if include_hidden %}
+  {% for t in extra_tags %}{% if t != "" %}{% assign show_list = true %}{% break %}{% endif %}{% endfor %}
+  {% for c in extra_cats %}{% if c != "" %}{% assign show_list = true %}{% break %}{% endif %}{% endfor %}
+{% endif %}
+
+{% if show_list %}
+<div class="tag-category-list">
+  <ul class="p-0 m-0">
+    {% assign need_bullet = false %}
+
+    {% for tag in site.display_tags %}
+      {% if need_bullet %}<p>&bull;</p>{% endif %}
+      <li>
+        <i class="fas fa-hashtag fa-sm"></i>
+        <a href="{{ tag | slugify | prepend: tag_base | relative_url }}">{{ tag }}</a>
+      </li>
+      {% assign need_bullet = true %}
+    {% endfor %}
+
+    {% for category in site.display_categories %}
+      {% if need_bullet %}<p>&bull;</p>{% endif %}
+      <li>
+        <i class="fas fa-tag fa-sm"></i>
+        <a href="{{ category | slugify | prepend: cat_base | relative_url }}">{{ category }}</a>
+      </li>
+      {% assign need_bullet = true %}
+    {% endfor %}
+
+    {% if include_hidden %}
+      {% for tag in extra_tags %}
+        {% if tag != "" %}
+          {% assign tag_public = false %}
+          {% for post in public_posts %}
+            {% if post.tags contains tag %}
+              {% assign tag_public = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if need_bullet %}<p>&bull;</p>{% endif %}
+          <li class="tag-category-hidden-only">
+            <i class="fas fa-hashtag fa-sm"></i>
+            <a href="{{ tag | slugify | prepend: tag_base | relative_url }}">{{ tag }}</a>
+            {% unless tag_public %}<span class="blog-hidden-badge">hidden</span>{% endunless %}
+          </li>
+          {% assign need_bullet = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% for category in extra_cats %}
+        {% if category != "" %}
+          {% assign cat_public = false %}
+          {% for post in public_posts %}
+            {% if post.categories contains category %}
+              {% assign cat_public = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if need_bullet %}<p>&bull;</p>{% endif %}
+          <li class="tag-category-hidden-only">
+            <i class="fas fa-tag fa-sm"></i>
+            <a href="{{ category | slugify | prepend: cat_base | relative_url }}">{{ category }}</a>
+            {% unless cat_public %}<span class="blog-hidden-badge">hidden</span>{% endunless %}
+          </li>
+          {% assign need_bullet = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </ul>
+</div>
+{% endif %}

@@ -140,6 +140,9 @@ related_blog_posts:
   enabled: true
   max_related: 5
 
+# Hidden posts: set hidden: true in post front matter (excluded from blog index, RSS, archives).
+# Admin dashboard: /blog/admin/ — configure password in _data/admin.yml (see admin.example.yml).
+
 # Comment plugin
 # Disqus comments
 disqus_shortname: sijie-yang

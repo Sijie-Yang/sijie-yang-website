@@ -1,0 +1,8 @@
+# Copy to admin.yml and set your password hash (SHA-256 hex).
+# Generate: echo -n 'your-password' | shasum -a 256
+#
+# Note: the hash is in your public repo — use a dedicated admin password,
+# not your GitHub or email password.
+
+password_hash: "REPLACE_WITH_SHA256_HEX"
+session_days: 30

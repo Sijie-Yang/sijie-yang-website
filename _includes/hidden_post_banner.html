@@ -1,0 +1,6 @@
+{% if page.hidden %}
+<div class="blog-hidden-banner alert alert-secondary" role="status">
+  <strong>Hidden post</strong> — not listed on the public blog{% if page.source_platform %} · source: {{ page.source_platform }}{% endif %}{% if page.source_url %} · <a href="{{ page.source_url }}" target="_blank" rel="noopener">original</a>{% endif %}
+  · <a href="{{ '/blog/admin/' | relative_url }}">Admin</a>
+</div>
+{% endif %}

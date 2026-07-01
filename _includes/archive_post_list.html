@@ -1,0 +1,25 @@
+{% assign include_hidden = include.include_hidden | default: false %}
+  <ul class="post-list post-list-compact">
+    {% for post in page.posts %}
+    {% unless include_hidden %}{% if post.hidden %}{% continue %}{% endif %}{% endunless %}
+    <li class="post-list-entry{% if include_hidden and post.hidden %} post-list-entry-hidden{% endif %}">
+      <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+      <div class="post-list-body">
+        <h3 class="post-list-title">
+          <a href="{{ post.url | relative_url }}">{% include post_title_bilingual.html post=post %}</a>
+          {% if include_hidden and post.hidden %}
+          <span class="blog-hidden-badge" title="{% if post.source_platform %}{{ post.source_platform }}{% else %}hidden{% endif %}">hidden</span>
+          {% endif %}
+        </h3>
+        {% if post.description or post.description_zh %}
+        <p class="post-list-desc">{% include post_description_bilingual.html post=post %}</p>
+        {% endif %}
+        {% if include_hidden and post.hidden and post.source_url %}
+        <p class="post-list-meta blog-hidden-source">
+          <a href="{{ post.source_url }}" target="_blank" rel="noopener">{{ post.source_url | replace: 'https://', '' | replace: 'http://', '' | truncate: 48 }}</a>
+        </p>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>

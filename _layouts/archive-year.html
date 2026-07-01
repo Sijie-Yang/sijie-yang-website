@@ -14,26 +14,6 @@ layout: default
     {% endif %}
   </header>
 
-  <ul class="post-list post-list-compact">
-    {% for post in page.posts %}
-    <li class="post-list-entry">
-      <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d' }}</time>
-      <div class="post-list-body">
-        <h3 class="post-list-title">
-          {% if post.redirect == blank %}
-            <a href="{{ post.url | relative_url }}">{% include post_title_bilingual.html post=post %}</a>
-          {% elsif post.redirect contains '://' %}
-            <a href="{{ post.redirect }}" target="_blank">{% include post_title_bilingual.html post=post %}</a>
-          {% else %}
-            <a href="{{ post.redirect | relative_url }}">{% include post_title_bilingual.html post=post %}</a>
-          {% endif %}
-        </h3>
-        {% if post.description or post.description_zh %}
-        <p class="post-list-desc">{% include post_description_bilingual.html post=post %}</p>
-        {% endif %}
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+  {% include archive_post_list_year.html %}
 
 </div>

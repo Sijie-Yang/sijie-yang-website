@@ -1,0 +1,64 @@
+---
+layout: default
+---
+<div id="admin-config"
+     data-password-hash="{{ site.data.admin.password_hash | default: '' }}"
+     data-session-days="{{ site.data.admin.session_days | default: 30 }}"
+     hidden></div>
+
+<div id="admin-gate" class="post blog-admin-gate-wrap" hidden>
+  <div class="header-bar">
+    {% if site.bilingual.enabled and site.blog_name_zh %}
+    <h2 class="lang-content" data-lang="en">{{ site.blog_name }}</h2>
+    <h2 class="lang-content" data-lang="zh">{{ site.blog_name_zh }}</h2>
+    {% else %}
+    <h2>{{ site.blog_name }}</h2>
+    {% endif %}
+  </div>
+  <p class="post-description lang-content" data-lang="en">Admin — sign in to view hidden posts alongside the full blog list.</p>
+  <p class="post-description lang-content" data-lang="zh">管理员 — 登录后可查看含隐藏文章的完整博客列表。</p>
+
+  <div id="admin-setup-msg" class="alert alert-warning" hidden>
+    <strong>Setup required.</strong> Set <code>password_hash</code> in <code>_data/admin.yml</code>.
+    <pre class="mt-2 mb-0"><code>echo -n 'your-password' | shasum -a 256</code></pre>
+  </div>
+  <form id="admin-login-form" class="blog-admin-login">
+    <label for="admin-password">
+      <span class="lang-content" data-lang="en">Password</span>
+      <span class="lang-content" data-lang="zh">密码</span>
+    </label>
+    <div class="input-group">
+      <input type="password" id="admin-password" class="form-control" autocomplete="current-password" required />
+      <button type="submit" class="btn btn-primary">
+        <span class="lang-content" data-lang="en">Sign in</span>
+        <span class="lang-content" data-lang="zh">登录</span>
+      </button>
+    </div>
+    <p id="admin-login-error" class="text-danger mt-2" hidden>
+      <span class="lang-content" data-lang="en">Incorrect password.</span>
+      <span class="lang-content" data-lang="zh">密码错误。</span>
+    </p>
+  </form>
+  <p class="mt-3 mb-0">
+    <a href="{{ '/blog/' | relative_url }}" class="lang-content" data-lang="en">← Public blog</a>
+    <a href="{{ '/blog/' | relative_url }}" class="lang-content" data-lang="zh">← 公开博客</a>
+  </p>
+</div>
+
+<div id="admin-panel" class="post" hidden>
+  <div class="blog-admin-toolbar">
+    <span class="blog-admin-toolbar-label lang-content" data-lang="en">Admin view</span>
+    <span class="blog-admin-toolbar-label lang-content" data-lang="zh">管理员视图</span>
+    <span class="blog-admin-toolbar-hint lang-content" data-lang="en">includes hidden posts</span>
+    <span class="blog-admin-toolbar-hint lang-content" data-lang="zh">含隐藏文章</span>
+    <button type="button" id="admin-logout" class="btn btn-sm btn-outline-secondary blog-admin-logout">
+      <span class="lang-content" data-lang="en">Sign out</span>
+      <span class="lang-content" data-lang="zh">退出</span>
+    </button>
+    <a href="{{ '/blog/' | relative_url }}" class="blog-admin-public-link lang-content" data-lang="en">Public blog</a>
+    <a href="{{ '/blog/' | relative_url }}" class="blog-admin-public-link lang-content" data-lang="zh">公开博客</a>
+  </div>
+  {{ content }}
+</div>
+
+<script src="{{ '/assets/js/admin-auth.js' | relative_url | bust_file_cache }}"></script>
