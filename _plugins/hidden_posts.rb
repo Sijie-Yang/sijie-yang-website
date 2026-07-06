@@ -87,11 +87,18 @@ module HiddenPosts
     end
   end
 
-  # Admin-only tag/category archives (include hidden posts; noindex).
+  # Admin-only tag/category/media/status archives (include hidden posts; noindex).
   class AdminArchive < Jekyll::Page
     attr_accessor :posts, :type, :slug
 
-    def initialize(site, title, type, posts)
+    LAYOUTS = {
+      'tag' => 'admin-archive-tag',
+      'category' => 'admin-archive-category',
+      'media' => 'admin-archive-media',
+      'status' => 'admin-archive-status',
+    }.freeze
+
+    def initialize(site, title, type, posts, layout = nil)
       @site = site
       @posts = posts.sort!.reverse!
       @type = type
@@ -101,7 +108,7 @@ module HiddenPosts
       @path = relative_path
       @name = 'index'
       @data = {
-        'layout' => type == 'tag' ? 'admin-archive-tag' : 'admin-archive-category',
+        'layout' => layout || LAYOUTS.fetch(type),
         'robots' => 'noindex, nofollow',
         'sitemap' => false,
       }
@@ -132,6 +139,8 @@ module HiddenPosts
     def generate(site)
       site.pages.concat(build_archives(site, 'tag', :tags))
       site.pages.concat(build_archives(site, 'category', :categories))
+      site.pages.concat(build_meta_archives(site, 'media', 'media_type', 'source_platform'))
+      site.pages.concat(build_meta_archives(site, 'status', 'post_status'))
     end
 
     private
@@ -140,6 +149,18 @@ module HiddenPosts
       groups = Hash.new { |h, k| h[k] = [] }
       site.posts.docs.each do |post|
         Array(post.data[attr.to_s]).each { |label| groups[label] << post }
+      end
+      groups.map { |title, posts| AdminArchive.new(site, title, type, posts) }
+    end
+
+    def build_meta_archives(site, type, field, fallback_field = nil)
+      groups = Hash.new { |h, k| h[k] = [] }
+      site.posts.docs.each do |post|
+        value = post.data[field.to_s]
+        value = post.data[fallback_field.to_s] if (value.nil? || value.to_s.empty?) && fallback_field
+        next if value.nil? || value.to_s.empty?
+
+        groups[value.to_s] << post
       end
       groups.map { |title, posts| AdminArchive.new(site, title, type, posts) }
     end

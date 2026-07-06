@@ -1,12 +1,14 @@
 ---
 description: Blog post framework diagram conventions (Mermaid SVG)
-globs: assets/img/blog/*-framework.mmd,assets/img/blog/*-framework.svg,_posts/*.md
+globs: assets/img/blog/**/*-framework.mmd,assets/img/blog/**/*-framework.svg,_posts/*.md
 alwaysApply: false
 ---
 
 # Blog Framework Diagrams
 
-Framework diagrams live in `assets/img/blog/{slug}-framework.mmd` + `.svg`. Embed at the top of both `content_zh` and `content_en` in bilingual posts.
+Framework diagrams live in `assets/img/blog/{media}-{YYYY-MM-DD}/{slug}-framework.mmd` + `.svg`, matching the post's `media_type` (or `site` for main blog) and date. Embed at the top of both `content_zh` and `content_en` in bilingual posts.
+
+Substack covers: see `.cursor/rules/substack-cover-art.mdc` → `assets/img/blog/{media}-{YYYY-MM-DD}/cover.png`
 
 ## Structure (follow existing good diagrams)
 
@@ -53,11 +55,11 @@ classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
 ## Regenerate SVG after editing `.mmd`
 
 ```bash
-npx @mermaid-js/mermaid-cli -i assets/img/blog/{slug}-framework.mmd -o assets/img/blog/{slug}-framework.svg -b transparent
+npx @mermaid-js/mermaid-cli -i assets/img/blog/{media}-{YYYY-MM-DD}/{slug}-framework.mmd -o assets/img/blog/{media}-{YYYY-MM-DD}/{slug}-framework.svg -b transparent
 ```
 
 ## Reference examples
 
-- Two cores + branches: `make-profitable-framework.mmd`
-- One core + parallel mains: `systematic-thinking-framework.mmd`, `ai-agents-framework.mmd`
-- Core chain + tier + goal: `ai-asymmetric-advantage-framework.mmd`
+- Two cores + branches: `site-2026-01-25/make-profitable-framework.mmd`
+- One core + parallel mains: `site-2025-08-22/systematic-thinking-framework.mmd`, `site-2025-12-08/ai-agents-framework.mmd`
+- Core chain + tier + goal: `site-2026-06-25/ai-asymmetric-advantage-framework.mmd`

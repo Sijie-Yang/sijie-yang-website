@@ -10,7 +10,7 @@ categories: research
 tags: [perception, urban comfort, SVI]
 default_lang: en
 content_zh: |
-  <p align="center"><img src="/assets/img/blog/thermal-comfort-framework.svg" alt="Thermal Comfort Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2025-04-08/thermal-comfort-framework.svg" alt="Thermal Comfort Framework" /></p>
 
   <p align="center"><em>Core idea: research gaps → Thermal Affordance → VATA → validated city-scale assessment.</em></p>
 
@@ -57,7 +57,7 @@ content_zh: |
   ## VATA 框架
 
   <p style="text-align: center;">
-    <img src="/assets/img/250408/fig2_vata_framework.png" alt="图 2：VATA 框架概览" style="width: 75%; max-width: 600px;"/>
+    <img src="/assets/img/blog/site-2025-04-08/fig2_vata_framework.png" alt="图 2：VATA 框架概览" style="width: 75%; max-width: 600px;"/>
     <br>
     <em>VATA 框架概览</em>
   </p>
@@ -65,7 +65,7 @@ content_zh: |
   VATA 框架应对传统 OTC 评估的挑战，利用视觉数据（SVI）、人类感知与热舒适之间的联系。
 
   <p style="text-align: center;">
-    <img src="/assets/img/250408/fig1_vata_concept.png" alt="图 1：VATA 概念框架" style="width: 75%; max-width: 600px;"/>
+    <img src="/assets/img/blog/site-2025-04-08/fig1_vata_concept.png" alt="图 1：VATA 概念框架" style="width: 75%; max-width: 600px;"/>
     <br>
     <em>阐释 VATA 概念的概念框架</em>
   </p>
@@ -79,7 +79,7 @@ content_zh: |
   * **验证：** 将 VATA 预测与通过现场调查（热行走）收集的真实 OTC 数据对照验证，指标包括主观舒适评分与生理数据（如心率）。
 
   <p style="text-align: center;">
-    <img src="/assets/img/250408/fig3_research framework.png" alt="图 3：研究框架" style="width: 75%; max-width: 600px;"/>
+    <img src="/assets/img/blog/site-2025-04-08/fig3_research framework.png" alt="图 3：研究框架" style="width: 75%; max-width: 600px;"/>
     <br>
     <em>详细研究框架图</em>
   </p>
@@ -102,7 +102,7 @@ content_zh: |
   * **VATA 制图：** 我们生成新加坡高分辨率 VATA 地图，聚合为六边形单元。该地图直观识别高（如 Windsor Nature Park、East Coast Park 等公园）与低（如 Choa Chu Kang 部分区域）热承载力区域，指导潜在干预。
 
   <p style="text-align: center;">
-    <img src="/assets/img/250408/fig10_result_VATA mapping.png" alt="图 10：新加坡 VATA 预测制图" style="width: 75%; max-width: 600px;"/>
+    <img src="/assets/img/blog/site-2025-04-08/fig10_result_VATA mapping.png" alt="图 10：新加坡 VATA 预测制图" style="width: 75%; max-width: 600px;"/>
     <br>
     <em>新加坡 VATA 预测结果制图</em>
   </p>
@@ -120,7 +120,7 @@ content_zh: |
   * **持续监测：** 框架支持持续监测循环，利用更新的 SVI 数据完善模型并追踪干预随时间的影响。
 
   <p style="text-align: center;">
-    <img src="/assets/img/250408/fig13_discussion_VATA_framework_revision.png" alt="图 13：持续监测框架" style="width: 75%; max-width: 600px;"/>
+    <img src="/assets/img/blog/site-2025-04-08/fig13_discussion_VATA_framework_revision.png" alt="图 13：持续监测框架" style="width: 75%; max-width: 600px;"/>
     <br>
     <em>持续监测与设计循环示意图</em>
   </p>
@@ -142,7 +142,7 @@ content_zh: |
   - [项目网站与数据](https://thermal-affordance.ual.sg/)
   - [代码仓库](https://github.com/Sijie-Yang/Thermal-Affordance)
 content_en: |
-  <p align="center"><img src="/assets/img/blog/thermal-comfort-framework.svg" alt="Thermal Comfort Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2025-04-08/thermal-comfort-framework.svg" alt="Thermal Comfort Framework" /></p>
 
   <p align="center"><em>Core idea: research gaps → Thermal Affordance → VATA → validated city-scale assessment.</em></p>
 
@@ -189,7 +189,7 @@ content_en: |
   ## The VATA Framework
 
   <p style="text-align: center;">
-    <img src="/assets/img/250408/fig2_vata_framework.png" alt="Figure 2: VATA Framework Overview" style="width: 75%; max-width: 600px;"/>
+    <img src="/assets/img/blog/site-2025-04-08/fig2_vata_framework.png" alt="Figure 2: VATA Framework Overview" style="width: 75%; max-width: 600px;"/>
     <br>
     <em>VATA Framework Overview</em>
   </p>
@@ -197,7 +197,7 @@ content_en: |
   The VATA framework addresses the challenges of traditional OTC evaluation. It leverages the connection between visual data (SVI), human perception, and thermal comfort.
 
   <p style="text-align: center;">
-    <img src="/assets/img/250408/fig1_vata_concept.png" alt="Figure 1: VATA Conceptual Framework" style="width: 75%; max-width: 600px;"/>
+    <img src="/assets/img/blog/site-2025-04-08/fig1_vata_concept.png" alt="Figure 1: VATA Conceptual Framework" style="width: 75%; max-width: 600px;"/>
     <br>
     <em>Conceptual framework illustrating the VATA concept</em>
   </p>
@@ -211,7 +211,7 @@ content_en: |
   *   **Validation:** VATA predictions are validated against real-world OTC data collected through field surveys (thermal walks) using metrics like subjective comfort ratings and physiological data (e.g., heart rate).
 
   <p style="text-align: center;">
-    <img src="/assets/img/250408/fig3_research framework.png" alt="Figure 3: Research Framework" style="width: 75%; max-width: 600px;"/>
+    <img src="/assets/img/blog/site-2025-04-08/fig3_research framework.png" alt="Figure 3: Research Framework" style="width: 75%; max-width: 600px;"/>
     <br>
     <em>Detailed research framework diagram</em>
   </p>
@@ -234,7 +234,7 @@ content_en: |
   *   **VATA Mapping:** We generated a high-resolution map of VATA across Singapore, aggregated into hexagonal units. This map visually identifies areas with high (e.g., parks like Windsor Nature Park, East Coast Park) and low (e.g., parts of Choa Chu Kang) thermal affordance, guiding potential interventions.
 
   <p style="text-align: center;">
-    <img src="/assets/img/250408/fig10_result_VATA mapping.png" alt="Figure 10: VATA Prediction Mapping for Singapore" style="width: 75%; max-width: 600px;"/>
+    <img src="/assets/img/blog/site-2025-04-08/fig10_result_VATA mapping.png" alt="Figure 10: VATA Prediction Mapping for Singapore" style="width: 75%; max-width: 600px;"/>
     <br>
     <em>VATA prediction results mapped across Singapore</em>
   </p>
@@ -252,7 +252,7 @@ content_en: |
   *   **Continuous Monitoring:** The framework supports a continuous monitoring cycle, using updated SVI data to refine models and track the impact of interventions over time.
 
   <p style="text-align: center;">
-    <img src="/assets/img/250408/fig13_discussion_VATA_framework_revision.png" alt="Figure 13: Continuous Monitoring Framework" style="width: 75%; max-width: 600px;"/>
+    <img src="/assets/img/blog/site-2025-04-08/fig13_discussion_VATA_framework_revision.png" alt="Figure 13: Continuous Monitoring Framework" style="width: 75%; max-width: 600px;"/>
     <br>
     <em>Diagram illustrating the continuous monitoring and design cycle</em>
   </p>

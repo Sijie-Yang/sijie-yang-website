@@ -264,6 +264,10 @@ jekyll-archives:
 display_tags: ['AI', 'agents', 'GeoAI', 'urban science', 'urban comfort', 'perception', 'cognition', 'SVI', 'career', 'academia', 'PhD', 'systems thinking']
 display_categories: ['research', 'discussion', 'reflection']
 
+# Admin-only metadata for hidden posts (shown next to titles in /blog/admin/).
+admin_media_types: [substack, youtube, 朋友圈, medium, wechat]
+admin_post_statuses: [planning, in progress, completed, published]
+
 bilingual:
   enabled: true
   default_lang: en

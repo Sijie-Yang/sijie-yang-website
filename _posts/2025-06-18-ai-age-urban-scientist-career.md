@@ -12,7 +12,7 @@ giscus_comments: true
 related_posts: false
 default_lang: en
 content_zh: |
-  <p align="center"><img src="/assets/img/blog/ai-age-urban-scientist-career-framework.svg" alt="Urban Scientist Career Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2025-06-18/ai-age-urban-scientist-career-framework.svg" alt="Urban Scientist Career Framework" /></p>
 
   <p align="center"><em>Core idea: AI commoditizes analysis → human edge is context, framing, and validation.</em></p>
 
@@ -168,7 +168,7 @@ content_zh: |
 
   *你在城市研究中与 AI 的经验如何？你如何看待城市科学家角色的演变？欢迎在评论中分享你的想法。*
 content_en: |
-  <p align="center"><img src="/assets/img/blog/ai-age-urban-scientist-career-framework.svg" alt="Urban Scientist Career Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2025-06-18/ai-age-urban-scientist-career-framework.svg" alt="Urban Scientist Career Framework" /></p>
 
   <p align="center"><em>Core idea: AI commoditizes analysis → human edge is context, framing, and validation.</em></p>
 

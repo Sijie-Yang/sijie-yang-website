@@ -13,7 +13,7 @@ giscus_comments: true
 related_posts: true
 default_lang: zh
 content_zh: |
-  <p align="center"><img src="/assets/img/blog/ai-asymmetric-advantage-framework.svg" alt="Asymmetric Advantage Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2026-06-25/ai-asymmetric-advantage-framework.svg" alt="Asymmetric Advantage Framework" /></p>
 
   <p align="center"><em>Core idea: public info is commoditized → what stays scarce is source, decision, and allocation → move toward the decision center.</em></p>
 
@@ -260,7 +260,7 @@ content_zh: |
   真正的机会，是不断从被动接受者，变成信息处理者；再从信息处理者，变成信息源和决策者。
 
 content_en: |
-  <p align="center"><img src="/assets/img/blog/ai-asymmetric-advantage-framework.svg" alt="Asymmetric Advantage Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2026-06-25/ai-asymmetric-advantage-framework.svg" alt="Asymmetric Advantage Framework" /></p>
 
   <p align="center"><em>Core idea: public info is commoditized → what stays scarce is source, decision, and allocation → move toward the decision center.</em></p>
 

@@ -1,0 +1,12 @@
+{% assign show_badges = include.include_hidden | default: false %}
+{% assign post = include.post %}
+{% if show_badges and post.hidden %}
+  <span class="blog-hidden-badge" title="{% if post.source_platform %}{{ post.source_platform }}{% else %}hidden{% endif %}">hidden</span>
+  {% assign media = post.media_type | default: post.source_platform %}
+  {% if media != blank %}
+    <span class="blog-admin-badge blog-admin-badge-media">{{ media }}</span>
+  {% endif %}
+  {% if post.post_status != blank %}
+    <span class="blog-admin-badge blog-admin-badge-status">{{ post.post_status }}</span>
+  {% endif %}
+{% endif %}

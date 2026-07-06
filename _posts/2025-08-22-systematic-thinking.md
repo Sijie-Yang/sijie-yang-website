@@ -12,7 +12,7 @@ giscus_comments: true
 related_posts: false
 default_lang: en
 content_zh: |
-  <p align="center"><img src="/assets/img/blog/systematic-thinking-framework.svg" alt="Systematic Thinking Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2025-08-22/systematic-thinking-framework.svg" alt="Systematic Thinking Framework" /></p>
 
   <p align="center"><em>Core idea: AI optimizes without understanding → first principles + systems thinking → question the objective first.</em></p>
 
@@ -139,7 +139,7 @@ content_zh: |
 
   *你如何在工作中思考系统与第一性原理？你见过 optimisation without understanding 导致问题的例子吗？欢迎分享。*
 content_en: |
-  <p align="center"><img src="/assets/img/blog/systematic-thinking-framework.svg" alt="Systematic Thinking Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2025-08-22/systematic-thinking-framework.svg" alt="Systematic Thinking Framework" /></p>
 
   <p align="center"><em>Core idea: AI optimizes without understanding → first principles + systems thinking → question the objective first.</em></p>
 

@@ -1,0 +1,50 @@
+---
+description: Substack / external blog cover art generation (conceptual B&W editorial)
+globs: assets/img/blog/**/cover.png,_posts/*.md
+alwaysApply: false
+---
+
+# Substack Cover Art
+
+Generate cover images when the user asks for a Substack (or external-platform) cover while drafting a hidden post.
+
+## File location
+
+```
+assets/img/blog/{media}-{YYYY-MM-DD}/cover.png
+```
+
+- `{media}` = post `media_type` (e.g. `substack`, `youtube`, `wechat`); main-site posts use `site`
+- `{YYYY-MM-DD}` = post `date` in front matter
+- Set in post front matter: `substack_cover: /assets/img/blog/{media}-{YYYY-MM-DD}/cover.png`
+
+Example: `assets/img/blog/substack-2026-07-03/cover.png`
+
+## Visual style (user reference aesthetic)
+
+- **16:9 wide** landscape, suitable for Substack hero/cover
+- **High-contrast black & white** conceptual editorial illustration — ink-on-paper feel
+- **Mood:** intellectual, calm, slightly surreal; professional thinking / strategy / urban-tech writing
+- **Composition varies by article** — derive from the post thesis when generating; do not reuse a fixed template
+- **No mandatory tropes** — do not default to recurring motifs (e.g. tiny figure vs. data wave) unless the user asks
+- **No text, logos, or watermarks** in the image
+
+## Prompting
+
+- Describe **style only** in the rule; at generation time, derive abstract visual direction from the article thesis (not the title alone)
+- Style keywords: high-contrast monochrome, conceptual editorial illustration, ink/graphite texture, clean negative space, surreal but restrained, intellectual mood
+- Avoid literal UI mockups, readable text, logos, and stock-photo clichés
+- Keep monochrome; avoid color unless the user explicitly asks
+
+## Workflow
+
+1. Read post `date`, `media_type`, and thesis from front matter / draft
+2. Generate with `GenerateImage`; pass user reference covers if available via `reference_image_paths`
+3. Save to `assets/img/blog/{media}-{YYYY-MM-DD}/cover.png`
+4. Add or update `substack_cover` in the post front matter
+
+## Do not
+
+- Save covers under `assets/img/substack/` (deprecated)
+- Use slug-only filenames without `{media}-{date}` folder
+- Reuse the same composition for every article

@@ -12,7 +12,7 @@ giscus_comments: true
 related_posts: false
 default_lang: en
 content_zh: |
-  <p align="center"><img src="/assets/img/blog/scholar-close-loop-framework.svg" alt="Scholar Close-Loop Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2026-03-11/scholar-close-loop-framework.svg" alt="Scholar Close-Loop Framework" /></p>
 
   <p align="center"><em>Core idea: learning → research (center) → service → social — a closed loop.</em></p>
 
@@ -27,7 +27,7 @@ content_zh: |
   我逐渐认识到，对学者而言，最重要的不仅是努力，而是围绕学术项目构建**学习—研究—服务—社交闭环**。
 
   <div style="text-align: center; margin: 1.5rem 0;">
-    <img src="/assets/img/260311/close-loop.png" alt="学习—研究—服务—社交闭环" style="width: 85%; max-width: 700px;"/>
+    <img src="/assets/img/blog/site-2026-03-11/close-loop.png" alt="学习—研究—服务—社交闭环" style="width: 85%; max-width: 700px;"/>
   </div>
 
   ## 1. 学习是研究的输入
@@ -145,7 +145,7 @@ content_zh: |
 
   **这就是完整闭环：** 学习产生问题 → 研究驱动产出 → 服务提供支持 → 社交放大影响 → 归档沉淀经验 → 下一轮学习开始。每个项目不是孤立任务，而是该系统一次完整迭代的载体。当你将每个研究项目视为再运行一次闭环的机会，学术生活便不再是一堆零散职责，而成为自我强化的成长引擎。
 content_en: |
-  <p align="center"><img src="/assets/img/blog/scholar-close-loop-framework.svg" alt="Scholar Close-Loop Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2026-03-11/scholar-close-loop-framework.svg" alt="Scholar Close-Loop Framework" /></p>
 
   <p align="center"><em>Core idea: learning → research (center) → service → social — a closed loop.</em></p>
 
@@ -160,7 +160,7 @@ content_en: |
   I have come to believe that what matters most for a scholar is not just hard work, but building a **learning–research–service–social close-loop** organized around academic projects.
 
   <div style="text-align: center; margin: 1.5rem 0;">
-    <img src="/assets/img/260311/close-loop.png" alt="Learning–Research–Service–Social Close-Loop" style="width: 85%; max-width: 700px;"/>
+    <img src="/assets/img/blog/site-2026-03-11/close-loop.png" alt="Learning–Research–Service–Social Close-Loop" style="width: 85%; max-width: 700px;"/>
   </div>
 
   ## 1. Learning Is the Input of Research

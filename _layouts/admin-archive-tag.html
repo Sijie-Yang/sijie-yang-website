@@ -19,6 +19,7 @@ layout: admin
     <a href="{{ '/blog/admin/' | relative_url }}" class="lang-content" data-lang="zh">← 全部文章</a>
   </p>
 
+  {% include admin_meta_filter_list.html include_hidden=true %}
   {% include blog_tag_category_list.html include_hidden=true %}
 
   {% include archive_post_list.html include_hidden=true %}

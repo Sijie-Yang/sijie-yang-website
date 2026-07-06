@@ -7,10 +7,12 @@ date: 2025-03-12
 description: A Substack essay on urban microclimate, perception, and design — archived here as a hidden mirror.
 description_zh: 关于城市微气候、感知与设计的一篇 Substack 随笔，在此作为隐藏镜像归档。
 description_en: A Substack essay on urban microclimate, perception, and design — archived here as a hidden mirror.
-tags: [urban science, substack]
+tags: [urban science]
 categories: discussion
 hidden: true
+media_type: substack
 source_platform: substack
+post_status: published
 source_url: https://example.substack.com/p/street-trees-urban-microclimate
 giscus_comments: false
 related_posts: false

@@ -7,9 +7,7 @@
       <div class="post-list-body">
         <h3 class="post-list-title">
           <a href="{{ post.url | relative_url }}">{% include post_title_bilingual.html post=post %}</a>
-          {% if include_hidden and post.hidden %}
-          <span class="blog-hidden-badge" title="{% if post.source_platform %}{{ post.source_platform }}{% else %}hidden{% endif %}">hidden</span>
-          {% endif %}
+          {% include admin_post_badges.html post=post include_hidden=include_hidden %}
         </h3>
         {% if post.description or post.description_zh %}
         <p class="post-list-desc">{% include post_description_bilingual.html post=post %}</p>

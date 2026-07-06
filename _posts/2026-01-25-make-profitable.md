@@ -13,7 +13,7 @@ giscus_comments: true
 related_posts: false
 default_lang: en
 content_zh: |
-  <p align="center"><img src="/assets/img/blog/make-profitable-framework.svg" alt="GeoAI Commercial Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2026-01-25/make-profitable-framework.svg" alt="GeoAI Commercial Framework" /></p>
 
   <p align="center"><em>Core idea: urban data + AI → value chain → Urban Analytics as a Service.</em></p>
 
@@ -41,7 +41,7 @@ content_zh: |
 
   城市分析与 GeoAI 的商业潜力不仅在于"把论文做成软件"，更在于将复杂城市系统的理解转化为可重复、可扩展、可定价的决策支持能力。对于研究者而言，这既是学术成果社会化的路径，也是在 AI 时代重新定义自身价值的重要方向。
 content_en: |
-  <p align="center"><img src="/assets/img/blog/make-profitable-framework.svg" alt="GeoAI Commercial Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2026-01-25/make-profitable-framework.svg" alt="GeoAI Commercial Framework" /></p>
 
   <p align="center"><em>Core idea: urban data + AI → value chain → Urban Analytics as a Service.</em></p>
 

@@ -13,7 +13,7 @@ giscus_comments: true
 related_posts: false
 default_lang: zh
 content_zh: |
-  <p align="center"><img src="/assets/img/blog/2025-annual-summary-framework.svg" alt="2025 Annual Summary Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2026-02-17/2025-annual-summary-framework.svg" alt="2025 Annual Summary Framework" /></p>
 
   <p align="center"><em>Core idea: PhD Candidate milestone → three research threads → 2026 expansion.</em></p>
 
@@ -62,7 +62,7 @@ content_zh: |
 
   2025 是既有思考又有产出的一年，我在学术发表与身份认同上都在稳步进入学界。2026 年，我将更主动地参与学术活动、推进研究贡献，为领域尽一份力。
 content_en: |
-  <p align="center"><img src="/assets/img/blog/2025-annual-summary-framework.svg" alt="2025 Annual Summary Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2026-02-17/2025-annual-summary-framework.svg" alt="2025 Annual Summary Framework" /></p>
 
   <p align="center"><em>Core idea: PhD Candidate milestone → three research threads → 2026 expansion.</em></p>
 

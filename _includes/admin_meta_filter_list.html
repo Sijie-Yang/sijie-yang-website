@@ -1,0 +1,42 @@
+{% assign include_hidden = include.include_hidden | default: false %}
+{% if include_hidden %}
+  {% assign has_media = site.admin_media_types.size > 0 %}
+  {% assign has_status = site.admin_post_statuses.size > 0 %}
+  {% if has_media or has_status %}
+  <div class="admin-meta-filter-list">
+    {% if has_media %}
+    <div class="admin-meta-filter-group">
+      <span class="admin-meta-filter-label lang-content" data-lang="zh">媒体</span>
+      <span class="admin-meta-filter-label lang-content" data-lang="en">Media</span>
+      <ul class="p-0 m-0">
+        {% for media in site.admin_media_types %}
+          {% if forloop.first == false %}<p>&bull;</p>{% endif %}
+          <li>
+            <a href="{{ media | slugify | prepend: '/blog/admin/media/' | relative_url }}">{{ media }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if has_media and has_status %}
+    <p class="admin-meta-filter-sep">&bull;</p>
+    {% endif %}
+
+    {% if has_status %}
+    <div class="admin-meta-filter-group">
+      <span class="admin-meta-filter-label lang-content" data-lang="zh">状态</span>
+      <span class="admin-meta-filter-label lang-content" data-lang="en">Status</span>
+      <ul class="p-0 m-0">
+        {% for status in site.admin_post_statuses %}
+          {% if forloop.first == false %}<p>&bull;</p>{% endif %}
+          <li>
+            <a href="{{ status | slugify | prepend: '/blog/admin/status/' | relative_url }}">{{ status }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+{% endif %}

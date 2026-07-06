@@ -13,7 +13,7 @@ giscus_comments: true
 related_posts: true
 default_lang: zh
 content_zh: |
-  <p align="center"><img src="/assets/img/blog/academic-research-frontier-framework.svg" alt="Academic Research Frontier Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2026-07-01/academic-research-frontier-framework.svg" alt="Academic Research Frontier Framework" /></p>
 
   <p align="center"><em>Core idea: AI raises efficiency and redundancy → feedback loops break → research must move toward embodied observation and Physical AI urban science.</em></p>
 
@@ -107,7 +107,7 @@ content_zh: |
   下一个有意义的研究关口，或许不在「再用 AI 写一篇论文」，而在：**我们能否建立一套真正嵌入城市的感知—建模—解释—反馈体系，并让研究在这一体系中获得不可冗余的位置。**
 
 content_en: |
-  <p align="center"><img src="/assets/img/blog/academic-research-frontier-framework.svg" alt="Academic Research Frontier Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2026-07-01/academic-research-frontier-framework.svg" alt="Academic Research Frontier Framework" /></p>
 
   <p align="center"><em>Core idea: AI raises efficiency and redundancy → feedback loops break → research must move toward embodied observation and Physical AI urban science.</em></p>
 

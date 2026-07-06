@@ -13,7 +13,7 @@ related_posts: false
 related_publications:
 default_lang: en
 content_zh: |
-  <p align="center"><img src="/assets/img/blog/urban-environment-cognition-framework.svg" alt="Urban Environment Cognition Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2021-12-18/urban-environment-cognition-framework.svg" alt="Urban Environment Cognition Framework" /></p>
 
   <p align="center"><em>Core idea: built environment shapes cognition — salient (symbolic) vs hidden (spatial) modes.</em></p>
 
@@ -25,10 +25,10 @@ content_zh: |
 
   <div class="row mt-3">
       <div class="col-sm mt-3 mt-md-0">
-          {% include figure.html path="assets/img/211218/eiffel-tower.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+          {% include figure.html path="assets/img/blog/site-2021-12-18/eiffel-tower.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
       </div>
       <div class="col-sm mt-3 mt-md-0">
-          {% include figure.html path="assets/img/211218/historical-axis.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+          {% include figure.html path="assets/img/blog/site-2021-12-18/historical-axis.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
       </div>
   </div>
   <div class="caption">
@@ -40,7 +40,7 @@ content_zh: |
 
   <div class="row mt-3">
       <div class="col-sm mt-3 mt-md-0">
-          {% include figure.html path="assets/img/211218/public-space.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+          {% include figure.html path="assets/img/blog/site-2021-12-18/public-space.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
       </div>
   </div>
   <div class="caption">
@@ -57,7 +57,7 @@ content_zh: |
 
   Hillier, B., 1996. 'Can architecture cause social malaise?', in Space Is the Machine. Cambridge: Cambridge University Press. p.138-170.
 content_en: |
-  <p align="center"><img src="/assets/img/blog/urban-environment-cognition-framework.svg" alt="Urban Environment Cognition Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2021-12-18/urban-environment-cognition-framework.svg" alt="Urban Environment Cognition Framework" /></p>
 
   <p align="center"><em>Core idea: built environment shapes cognition — salient (symbolic) vs hidden (spatial) modes.</em></p>
 
@@ -69,10 +69,10 @@ content_en: |
 
   <div class="row mt-3">
       <div class="col-sm mt-3 mt-md-0">
-          {% include figure.html path="assets/img/211218/eiffel-tower.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+          {% include figure.html path="assets/img/blog/site-2021-12-18/eiffel-tower.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
       </div>
       <div class="col-sm mt-3 mt-md-0">
-          {% include figure.html path="assets/img/211218/historical-axis.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+          {% include figure.html path="assets/img/blog/site-2021-12-18/historical-axis.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
       </div>
   </div>
   <div class="caption">
@@ -84,7 +84,7 @@ content_en: |
 
   <div class="row mt-3">
       <div class="col-sm mt-3 mt-md-0">
-          {% include figure.html path="assets/img/211218/public-space.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+          {% include figure.html path="assets/img/blog/site-2021-12-18/public-space.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
       </div>
   </div>
   <div class="caption">

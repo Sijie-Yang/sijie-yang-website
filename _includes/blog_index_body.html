@@ -21,6 +21,7 @@
 {% endif %}
 
 {% include blog_tag_category_list.html include_hidden=include_hidden %}
+{% include admin_meta_filter_list.html include_hidden=include_hidden %}
 
 {% if include_hidden %}
   {% assign featured_posts = site.posts | where: "featured", "true" %}
@@ -43,7 +44,7 @@
                   <div class="float-right">
                     <i class="fa-solid fa-thumbtack fa-xs"></i>
                   </div>
-                  <h3 class="card-title text-lowercase">{% include post_title_bilingual.html post=post %}{% if include_hidden and post.hidden %} <span class="blog-hidden-badge">hidden</span>{% endif %}</h3>
+                  <h3 class="card-title text-lowercase">{% include post_title_bilingual.html post=post %}{% include admin_post_badges.html post=post include_hidden=include_hidden %}</h3>
                   <p class="card-text">{% include post_description_bilingual.html post=post %}</p>
 
                   {% if post.external_source == blank %}
@@ -95,9 +96,7 @@
         {% else %}
           <a href="{{ post.redirect | relative_url }}">{% include post_title_bilingual.html post=post %}</a>
         {% endif %}
-        {% if include_hidden and post.hidden %}
-          <span class="blog-hidden-badge" title="{% if post.source_platform %}{{ post.source_platform }}{% else %}hidden{% endif %}">hidden</span>
-        {% endif %}
+        {% include admin_post_badges.html post=post include_hidden=include_hidden %}
         </h3>
         {% if post.description or post.description_zh %}
         <p class="post-list-desc">{% include post_description_bilingual.html post=post %}</p>

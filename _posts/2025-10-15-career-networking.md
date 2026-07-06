@@ -12,7 +12,7 @@ giscus_comments: true
 related_posts: false
 default_lang: en
 content_zh: |
-  <p align="center"><img src="/assets/img/blog/career-networking-framework.svg" alt="Networking Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2025-10-15/career-networking-framework.svg" alt="Networking Framework" /></p>
 
   <p align="center"><em>Core idea: networking is value exchange — anxiety comes from unclear exchange; make it explicit.</em></p>
 
@@ -199,7 +199,7 @@ content_zh: |
 
   *你如何看待 networking？Explicit value exchange helpful or off-putting？欢迎分享。*
 content_en: |
-  <p align="center"><img src="/assets/img/blog/career-networking-framework.svg" alt="Networking Framework" /></p>
+  <p align="center"><img src="/assets/img/blog/site-2025-10-15/career-networking-framework.svg" alt="Networking Framework" /></p>
 
   <p align="center"><em>Core idea: networking is value exchange — anxiety comes from unclear exchange; make it explicit.</em></p>
 

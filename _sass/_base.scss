@@ -1298,6 +1298,78 @@ html.transition *:after {
   margin-left: 0.2rem;
 }
 
+.blog-admin-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.blog-admin-badge-media {
+  color: #1a365d;
+  background: #ebf4ff;
+  border: 1px solid #bee3f8;
+}
+
+.blog-admin-badge-status {
+  color: #22543d;
+  background: #f0fff4;
+  border: 1px solid #c6f6d5;
+}
+
+.admin-meta-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.admin-meta-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+  }
+
+  li {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  a {
+    color: var(--global-text-color-light);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+.admin-meta-filter-label {
+  font-weight: 600;
+  color: var(--global-text-color);
+  margin-right: 0.15rem;
+}
+
+.admin-meta-filter-sep {
+  margin: 0;
+  color: var(--global-text-color-light);
+}
+
 progress {
   /* Positioning */
   position: fixed;
