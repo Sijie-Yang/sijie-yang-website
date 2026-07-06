@@ -26,7 +26,7 @@
         - GPA 4.0/4.0.
         - Module direction - Artificial Intelligence and Data Analytics
         - Teaching Asistant in mathematics, algorithm design, and computer architecture
-        - Expected graduation in 2025
+        - Graduated in 2025
       description_zh:
         - GPA 4.0/4.0
         - 方向：人工智能与数据分析
@@ -210,6 +210,13 @@
   title_zh: 发表论文
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - "Peng, C.†, <strong>Yang, S.</strong>†, Liu, A., Xiang, Y., Zhou, Z., & Biljecki, F. (2026). City Landscape In Sight: A Crowdsourced Framework For Unlocking Urban-Scale Window View Perceptions From Real Estate Imagery. <em>Landscape and Urban Planning</em>. (Accepted manuscript.) <a href='https://arxiv.org/abs/2606.15198' target='_blank'>URL</a> | <a href='https://arxiv.org/pdf/2606.15198' target='_blank'>PDF</a>"
+        - "<strong>Yang, S.</strong>, Law, S., Fan, Z., & Biljecki, F. (2026). StreetRAG-Index: Concept-to-Index Retrieval-Augmented Generation Over Urban Street Networks. In <em>Proceedings of the 15th International Space Syntax Symposium</em>, Johor Bahru, Malaysia. <a href='https://github.com/Sijie-Yang/StreetRAG' target='_blank'>URL</a>"
+        - "<strong>Yang, S.</strong>, Li, J., & Biljecki, F. (2026). Reasoning Is All You Need For Urban Planning AI. In <em>AAAI 2026 (Poster) — AI for Urban Planning (AI4UP)</em>. <a href='https://arxiv.org/abs/2511.05375' target='_blank'>URL</a> | <a href='https://arxiv.org/pdf/2511.05375' target='_blank'>PDF</a>"
+        - "Liu, H., <strong>Yang, S.</strong>, Abdelrahman, M., Zhu, Y., Wei, X., & Biljecki, F. (2026). Inferring Urban Functions From Google Maps Reviews: A Multi-Scale, Multi-Modal And Cross-City Approach. <em>Computers, Environment and Urban Systems</em>, 129, 102475. <a href='https://doi.org/10.1016/j.compenvurbsys.2026.102475' target='_blank'>DOI</a> | <a href='https://www.researchgate.net/publication/407470449_Inferring_urban_functions_from_Google_Maps_reviews_A_multi-scale_multi-modal_and_cross-city_approach' target='_blank'>PDF</a>"
+        - "Kang, S., Cai, Y., Zhong, T., Liu, Y., <strong>Yang, S.</strong>, & Ye, Y. (2026). Urbanpedia As An Interactive Design Dictionary: A Quantitative Morphological Approach For Walkability. <em>Sustainable Cities and Society</em>, 147, 107550. <a href='https://doi.org/10.1016/j.scs.2026.107550' target='_blank'>DOI</a> | <a href='https://www.researchgate.net/publication/405325560_URBANPEDIA_as_an_Interactive_Design_Dictionary_A_Quantitative_Morphological_Approach_for_Walkability' target='_blank'>PDF</a>"
     - year: 2025
       items:
         - "<strong>Yang, S.</strong>, Chong, A., Liu, P., & Biljecki, F. (2025). Thermal Comfort in Sight: Thermal Affordance and its Visual Assessment for Sustainable Streetscape Design. <em>Building and Environment</em>. <a href='http://dx.doi.org/10.1016/j.buildenv.2025.112569' target='_blank'>DOI</a> | <a href='https://arxiv.org/pdf/2410.11887' target='_blank'>PDF</a>"
