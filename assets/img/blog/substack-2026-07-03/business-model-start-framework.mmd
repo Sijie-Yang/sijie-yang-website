@@ -1,0 +1,17 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["Entrepreneurship<br/><b>Demand × MVP × Scale</b>"]):::core
+
+    A ==> D["Demand discovery"]:::main
+    A ==> M["MVP validation"]:::main
+    A ==> S["Scale replication"]:::main
+
+    D --> Dd["painful need · not pretty"]:::sub
+    M --> Md["get paid · proof of model"]:::sub
+    S --> Sd["only after evidence"]:::sub
+
+    Dd & Md & Sd ==> G(["Validated business model"]):::goal

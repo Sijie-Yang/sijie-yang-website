@@ -1,0 +1,17 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["Do not orbit<br/>others' possibility"]):::core
+
+    A ==> R["Recognize the drain"]:::main
+    A ==> S["Speech ≠ action"]:::main
+    A ==> D["Self-first decisions"]:::main
+
+    R --> Rd["misaligned · no co-build"]:::sub
+    S --> Sd["altruistic words · release"]:::sub
+    D --> Dd["best option · not her city"]:::sub
+
+    Rd & Sd & Dd ==> G(["Like privately<br/>act for yourself"]):::goal

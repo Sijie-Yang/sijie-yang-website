@@ -1,0 +1,17 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["Sustainable public voice<br/>without shame hijack"]):::core
+
+    A ==> C["Fixed category SOP"]:::main
+    A ==> M["Rational metrics"]:::main
+    A ==> L["Iterate the loop"]:::main
+
+    C --> Cd["standards · checklist"]:::sub
+    M --> Md["data · not mood"]:::sub
+    L --> Ld["method · not identity"]:::sub
+
+    Cd & Md & Ld ==> G(["Publish by process<br/>improve by evidence"]):::goal

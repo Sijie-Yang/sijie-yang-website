@@ -1,0 +1,17 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["Speak · Connect · Act<br/><b>internet-era playbook</b>"]):::core
+
+    A ==> S["Speak out"]:::main
+    A ==> C["Connect"]:::main
+    A ==> T["Act"]:::main
+
+    S --> Sd["signal · cut through noise"]:::sub
+    C --> Cd["resources · people · trust"]:::sub
+    T --> Td["visible work · precise reach"]:::sub
+
+    Sd & Cd & Td ==> G(["Bold in doing<br/>modest in being"]):::goal

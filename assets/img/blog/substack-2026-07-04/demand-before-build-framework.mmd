@@ -1,0 +1,17 @@
+flowchart TB
+    classDef core fill:#2c5282,color:#fff,stroke:#1a365d,stroke-width:3px
+    classDef main fill:#ebf4ff,color:#1a365d,stroke:#4299e1,stroke-width:2px
+    classDef sub fill:#edf2f7,color:#4a5568,stroke:#cbd5e0
+    classDef goal fill:#276749,color:#fff,stroke:#22543d,stroke-width:2px
+
+    A(["Confirm demand<br/>before you build"]):::core
+
+    A ==> M1["Define audience"]:::main
+    A ==> M2["Research in the field"]:::main
+    A ==> M3["Analyze & align"]:::main
+
+    M1 --> M1d["who · pain · context"]:::sub
+    M2 --> M2d["questions · contact · collect"]:::sub
+    M3 --> M3d["insights → product · loop"]:::sub
+
+    M1d & M2d & M3d ==> G(["Build with correspondence<br/>not imagination alone"]):::goal
