@@ -218,26 +218,52 @@
         {%- capture link -%}https://www.zotero.org/{{ site.zotero_username }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
-    {%- if sameaslinks != blank -%}
-        {%- assign sameaslinks = sameaslinks | split: "" -%}
-    {%- endif -%}
 
+    <!-- Person entity for search / Knowledge Graph identity linking -->
     <script type="application/ld+json">
     {
-        "author":
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sijie Yang",
+      "alternateName": "杨斯捷",
+      "jobTitle": "PhD Researcher",
+      "email": "{{ site.email }}",
+      "description": {{ site.description | strip_html | strip_newlines | strip | jsonify }},
+      "affiliation": {
+        "@type": "Organization",
+        "name": "National University of Singapore",
+        "url": "https://www.nus.edu.sg/"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Urban Analytics Lab",
+        "url": "https://ual.sg/"
+      },
+      "alumniOf": [
         {
-            "@type": "Person",
-            "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}"
+          "@type": "CollegeOrUniversity",
+          "name": "University College London"
         },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{%- if is_blog_post -%}BlogPosting{%- else -%}WebSite{%- endif -%}",
-        "description": "{%- if page.description -%}{{ page.description }}{%- else if site.description -%}{{ site.description }}{%- endif -%}",
-        "headline": "{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}",
-        {% if sameaslinks != blank -%}
-        "sameAs": {{ sameaslinks }},
-        {%- endif %}
-        "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
-        "@context": "https://schema.org"
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Pennsylvania"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Chongqing University"
+        }
+      ],
+      "knowsAbout": [
+        "Urban Analytics",
+        "Artificial Intelligence for Urban Planning",
+        "Street View Imagery",
+        "Urban Comfort",
+        "Spatial Analytics",
+        "Space Syntax",
+        "GeoAI"
+      ],
+      "url": "{{ site.url }}{{ site.baseurl }}/"{% if sameaslinks.size > 0 %},
+      "sameAs": {{ sameaslinks | jsonify }}{% endif %}
     }
     </script>
 {%- endif %}

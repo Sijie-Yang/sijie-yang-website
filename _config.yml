@@ -17,7 +17,7 @@ keywords: urban studies, architecture, geography, research, academic, Sijie Yang
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🏛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://sijieyang.github.io # the base hostname & protocol for your site
+url: https://sijie-yang.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -63,7 +63,7 @@ max_width: 800px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_schema_org: true # Include Schema.org Person JSON-LD in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -88,7 +88,7 @@ osf_id: # your OSF ID
 research_gate_profile: # your profile on ResearchGate
 scopus_id: # your profile on Scopus
 blogger_url: # your blogger URL
-work_url: # work page URL
+work_url: https://ual.sg/author/sijie-yang/ # NUS Urban Analytics Lab people page
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
