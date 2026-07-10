@@ -17,6 +17,106 @@
 #   outlet_zh, source_note, source_note_zh, title, language (zh|en),
 #   excerpt, excerpt_zh, related (list of {label, url})
 
+- id: zhonglian-cup-website-guiyi-2022
+  date: "2022-03-25"
+  platform: news
+  outlet: Zhonglian Cup International Student Architecture Competition
+  outlet_zh: 中联杯·国际大学生建筑设计竞赛
+  source_note: Official competition website
+  source_note_zh: 竞赛官网
+  language: zh
+  title: "5th Zhonglian Cup Third Prize — Gui Yi"
+  title_zh: 第五届中联杯三等奖：归彝
+  url: https://zlb.chinaasc.org.cn/article.php?id=65
+  excerpt: Official Zhonglian Cup feature of the third-prize project Gui Yi by Sijie Yang and Gao Yanan (Chongqing University), advised by Haijing Huang.
+  excerpt_zh: 中联杯官网展示第五届三等奖作品「归彝」，设计成员杨斯捷、高亚男（重庆大学），指导老师黄海静。
+  cover: zhonglian-cup-guiyi-2022-cover.png
+  screenshot_full: zhonglian-cup-guiyi-2022-full.jpg
+
+- id: wechat-geo-window-view-2026
+  date: "2026-07-08"
+  platform: wechat
+  outlet: GEO Research
+  outlet_zh: GEO科研
+  source_note: WeChat Official Account
+  source_note_zh: 微信公众号
+  language: zh
+  title: "LAUP-2026 | From Streetscape to Window View — Crowdsourced Real-Estate Imagery for City-Scale Window View Perception"
+  title_zh: LAUP-2026 | 从街景到窗景，众包房产影像支持的城市尺度窗景感知
+  url: https://mp.weixin.qq.com/s/xn6pcjd0ftc3IuDNKZL2aA
+  excerpt: WeChat feature on City Landscape in Sight (Landscape and Urban Planning, 2026), introducing a crowdsourced framework for urban-scale residential window view perception from real estate imagery; co-authored by Sijie Yang et al.
+  excerpt_zh: GEO科研公众号介绍发表于 Landscape and Urban Planning 的 City Landscape in Sight 研究，提出基于众包房产影像的城市尺度住宅窗景感知框架；杨斯捷为共同作者。
+  cover: wechat-geo-window-view-2026-cover.png
+  screenshot_full: wechat-geo-window-view-2026-full.jpg
+  related:
+    - label: City Landscape In Sight
+      label_zh: 城市景观在眼前
+      url: https://arxiv.org/abs/2606.15198
+
+- id: wechat-zhonglian-cup-guiyi-2022
+  date: "2022-04-20"
+  platform: wechat
+  outlet: Zhonglian Cup International Student Architecture Competition
+  outlet_zh: 中联杯国际大学生建筑设计竞赛
+  source_note: WeChat Official Account
+  source_note_zh: 微信公众号
+  language: zh
+  title: "5th Zhonglian Cup — Competition Brief and Awarded Works Explained"
+  title_zh: 第五届「中联杯」竞赛题目及获奖作品解读
+  url: https://mp.weixin.qq.com/s/NFC9cczZ-zeLr4LtWgSiKQ
+  excerpt: WeChat feature interpreting the 5th Zhonglian Cup competition theme and awarded works, including Sijie Yang and Gao Yanan's Chongqing University project Gui Yi.
+  excerpt_zh: 中联杯官方公众号解读第五届竞赛题目与获奖作品，其中介绍重庆大学杨斯捷、高亚男作品「归彝」。
+  cover: wechat-zhonglian-cup-guiyi-2022-cover.png
+  screenshot_full: wechat-zhonglian-cup-guiyi-2022-full.jpg
+
+- id: wechat-yujian-competition-talk-2019
+  date: "2019-12-02"
+  platform: wechat
+  outlet: YuJian
+  outlet_zh: 遇建
+  source_note: WeChat Official Account
+  source_note_zh: 微信公众号
+  language: zh
+  title: "YuJian • Vitality Court — Top Studio Competition Experience Sharing Session"
+  title_zh: 【遇建 • 活力庭】学霸工作室——竞赛经验分享会
+  url: https://mp.weixin.qq.com/s/82LfPNo3daASv2WPnl4ufQ
+  excerpt: WeChat recap of a Chongqing University architecture competition experience sharing session, featuring Sijie Yang on team selection, division of labor, and extending course design into competition work.
+  excerpt_zh: 遇建公众号报道重大建筑城规学院竞赛经验分享会，杨斯捷分享合理组队分工，以及从课程设计延伸探索竞赛更多可能性的经验。
+  cover: wechat-yujian-competition-talk-2019-cover.png
+  screenshot_full: wechat-yujian-competition-talk-2019-full.jpg
+
+- id: wechat-venice-biennale-2018
+  date: "2018-11-28"
+  platform: wechat
+  outlet: CQU School of Architecture and Urban Planning
+  outlet_zh: 重庆大学建筑城规学院
+  source_note: WeChat Official Account
+  source_note_zh: 微信公众号
+  language: zh
+  title: "CQU Student Works Selected for the 2018 Venice Architecture Biennale Exhibition"
+  title_zh: 我院学生作品入选「2018威尼斯国际建筑双年展」
+  url: https://mp.weixin.qq.com/s/s8qijn9xd1Oo7Bnf0FVuCg
+  excerpt: Official CQU announcement that student works were selected for the China Universities Architecture Faculty & Students Fine Art Document Exhibition at the 2018 Venice Architecture Biennale, including Sijie Yang's Boiling Summer.
+  excerpt_zh: 重庆大学建筑城规学院官方发布：多名学生作品入选 2018 威尼斯国际建筑双年展中国高等院校建筑学科师生优秀美术作品文献展，其中包括杨斯捷作品《沸腾的夏》。
+  cover: wechat-venice-biennale-2018-cover.png
+  screenshot_full: wechat-venice-biennale-2018-full.jpg
+
+- id: wechat-arch-newcomer-guiyi-2020
+  date: "2020-07-07"
+  platform: wechat
+  outlet: Architecture Newcomer Competition CHN
+  outlet_zh: 建筑新人赛CHN
+  source_note: WeChat Official Account
+  source_note_zh: 微信公众号
+  language: zh
+  title: "2019 Newcomer Competition Review (3) — Exchange and Interaction (Activity Center)"
+  title_zh: 2019新人赛优秀作品回顾（3）--交流与互动（当代活动中心篇）
+  url: https://mp.weixin.qq.com/s/irnN1mP0rUrWeJlovqtJmw
+  excerpt: WeChat feature on outstanding 2019 student competition works, including Sijie Yang and Gao Yanan's project Gui Yi — a cultural exhibition hall design mediating visitor–villager relations in a Yunnan Yi village.
+  excerpt_zh: 微信公众号回顾 2019 建筑新人赛优秀作品，其中收录杨斯捷、高亚男合作作品「归彝」——以乡道与院落空间原型回应云南村落彝族文化展示建筑中的游客与村民关系。
+  cover: wechat-arch-newcomer-guiyi-2020-cover.png
+  screenshot_full: wechat-arch-newcomer-guiyi-2020-full.jpg
+
 - id: rednote-city-landscape-in-sight-2026
   date: "2026-07-07"
   platform: rednote
