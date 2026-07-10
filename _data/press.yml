@@ -1,0 +1,99 @@
+# Media coverage / press reports (displayed newest first)
+# Add new entries at the top of this list.
+#
+# platform: news | linkedin | rednote | wechat
+#
+# Screenshot workflow:
+#   cover           — square list thumbnail (640px), top crop: header + title
+#   screenshot_full — full-page panorama, shown in modal on click
+#
+# WeChat: use 677px viewport; force-load #js_content img[data-src] before capture.
+# RedNote: export note to PDF, then `pdftoppm -png -r 200`; cover = top square crop.
+# News sites: use 1440px viewport; top-left square crop from full page.
+# Required fields:
+#   id, date, platform, outlet, title_zh, url, cover, screenshot_full
+#
+# Optional fields:
+#   outlet_zh, source_note, source_note_zh, title, language (zh|en),
+#   excerpt, excerpt_zh, related (list of {label, url})
+
+- id: rednote-city-landscape-in-sight-2026
+  date: "2026-07-07"
+  platform: rednote
+  outlet: RedNote
+  outlet_zh: 小红书
+  source_note: Posted by Peter Young
+  source_note_zh: Peter Young 发布
+  language: zh
+  title: "LUP | City-Scale Window View Perception"
+  title_zh: LUP | 城市尺度窗景感知
+  url: http://xhslink.com/o/22zUrbaMUcK
+  excerpt: RedNote post on City Landscape in Sight — window views are experienced not only on streets, but also through home windows, with city-scale perception maps and planning insights.
+  excerpt_zh: 小红书笔记：城市不只是在街道上被体验，也是在窗户前被感受；介绍 City Landscape in Sight 城市尺度窗景感知研究与规划启示。
+  cover: rednote-city-landscape-in-sight-2026-cover.png
+  screenshot_full: rednote-city-landscape-in-sight-2026-full.png
+  related:
+    - label: City Landscape In Sight
+      label_zh: 城市景观在眼前
+      url: https://arxiv.org/abs/2606.15198
+
+- id: chinadaily-window-view-2026
+  date: "2026-07-09"
+  platform: news
+  outlet: China Daily
+  outlet_zh: 中国日报网
+  source_note: Reprinted from Hebei Youth Daily
+  source_note_zh: 转载：河北青年报
+  language: zh
+  title: AI Quantifies Residential Window View Perception, Offering New Tools for Livable City Design
+  title_zh: AI量化住宅窗景感知，为宜居城市设计提供新工具
+  url: https://cnews.chinadaily.com.cn/a/202607/09/WS6a4f6069a310d709c2fbcae0.html
+  excerpt: Coverage of the NUS team's city-scale residential window view framework published in Landscape and Urban Planning, featuring co-first author Sijie Yang.
+  excerpt_zh: 报道新加坡国立大学团队在《Landscape and Urban Planning》发表的城市尺度住宅窗景评估框架，共同第一作者杨斯捷接受采访。
+  cover: chinadaily-2026-07-09-cover.png
+  screenshot_full: chinadaily-2026-07-09-window-view-full.png
+  related:
+    - label: City Landscape In Sight
+      label_zh: 城市景观在眼前
+      url: https://arxiv.org/abs/2606.15198
+
+- id: wechat-thermal-comfort-2025
+  date: "2025-11-14"
+  platform: wechat
+  outlet: Urban Modeling
+  outlet_zh: 城市建模
+  source_note: WeChat Official Account
+  source_note_zh: 微信公众号
+  language: zh
+  title: "Paper Pick | B&E — Visual Thermal Comfort Assessment for Sustainable Streetscape Design"
+  title_zh: 论文荐读｜B&E-视觉热舒适评估助力可持续街道设计
+  url: https://mp.weixin.qq.com/s/3vodtLN9ZwbsKMVHcLSSQg
+  excerpt: Feature on the VATA framework and thermal affordance concept for city-scale visual thermal comfort assessment, authored by Sijie Yang et al.
+  excerpt_zh: 介绍 VATA 框架与热可供性概念，用于城市尺度视觉热舒适评估；作者包括杨斯捷等。
+  cover: wechat-2026-thermal-comfort-cover.png
+  screenshot_full: wechat-2026-thermal-comfort-full.png
+  related:
+    - label: Thermal Comfort in Sight
+      label_zh: 热舒适在眼前
+      url: https://doi.org/10.1016/j.buildenv.2025.112569
+
+- id: wechat-growing-cub-thermal-comfort-2025
+  date: "2025-09-15"
+  platform: wechat
+  outlet: Growing Cub
+  outlet_zh: Growing Cub
+  source_note: WeChat Official Account
+  source_note_zh: 微信公众号
+  language: zh
+  title: "Thermal Comfort in Sight: Thermal Affordance and Visual Assessment for Sustainable Streetscape Design"
+  title_zh: 热舒适度在望：可持续街景设计的热可供性及其视觉评估
+  url: https://mp.weixin.qq.com/s/T7aLJx98RdNMAI8bkdY5yQ
+  excerpt: WeChat feature on the Building and Environment paper on thermal affordance, VATA, and visual thermal comfort assessment for sustainable streetscapes.
+  excerpt_zh: 微信公众号介绍发表于 Building and Environment 的热可供性与 VATA 视觉热舒适评估研究。
+  cover: wechat-growing-cub-thermal-comfort-2025-cover.png
+  screenshot_full: wechat-growing-cub-thermal-comfort-2025-full.jpg
+  related:
+    - label: Thermal Comfort in Sight
+      label_zh: 热舒适在眼前
+      url: https://doi.org/10.1016/j.buildenv.2025.112569
+

@@ -17,6 +17,8 @@
   function setLang(lang) {
     if (lang !== "zh" && lang !== "en") return;
 
+    document.documentElement.setAttribute("data-site-lang", lang);
+
     document.querySelectorAll(".lang-content[data-lang]").forEach(function (el) {
       el.classList.toggle("active", el.getAttribute("data-lang") === lang);
     });

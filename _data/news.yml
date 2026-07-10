@@ -4,6 +4,10 @@
 #     content: "Markdown content with [links](url)"
 #     content_zh: "Chinese translation with preserved [links](url)"
 
+- date: "2026-07-09"
+  content: "Featured in [China Daily](https://cnews.chinadaily.com.cn/a/202607/09/WS6a4f6069a310d709c2fbcae0.html) coverage of [City Landscape In Sight](https://arxiv.org/abs/2606.15198). See [press page](/press/)."
+  content_zh: "[中国日报](https://cnews.chinadaily.com.cn/a/202607/09/WS6a4f6069a310d709c2fbcae0.html) 报道 [City Landscape In Sight](https://arxiv.org/abs/2606.15198) 研究。详见[媒体报道](/press/)。"
+
 - date: "2026-06-13"
   content: "New preprint [City Landscape In Sight](https://arxiv.org/abs/2606.15198), window view imagery perception research with [Chucai Peng](https://www.researchgate.net/profile/Chucai-Peng)."
   content_zh: "新预印本 [City Landscape In Sight](https://arxiv.org/abs/2606.15198)，与 [彭楚才](https://www.researchgate.net/profile/Chucai-Peng) 合作的窗景影像感知研究。"
