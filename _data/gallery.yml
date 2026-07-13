@@ -31,6 +31,28 @@
 #         caption_zh: "与同事交流"
 
 events:
+  - date: "2026-07-13"
+    title: "NUS Commencement Class of 2026 for PostDoc Wenpei Li's PhD and RA Haoxi Yuan's master's graduation"
+    title_zh: "新加坡国立大学 2026 届毕业典礼：博士后李文佩博士毕业与 RA 袁浩晰硕士毕业"
+    category: "personal"
+    images:
+      - image: "260713_1.jpg"
+        caption: "Group photo celebrating PostDoc Wenpei Li's PhD and RA Haoxi Yuan's master's graduation"
+        caption_zh: "庆祝博士后李文佩博士毕业与 RA 袁浩晰硕士毕业合影"
+      - image: "260713_2.jpg"
+        caption: "With Haoxi Yuan at the NUS Commencement Class of 2026 backdrop"
+        caption_zh: "与袁浩晰在新加坡国立大学 2026 届毕业典礼背景板前"
+      - image: "260713_3.jpg"
+        caption: "With Wenpei Li and Haoxi Yuan at the commencement alumni welcome frame"
+        caption_zh: "与李文佩、袁浩晰在校友欢迎相框前合影"
+  - date: "2026-07-10"
+    title: "Lab farewell dinner at Citrus Kitchen for master's student Chang Liu returning to China"
+    title_zh: "实验室硕士生刘畅回国欢送聚餐"
+    category: "personal"
+    images:
+      - image: "260710_1.jpg"
+        caption: "Group dinner at Trus Kitchen for Chang Liu's farewell"
+        caption_zh: "Trus Kitchen 欢送刘畅回国聚餐"
   - date: "2026-06-12"
     title: "Spatial Science Sharing Session in Singapore-ETH Centre (with SSS15)"
     title_zh: "新加坡-ETH 中心空间科学分享会（与 SSS15 同期）"
