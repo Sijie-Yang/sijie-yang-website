@@ -1,10 +1,10 @@
-# Shareable files hosted under /assets/pdf/ (and related paths).
-# Newest first recommended. Link via: {{ site.baseurl }}/assets/...
+# Shareable slides hosted under /assets/pdf/slides/.
+# Newest first recommended.
 # Fields:
 #   - date: "YYYY-MM-DD"
 #     title / title_zh
 #     description / description_zh (optional)
-#     category: slides | notes | other
+#     category: talk | teaching | other
 #     file: path relative to site root (e.g. assets/pdf/slides/....pdf)
 
 - date: "2026-07-14"
@@ -12,5 +12,5 @@
   title_zh: "学术分享 — 重庆大学黄海静老师课题组"
   description: "Personal research presentation slides (PDF)."
   description_zh: "个人研究汇报幻灯片（PDF）。"
-  category: slides
+  category: talk
   file: "assets/pdf/slides/2026-07-14-cqu-huang-haijing-group.pdf"

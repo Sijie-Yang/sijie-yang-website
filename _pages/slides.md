@@ -1,25 +1,25 @@
 ---
 layout: page
-title: downloads
-title_zh: 下载
-permalink: /downloads/
-description: Shareable slides, notes, and other materials for download.
-description_zh: 可分享的幻灯片、笔记及其他资料下载。
+title: slides
+title_zh: 幻灯片
+permalink: /slides/
+description: Shareable presentation slides.
+description_zh: 可分享的汇报与演讲幻灯片。
 bilingual: true
 default_lang: en
 nav: true
 nav_order: 7
 ---
 
-<div class="downloads-list">
-{%- assign items = site.data.downloads | sort: "date" | reverse -%}
+<div class="slides-list">
+{%- assign items = site.data.slides | sort: "date" | reverse -%}
 {%- if items.size == 0 -%}
-<p class="lang-content" data-lang="en">No downloads yet.</p>
-<p class="lang-content" data-lang="zh">暂无可下载内容。</p>
+<p class="lang-content" data-lang="en">No slides yet.</p>
+<p class="lang-content" data-lang="zh">暂无幻灯片。</p>
 {%- else -%}
-<ul class="downloads-items" style="list-style: none; padding-left: 0;">
+<ul class="slides-items" style="list-style: none; padding-left: 0;">
 {%- for item in items -%}
-  <li class="download-item" style="margin-bottom: 1.25rem;">
+  <li class="slides-item" style="margin-bottom: 1.25rem;">
     <div style="color: var(--global-text-color-light); font-size: 0.9rem;">{{ item.date }} · {{ item.category }}</div>
     <div class="lang-content" data-lang="en">
       <strong><a href="{{ item.file | relative_url }}" download>{{ item.title }}</a></strong>
