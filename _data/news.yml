@@ -4,6 +4,10 @@
 #     content: "Markdown content with [links](url)"
 #     content_zh: "Chinese translation with preserved [links](url)"
 
+- date: "2026-07-16"
+  content: "Featured on [China.com Technology](https://tech.china.com/articles/20260716/202607161918090.html) for open-source [SP-Survey](https://sp-survey.org). See [press](/press/)."
+  content_zh: "[中华网科技](https://tech.china.com/articles/20260716/202607161918090.html) 报道开源平台 [SP-Survey](https://sp-survey.org)。详见[媒体报道](/press/)。"
+
 - date: "2026-07-14"
   content: "Research talk at [Prof. Haijing Huang](https://chongjian.cqu.edu.cn/info/1661/5918.htm)'s group, [Chongqing University](https://www.cqu.edu.cn/). [Slides](/assets/pdf/slides/2026-07-14-cqu-huang-haijing-group.pdf)."
   content_zh: "在[重大](https://www.cqu.edu.cn/)建规学院 [黄海静教授](https://chongjian.cqu.edu.cn/info/1556/5437.htm)课题组汇报。[幻灯片](/assets/pdf/slides/2026-07-14-cqu-huang-haijing-group.pdf)。"

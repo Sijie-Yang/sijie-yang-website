@@ -17,6 +17,32 @@
 #   outlet_zh, source_note, source_note_zh, title, language (zh|en),
 #   excerpt, excerpt_zh, related (list of {label, url})
 
+- id: china-com-sp-survey-2026
+  date: "2026-07-16"
+  platform: news
+  outlet: China.com Technology
+  outlet_zh: 中华网科技
+  source_note: Reprinted from Shikuang Net
+  source_note_zh: 转载：实况网
+  language: zh
+  title: "Look at Photos, Share Feelings: Open-Source SP-Survey Lets the Public Join Urban Research"
+  title_zh: 看照片、说感受：开源平台SP-Survey让公众参与城市研究
+  url: https://tech.china.com/articles/20260716/202607161918090.html
+  excerpt: China.com Technology feature on SP-Survey, an open-source streetscape and visual perception survey platform led by NUS PhD researcher Sijie Yang under Prof. Filip Biljecki at the Urban Analytics Lab, linking survey workflows to research such as Thermal Comfort in Sight and City Landscape in Sight.
+  excerpt_zh: 中华网科技报道开源平台 SP-Survey：由 NUS 博士生杨斯捷主导开发，在 Urban Analytics Lab / Filip Biljecki 教授指导下迭代，面向街景与视觉感知调研，并关联《看得见的热舒适》《看得见的城市景观》等研究。
+  cover: china-com-sp-survey-2026-cover.png
+  screenshot_full: china-com-sp-survey-2026-full.png
+  related:
+    - label: SP-Survey
+      label_zh: SP-Survey
+      url: https://sp-survey.org
+    - label: Thermal Comfort in Sight
+      label_zh: 看得见的热舒适
+      url: https://doi.org/10.1016/j.buildenv.2025.112569
+    - label: City Landscape In Sight
+      label_zh: 看得见的城市景观
+      url: https://arxiv.org/abs/2606.15198
+
 - id: zhonglian-cup-website-guiyi-2022
   date: "2022-03-25"
   platform: news
