@@ -32,6 +32,14 @@
 
 events:
   - date: "2026-07-22"
+    title: "CPGIS BBQ dinner organized by Hao Li"
+    title_zh: "Hao Li 老师组织的 CPGIS 聚餐烧烤"
+    category: "personal"
+    images:
+      - image: "260722_2.jpg"
+        caption: "Group photo at the CPGIS BBQ dinner organized by Hao Li"
+        caption_zh: "Hao Li 老师组织的 CPGIS 聚餐烧烤合影"
+  - date: "2026-07-22"
     title: "Prof. May Yuan from UT Dallas visited our lab"
     title_zh: "UT Dallas 的 May Yuan 教授访问实验室"
     category: "meeting"
