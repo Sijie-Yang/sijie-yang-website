@@ -31,6 +31,14 @@
 #         caption_zh: "与同事交流"
 
 events:
+  - date: "2026-07-22"
+    title: "Prof. May Yuan from UT Dallas visited our lab"
+    title_zh: "UT Dallas 的 May Yuan 教授访问实验室"
+    category: "meeting"
+    images:
+      - image: "260722_1.jpg"
+        caption: "Group photo with Prof. May Yuan from UT Dallas"
+        caption_zh: "与 UT Dallas May Yuan 教授合影"
   - date: "2026-07-13"
     title: "NUS Commencement Class of 2026 for PostDoc Wenpei Li's PhD and RA Haoxi Yuan's master's graduation"
     title_zh: "新加坡国立大学 2026 届毕业典礼：博士后李文佩博士毕业与 RA 袁浩晰硕士毕业"
