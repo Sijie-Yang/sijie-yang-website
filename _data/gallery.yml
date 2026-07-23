@@ -31,6 +31,17 @@
 #         caption_zh: "与同事交流"
 
 events:
+  - date: "2026-07-23"
+    title: "Prof. Ying Long and Prof. Chen Zhong visited our lab"
+    title_zh: "Ying Long 教授与 Chen Zhong 教授访问实验室"
+    category: "meeting"
+    images:
+      - image: "260723_1.jpg"
+        caption: "Group lunch with Prof. Ying Long and Prof. Chen Zhong"
+        caption_zh: "与 Ying Long 教授、Chen Zhong 教授聚餐合影"
+      - image: "260723_2.jpg"
+        caption: "Group lunch with Prof. Ying Long and Prof. Chen Zhong"
+        caption_zh: "与 Ying Long 教授、Chen Zhong 教授聚餐合影"
   - date: "2026-07-22"
     title: "CPGIS BBQ dinner organized by Hao Li"
     title_zh: "Hao Li 老师组织的 CPGIS 聚餐烧烤"
