@@ -32,6 +32,17 @@
 
 events:
   - date: "2026-07-23"
+    title: "Dinner with Cai Wu and Qunshan Zhao"
+    title_zh: "与 Cai Wu、Qunshan Zhao 老师聚餐"
+    category: "personal"
+    images:
+      - image: "260723_11.jpg"
+        caption: "Group dinner with Cai Wu and Qunshan Zhao at Brotzeit"
+        caption_zh: "与 Cai Wu、Qunshan Zhao 老师在 Brotzeit 聚餐合影"
+      - image: "260723_12.jpg"
+        caption: "Group dinner with Cai Wu and Qunshan Zhao at Brotzeit"
+        caption_zh: "与 Cai Wu、Qunshan Zhao 老师在 Brotzeit 聚餐合影"
+  - date: "2026-07-23"
     title: "Prof. Ying Long and Prof. Chen Zhong visited our lab"
     title_zh: "Ying Long 教授与 Chen Zhong 教授访问实验室"
     category: "meeting"
