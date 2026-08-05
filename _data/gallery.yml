@@ -31,6 +31,22 @@
 #         caption_zh: "与同事交流"
 
 events:
+  - date: "2026-08-04"
+    title: "Celine Van Migerode (KU Leuven) visited our lab"
+    title_zh: "KU Leuven 的 Celine Van Migerode 访问实验室"
+    category: "meeting"
+    images:
+      - image: "260804_1.jpg"
+        caption: "Group photo after Celine Van Migerode's presentation on city definitions and the degree of urbanisation"
+        caption_zh: "Celine Van Migerode 报告后合影；主题为城市定义与城镇化程度（degree of urbanisation）"
+  - date: "2026-07-31"
+    title: "Seminar by Vaibhav Kumar (IISER Bhopal)"
+    title_zh: "Vaibhav Kumar（IISER Bhopal）学术报告"
+    category: "meeting"
+    images:
+      - image: "260731_1.jpg"
+        caption: "Group photo after Vaibhav Kumar's seminar in the School Conference Room; he leads the GeoAI4Cities Lab at IISER Bhopal"
+        caption_zh: "School Conference Room 报告后合影；Vaibhav Kumar 领导 IISER Bhopal 的 GeoAI4Cities Lab"
   - date: "2026-07-23"
     title: "Dinner with Cai Wu and Qunshan Zhao"
     title_zh: "与 Cai Wu、Qunshan Zhao 老师聚餐"
@@ -47,6 +63,9 @@ events:
     title_zh: "Ying Long 教授与 Chen Zhong 教授访问实验室"
     category: "meeting"
     images:
+      - image: "260723_13.jpg"
+        caption: "Group photo with Prof. Ying Long, Prof. Chen Zhong, and lab members"
+        caption_zh: "与 Ying Long 教授、Chen Zhong 教授及实验室成员合影"
       - image: "260723_1.jpg"
         caption: "Group lunch with Prof. Ying Long and Prof. Chen Zhong"
         caption_zh: "与 Ying Long 教授、Chen Zhong 教授聚餐合影"
