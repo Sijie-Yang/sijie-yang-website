@@ -174,6 +174,7 @@ nav_order: 4
           <div class="carousel-container">
             <div class="carousel-image-wrapper">
               <img id="eventGalleryImage" src="" alt="" class="img-fluid">
+              <video id="eventGalleryVideo" class="img-fluid gallery-video" controls playsinline style="display:none;"></video>
             </div>
             <div class="photo-info">
               <span id="photoCounter"></span>
@@ -215,7 +216,8 @@ nav_order: 4
     border-radius: 0.5rem;
   }
   
-  .carousel-container img {
+  .carousel-container img,
+  .carousel-container video.gallery-video {
     max-width: 100%;
     max-height: 70vh;
     object-fit: contain;
@@ -295,6 +297,7 @@ nav_order: 4
         {%- for photo in event.images -%}
         {
           image: "{{ photo.image | prepend: 'assets/img/gallery/' | relative_url }}",
+          {% if photo.video %}video: "{{ photo.video | prepend: 'assets/img/gallery/' | relative_url }}",{% endif %}
           caption_en: {{ photo.caption | default: '' | jsonify }},
           caption_zh: {{ photo.caption_zh | default: photo.caption | default: '' | jsonify }}
         }{% unless forloop.last %},{% endunless %}
@@ -343,15 +346,33 @@ nav_order: 4
     const event = eventsData[currentEventIndex];
     const photo = event.images[currentPhotoIndex];
     const img = document.getElementById('eventGalleryImage');
-    img.classList.add('is-loading');
-    img.onload = function() {
-      img.classList.remove('is-loading');
-    };
-    img.src = photo.image;
-    if (img.complete) {
-      img.classList.remove('is-loading');
+    const video = document.getElementById('eventGalleryVideo');
+    if (photo.video) {
+      img.style.display = 'none';
+      img.removeAttribute('src');
+      video.style.display = 'block';
+      if (video.src !== photo.video) {
+        video.pause();
+        video.src = photo.video;
+        video.poster = photo.image || '';
+        video.load();
+      }
+    } else {
+      video.pause();
+      video.removeAttribute('src');
+      video.removeAttribute('poster');
+      video.style.display = 'none';
+      img.style.display = 'block';
+      img.classList.add('is-loading');
+      img.onload = function() {
+        img.classList.remove('is-loading');
+      };
+      img.src = photo.image;
+      if (img.complete) {
+        img.classList.remove('is-loading');
+      }
+      img.alt = photoCaption(photo) || eventTitle(event);
     }
-    img.alt = photoCaption(photo) || eventTitle(event);
     document.getElementById('photoCounter').textContent = `${currentPhotoIndex + 1} / ${event.images.length}`;
     document.getElementById('photoCaption').textContent = photoCaption(photo) || '';
   }
@@ -369,6 +390,13 @@ nav_order: 4
       if (e.key === 'ArrowLeft') changePhoto(-1);
       if (e.key === 'ArrowRight') changePhoto(1);
       if (e.key === 'Escape') $('#eventGalleryModal').modal('hide');
+    }
+  });
+
+  $('#eventGalleryModal').on('hidden.bs.modal', function() {
+    var video = document.getElementById('eventGalleryVideo');
+    if (video) {
+      video.pause();
     }
   });
 </script>

@@ -139,6 +139,7 @@ layout: default
                    <div class="carousel-container">
                      <div class="carousel-image-wrapper">
                        <img id="eventGalleryImageHome" src="" alt="" class="img-fluid">
+                       <video id="eventGalleryVideoHome" class="img-fluid gallery-video" controls playsinline style="display:none; max-width:100%; max-height:70vh;"></video>
                      </div>
                      <div class="photo-info">
                        <span id="photoCounterHome"></span>
@@ -252,6 +253,7 @@ layout: default
                  {%- for photo in event.images -%}
                  {
                    image: "{{ photo.image | prepend: 'assets/img/gallery/' | relative_url }}",
+                   {% if photo.video %}video: "{{ photo.video | prepend: 'assets/img/gallery/' | relative_url }}",{% endif %}
                    caption_en: {{ photo.caption | default: '' | jsonify }},
                    caption_zh: {{ photo.caption_zh | default: photo.caption | default: '' | jsonify }}
                  }{% unless forloop.last %},{% endunless %}
@@ -299,8 +301,27 @@ layout: default
              if (currentEventIndexHome === -1) return;
              const event = eventsDataHome[currentEventIndexHome];
              const photo = event.images[currentPhotoIndexHome];
-             document.getElementById('eventGalleryImageHome').src = photo.image;
-             document.getElementById('eventGalleryImageHome').alt = photoCaptionHome(photo) || eventTitleHome(event);
+             const img = document.getElementById('eventGalleryImageHome');
+             const video = document.getElementById('eventGalleryVideoHome');
+             if (photo.video) {
+               img.style.display = 'none';
+               img.removeAttribute('src');
+               video.style.display = 'block';
+               if (video.src !== photo.video) {
+                 video.pause();
+                 video.src = photo.video;
+                 video.poster = photo.image || '';
+                 video.load();
+               }
+             } else {
+               video.pause();
+               video.removeAttribute('src');
+               video.removeAttribute('poster');
+               video.style.display = 'none';
+               img.style.display = 'block';
+               img.src = photo.image;
+               img.alt = photoCaptionHome(photo) || eventTitleHome(event);
+             }
              document.getElementById('photoCounterHome').textContent = `${currentPhotoIndexHome + 1} / ${event.images.length}`;
              document.getElementById('photoCaptionHome').textContent = photoCaptionHome(photo) || '';
            }
