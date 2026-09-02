@@ -31,6 +31,14 @@
 #         caption_zh: "与同事交流"
 
 events:
+  - date: "2026-09-02"
+    title: "Lab farewell for Koichi; he will return in November for his PhD defense"
+    title_zh: "Koichi 离开实验室，11月将回来做博士答辩"
+    category: "personal"
+    images:
+      - image: "260902_1.jpg"
+        caption: "Group selfie in the lab as Koichi leaves; he will return in November for his PhD defense"
+        caption_zh: "实验室合影送别 Koichi；他11月会回来做博士答辩"
   - date: "2026-08-06"
     title: "BBQ celebrating Filip's Associate Professorship"
     title_zh: "Filip 晋升副教授庆祝烧烤"
