@@ -1,0 +1,61 @@
+Category,Field,Value
+Project Info,Project Title,Thermal Comfort in Sight: Thermal Affordance and Its Visual Assessment for Sustainable Streetscape Design
+Project Info,Chinese Title,热舒适可供性:基于视觉评估的可持续街景设计
+Project Info,Research Programme,City in Sight
+Project Info,Project Period,2023 - present
+Project Info,Research Focus,"Urban heat resilience, thermal comfort, streetscape visual assessment"
+Project Info,Key Concept,Thermal Affordance - the integrated inherent capacity of a streetscape to influence human thermal comfort
+Publication,Journal,Building and Environment
+Publication,Year,2025
+Publication,DOI,10.1016/j.buildenv.2025.112569
+Publication,Authors,"Sijie Yang, Adrian Chong, Pengyuan Liu, Filip Biljecki*"
+Publication,Affiliation,National University of Singapore (NUS)
+Publication,Status,Published
+Publication,PDF Link,https://arxiv.org/pdf/2410.11887
+Publication,Blog Post,/blog/2025/thermal-comfort/
+Methodology,Framework Name,VATA (Visual Assessment of Thermal Affordance)
+Methodology,Data Source,Street View Imagery (SVI)
+Methodology,Survey Types,Online surveys + In-field surveys
+Methodology,Image Feature Categories,5 categories
+Methodology,Visual-Perceptual Indicators,19 indicators
+Methodology,Statistical Methods,Multi-task neural network + Elastic net regression
+Methodology,Prediction Model,Chained: IF → VPI → VATA
+Methodology,Validation Method,Field-investigated OTC data
+Methodology,Study Area,Singapore
+Features,Cost-Effective,Yes - reduces resource-intensive field campaigns
+Features,Scalable,Yes - applicable at urban scale
+Features,Transferable,Yes - adaptable to different cities
+Features,Interpretable,Yes - two-stage prediction provides explainable results
+Features,Geospatially Explicit,Yes - generates city-wide thermal affordance maps
+Data Collection,Street View Images,Visual features extraction
+Data Collection,Online Survey Data,Visual-perceptual indicators
+Data Collection,Field Survey Data,Validation measurements
+Data Collection,Meteorological Data,Environmental context
+Data Collection,Urban Morphology,Spatial context (GIS data)
+Image Features,Category 1,Sky View Factor
+Image Features,Category 2,Greenery Coverage
+Image Features,Category 3,Building Geometry
+Image Features,Category 4,Shading Elements
+Image Features,Category 5,Material Properties
+Applications,Application 1,Thermal affordance mapping at city scale
+Applications,Application 2,Long-term monitoring with model updates
+Applications,Application 3,Streetscape improvement guidance
+Applications,Application 4,Heat resilience planning
+Applications,Application 5,Sustainable urban development
+Applications,Application 6,Liveable city design
+Team,First Author,Sijie Yang
+Team,Co-author 1,Adrian Chong
+Team,Co-author 2,Pengyuan Liu
+Team,Principal Investigator,Filip Biljecki
+SDG,SDG 11,Sustainable Cities - enhances urban livability and resilience
+SDG,SDG 13,Climate Action - supports adaptation to climate change and UHI
+SDG,SDG 3,Good Health - improves outdoor thermal comfort
+Research Context,Challenge 1,Climate Change - rising global temperatures
+Research Context,Challenge 2,Urban Heat Island (UHI) - cities hotter than surroundings
+Research Context,Challenge 3,Traditional Methods - resource-intensive field studies
+Research Context,Solution,Cost-effective SVI-based assessment at city scale
+Key Findings,Finding 1,Visual features are strong predictors of thermal comfort potential
+Key Findings,Finding 2,Multi-stage prediction achieves good validation against field data
+Key Findings,Finding 3,Geospatial mapping reveals spatial patterns across Singapore
+Key Findings,Finding 4,Specific visual elements have measurable impacts
+Key Findings,Finding 5,Framework is transferable and supports long-term monitoring
