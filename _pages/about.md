@@ -63,6 +63,8 @@ visitor_stats:
 content_zh: |
   我是杨斯捷（Sijie Yang，See-jay Yahng），新加坡国立大学建筑系 Urban Analytics Lab 博士研究生，导师为 Filip Biljecki 教授。我拥有伦敦大学学院 Space Syntax 硕士学位、宾夕法尼亚大学计算机与信息技术硕士学位（MCIT），以及重庆大学建筑学学士学位。
 
+  研究工作见于 **Landscape and Urban Planning**、**Building and Environment**、**Computers, Environment and Urban Systems**、**Sustainable Cities and Society**，以及 **ISPRS International Journal of Geo-Information** 等地理信息期刊。Workshop 论文发表于 **AAAI** 和 **NeurIPS** 等计算机科学顶会。专业会议参与包括 **CUPUM** 和 **Space Syntax**（International Space Syntax Symposium）。
+
   我的研究探索计算机科学与 GIS 等新兴计算技术与建成环境研究的融合，聚焦四个方向：
 
   - **城市智能（Urban Intelligence）** 探索物联网与人工智能等新兴技术驱动的城市智能一体化发展。
@@ -81,6 +83,8 @@ content_zh: |
   了解研究方向 → [Horizon](/horizon/)。
 ---
 I am Sijie Yang (杨斯捷, pronounced *"See-jay Yahng"*), a PhD student at Urban Analytics Lab, Department of Architecture, National University of Singapore, where my PhD supervisor is Prof. Filip Biljecki. I hold an MSc in Space Syntax from University College London, a Master of Computer and Information Technology (MCIT) from the University of Pennsylvania, and a Bachelor of Architecture from Chongqing University.
+
+Research has appeared in **Landscape and Urban Planning**, **Building and Environment**, **Computers, Environment and Urban Systems**, **Sustainable Cities and Society**, and geoinformatics journals such as the **ISPRS International Journal of Geo-Information**. Workshop papers have been published at top computer science venues such as **AAAI** and **NeurIPS**. Professional conference participation includes **CUPUM** and **Space Syntax** (the International Space Syntax Symposium).
 
 My research explores the integration of new computational technologies, including Computer Science and GIScience, with the study of the built environment. I aim to advance knowledge in four key areas:
 
