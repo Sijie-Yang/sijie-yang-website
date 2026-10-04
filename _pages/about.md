@@ -63,7 +63,7 @@ visitor_stats:
 content_zh: |
   我是杨斯捷（Sijie Yang，See-jay Yahng），新加坡国立大学建筑系 Urban Analytics Lab 博士研究生，导师为 Filip Biljecki 教授。我拥有伦敦大学学院 Space Syntax 硕士学位、宾夕法尼亚大学计算机与信息技术硕士学位（MCIT），以及重庆大学建筑学学士学位。
 
-  研究工作见于 **Landscape and Urban Planning**、**Building and Environment**、**Computers, Environment and Urban Systems**、**Sustainable Cities and Society**，以及 **ISPRS International Journal of Geo-Information** 等地理信息期刊。Workshop 论文发表于 **AAAI** 和 **NeurIPS** 等计算机科学顶会。专业会议参与包括 **CUPUM** 和 **Space Syntax**（International Space Syntax Symposium）。
+  研究工作见于 Landscape and Urban Planning、Building and Environment、Computers, Environment and Urban Systems、Sustainable Cities and Society，以及 ISPRS International Journal of Geo-Information 等地理信息期刊。Workshop 论文发表于 AAAI 和 NeurIPS 等计算机科学顶会。专业会议参与包括 CUPUM 和 Space Syntax（International Space Syntax Symposium）。
 
   我的研究聚焦城市舒适、城市宜居与地理空间智能，把建成环境中主观、以人为中心的感知统一并量化为可在城市尺度衡量的指标。我基于街景、窗景、社交媒体图文和地理空间数据等多源城市数据，发展多模态学习方法、开放工具与智能体系统。当前工作包括多模态表征学习与优化、检索增强生成与地理空间基础模型，以及面向城市规划与科学发现的可推理 AI 智能体。聚焦四个方向：
 
@@ -84,7 +84,7 @@ content_zh: |
 ---
 I am Sijie Yang (杨斯捷, pronounced *"See-jay Yahng"*), a PhD student at Urban Analytics Lab, Department of Architecture, National University of Singapore, where my PhD supervisor is Prof. Filip Biljecki. I hold an MSc in Space Syntax from University College London, a Master of Computer and Information Technology (MCIT) from the University of Pennsylvania, and a Bachelor of Architecture from Chongqing University.
 
-Research has appeared in **Landscape and Urban Planning**, **Building and Environment**, **Computers, Environment and Urban Systems**, **Sustainable Cities and Society**, and geoinformatics journals such as the **ISPRS International Journal of Geo-Information**. Workshop papers have been published at top computer science venues such as **AAAI** and **NeurIPS**. Professional conference participation includes **CUPUM** and **Space Syntax** (the International Space Syntax Symposium).
+Research has appeared in Landscape and Urban Planning, Building and Environment, Computers, Environment and Urban Systems, Sustainable Cities and Society, and geoinformatics journals such as the ISPRS International Journal of Geo-Information. Workshop papers have been published at top computer science venues such as AAAI and NeurIPS. Professional conference participation includes CUPUM and Space Syntax (the International Space Syntax Symposium).
 
 My research centres on urban comfort, urban liveability, and geospatial intelligence: unifying and quantifying subjective, human-centered perception of the built environment into measurable, city-scale indicators. I develop multimodal learning methods, open tools, and agentic AI systems over multi-source urban data, including street-view and window-view imagery, social media text–image signals, and geospatial data. Current work spans multimodal representation learning and optimization, retrieval-augmented generation and geospatial foundation models, and reasoning-capable AI agents for urban planning and scientific discovery. I aim to advance knowledge in four key areas:
 
