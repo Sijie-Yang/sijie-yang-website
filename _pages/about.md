@@ -65,17 +65,17 @@ content_zh: |
 
   研究工作见于 **Landscape and Urban Planning**、**Building and Environment**、**Computers, Environment and Urban Systems**、**Sustainable Cities and Society**，以及 **ISPRS International Journal of Geo-Information** 等地理信息期刊。Workshop 论文发表于 **AAAI** 和 **NeurIPS** 等计算机科学顶会。专业会议参与包括 **CUPUM** 和 **Space Syntax**（International Space Syntax Symposium）。
 
-  我的研究探索计算机科学与 GIS 等新兴计算技术与建成环境研究的融合，聚焦四个方向：
+  我的研究聚焦城市舒适、城市宜居与地理空间智能，把建成环境中主观、以人为中心的感知统一并量化为可在城市尺度衡量的指标。我基于街景、窗景、社交媒体图文和地理空间数据等多源城市数据，发展多模态学习方法、开放工具与智能体系统。当前工作包括多模态表征学习与优化、检索增强生成与地理空间基础模型，以及面向城市规划与科学发现的可推理 AI 智能体。聚焦四个方向：
 
   - **城市智能（Urban Intelligence）** 探索物联网与人工智能等新兴技术驱动的城市智能一体化发展。
-  - **城市数据（Urban Data）** 利用多源城市数据分析复杂城市问题，揭示建成环境与城市动态之间的关联。
-  - **城市舒适（Urban Comfort）** 关注以人为中心的主观舒适感知，评估并提升城市空间的感官与体验维度。
+  - **城市数据（Urban Data）** 利用街景、窗景、社交媒体图文以及其他地理空间数据，分析建成环境与城市动态之间的关联。
+  - **城市舒适（Urban Comfort）** 关注以人为中心的主观舒适感知，并将其量化为可在城市尺度衡量的指标。
   - **建筑系统（Architectural Systems）** 在微观尺度研究空间配置、建筑信息系统与可持续绿色建筑等议题。
 
   同时，我积极探索前沿计算方法以推进城市科学：
 
-  - **基础模型（Foundation Models）：** 利用大语言模型与视觉模型进行地理空间推理。
-  - **AI 智能体（AI Agents）：** 开发面向城市规划与科学发现的自主系统。
+  - **基础模型（Foundation Models）：** 研究地理空间基础模型与检索增强生成，用于城市数据上的推理。
+  - **AI 智能体（AI Agents）：** 开发面向城市规划与科学发现的可推理智能体。
   - **世界模型（World Models）：** 学习城市系统的动态表征，实现预测性理解。
   - **强化学习（Reinforcement Learning）：** 支持自适应、优化的城市决策。
   - **时空建模（Spatiotemporal Modeling）：** 跨尺度、跨时间捕捉复杂地理模式。
@@ -86,17 +86,17 @@ I am Sijie Yang (杨斯捷, pronounced *"See-jay Yahng"*), a PhD student at Urba
 
 Research has appeared in **Landscape and Urban Planning**, **Building and Environment**, **Computers, Environment and Urban Systems**, **Sustainable Cities and Society**, and geoinformatics journals such as the **ISPRS International Journal of Geo-Information**. Workshop papers have been published at top computer science venues such as **AAAI** and **NeurIPS**. Professional conference participation includes **CUPUM** and **Space Syntax** (the International Space Syntax Symposium).
 
-My research explores the integration of new computational technologies, including Computer Science and GIScience, with the study of the built environment. I aim to advance knowledge in four key areas:
+My research centres on urban comfort, urban liveability, and geospatial intelligence: unifying and quantifying subjective, human-centered perception of the built environment into measurable, city-scale indicators. I develop multimodal learning methods, open tools, and agentic AI systems over multi-source urban data, including street-view and window-view imagery, social media text–image signals, and geospatial data. Current work spans multimodal representation learning and optimization, retrieval-augmented generation and geospatial foundation models, and reasoning-capable AI agents for urban planning and scientific discovery. I aim to advance knowledge in four key areas:
 
 - **Urban Intelligence** Investigating the integrated development of urban intelligence through emerging technologies, including the Internet of Things (IoT) and artificial intelligence (AI).
-- **Urban Data** Utilizing multi-source urban data to analyze and address complex urban challenges, to uncover insights into the interactions between the built environment and urban dynamics.
-- **Urban Comfort** Focusing on subjective, human-centered perceptions of comfort in urban spaces, to evaluate and enhance the sensory and experiential dimensions of urban environments.
+- **Urban Data** Using street-view and window-view imagery, social media text–image signals, and other geospatial data to examine how the built environment and urban dynamics interact.
+- **Urban Comfort** Focusing on subjective, human-centered perceptions of comfort in urban spaces, quantified as measurable, city-scale indicators.
 - **Architectural Systems** Conducting micro-scale investigations into architectural systems, including spatial configurations, building information systems, and sustainable green building solutions.
 
 I am also actively exploring cutting-edge computational methods to advance urban science:
 
-- **Foundation Models:** Leveraging large language and vision models for geospatial reasoning.
-- **AI Agents:** Developing autonomous systems for urban planning and science discovery tasks.
+- **Foundation Models:** Geospatial foundation models and retrieval-augmented generation for reasoning over urban data.
+- **AI Agents:** Reasoning-capable agents for urban planning and scientific discovery.
 - **World Models:** Learning dynamic representations of urban systems for predictive understanding.
 - **Reinforcement Learning:** Enabling adaptive and optimized urban decision-making.
 - **Spatiotemporal Modeling:** Capturing complex geographic patterns across scales and time.
