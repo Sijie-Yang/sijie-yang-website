@@ -4,6 +4,10 @@
 #     content: "Markdown content with [links](url)"
 #     content_zh: "Chinese translation with preserved [links](url)"
 
+- date: "2026-10-05"
+  content: "Flora Haiwei Li, a postdoctoral researcher at the [University of Cambridge](https://www.cam.ac.uk/), visited the [Urban Analytics Lab](https://ual.sg/)."
+  content_zh: "剑桥大学博士后 Flora Haiwei Li 访问 [Urban Analytics Lab](https://ual.sg/)。"
+
 - date: "2026-07-16"
   content: "Featured on [China.com Technology](https://tech.china.com/articles/20260716/202607161918090.html) for open-source [SP-Survey](https://sp-survey.org). See [press](/press/)."
   content_zh: "[中华网科技](https://tech.china.com/articles/20260716/202607161918090.html) 报道开源平台 [SP-Survey](https://sp-survey.org)。详见[媒体报道](/press/)。"

@@ -31,6 +31,20 @@
 #         caption_zh: "与同事交流"
 
 events:
+  - date: "2026-10-05"
+    title: "Flora Haiwei Li (University of Cambridge) visited our lab"
+    title_zh: "剑桥大学博士后 Flora Haiwei Li 访问实验室"
+    category: "meeting"
+    images:
+      - image: "261005_1.jpg"
+        caption: "Group photo outdoors under a tree"
+        caption_zh: "树下户外合影"
+      - image: "261005_2.jpg"
+        caption: "Looking at a printed poster"
+        caption_zh: "一起看海报"
+      - image: "261005_3.jpg"
+        caption: "Flora Haiwei Li presenting a University of Cambridge Research Framework slide"
+        caption_zh: "Flora Haiwei Li 展示剑桥大学 Research Framework 幻灯片"
   - date: "2026-09-02"
     title: "Lab farewell for Koichi; he will return in November for his PhD defense"
     title_zh: "Koichi 离开实验室，11月将回来做博士答辩"
