@@ -31,6 +31,14 @@
 #         caption_zh: "与同事交流"
 
 events:
+  - date: "2026-10-08"
+    title: "Dinner with Filip, Matias, and Wenpei"
+    title_zh: "与 Filip、Matias、Wenpei 聚餐"
+    category: "personal"
+    images:
+      - image: "261008_1.jpg"
+        caption: "Dinner with Filip, Matias, and Wenpei"
+        caption_zh: "与 Filip、Matias、Wenpei 聚餐"
   - date: "2026-10-05"
     title: "Flora Haiwei Li (University of Cambridge) visited our lab"
     title_zh: "剑桥大学博士后 Flora Haiwei Li 访问实验室"
