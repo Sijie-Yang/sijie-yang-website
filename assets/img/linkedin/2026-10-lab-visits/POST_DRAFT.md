@@ -9,14 +9,15 @@ Layout: two group photos as heroes (Flora · Nan) · Flora's talk + poster discu
 
 ## Post (English)
 
-October at the NUS Urban Analytics Lab brought two visitors whose work looks at cities from very different angles 🍂
+Two inspiring visits to the NUS Urban Analytics Lab this October 🍂
 
-• Dr Flora Haiwei Li (University of Cambridge) shared her work on urban physics for multi-scale climate solutions: how shading, evapotranspiration, and airflow can be engineered, from porous materials to full-scale prototypes, to make hot-humid cities like Singapore cooler and healthier for the people most exposed to heat.
+Hosted by Prof. Filip Biljecki, we were glad to welcome two scholars looking at cities from very different angles, from urban climate to cultural heritage:
 
-• Dr Nan Bai (TU Delft) spoke on understanding World Heritage with artificial intelligence, tracing cultural significance from public discourse on social media through to policy documents.
+• Dr Flora Haiwei Li (University of Cambridge) — Cooler, Healthier Cities: Urban Physics for Multi-Scale Climate Solutions
+• Dr Nan Bai (TU Delft) — World Heritage Understanding aided with Artificial Intelligence: From Public Discourse to Policy Documents
 
-Climate and heritage, physics and perception: two reminders that understanding a city takes many lenses. Beyond the talks, the conversations continued in front of our posters and over a shared meal.
+Beyond the talks, the conversations continued in front of our research posters and over a shared meal with the lab.
 
-Thank you both for visiting, and to everyone in the lab who joined.
+Grateful to both visitors for their time and ideas, and to everyone who joined. 🙏
 
-#UrbanAnalytics #UrbanClimate #UrbanHeritage #GeoAI #NUS #UAL #AcademicExchange
+#UrbanAnalytics #GeoAI #UrbanClimate #UrbanHeritage #NUS #GIS #AcademicExchange
