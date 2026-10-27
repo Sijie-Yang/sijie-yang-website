@@ -127,7 +127,7 @@
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
     {%- if site.twitter_username -%}
-        {%- capture link -%}https://twitter.com/{{ site.twitter_username }}{%- endcapture -%}
+        {%- capture link -%}https://x.com/{{ site.twitter_username }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
     {%- if site.mastodon_username -%}
@@ -224,8 +224,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Sijie Yang",
-      "alternateName": "杨斯捷",
+      "name": "Peter Sijie Yang",
+      "alternateName": ["Sijie Yang", "杨斯捷"],
       "jobTitle": "PhD Researcher",
       "email": "{{ site.email }}",
       "description": {{ site.description | strip_html | strip_newlines | strip | jsonify }},
