@@ -4,6 +4,10 @@
 #     content: "Markdown content with [links](url)"
 #     content_zh: "Chinese translation with preserved [links](url)"
 
+- date: "2026-10-26"
+  content: "[Nan Bai](https://www.tudelft.nl/staff/n.bai), Assistant Professor at [TU Delft](https://www.tudelft.nl/), visited the [Urban Analytics Lab](https://ual.sg/)."
+  content_zh: "[代尔夫特理工大学](https://www.tudelft.nl/)助理教授 [Nan Bai](https://www.tudelft.nl/staff/n.bai) 访问 [Urban Analytics Lab](https://ual.sg/)。"
+
 - date: "2026-10-05"
   content: "Flora Haiwei Li, a postdoctoral researcher at the [University of Cambridge](https://www.cam.ac.uk/), visited the [Urban Analytics Lab](https://ual.sg/)."
   content_zh: "剑桥大学博士后 Flora Haiwei Li 访问 [Urban Analytics Lab](https://ual.sg/)。"
