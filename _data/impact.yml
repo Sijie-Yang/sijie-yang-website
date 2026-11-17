@@ -1,0 +1,22 @@
+# Academic impact summary shown under the homepage intro.
+# Only put numbers here that you can point to a source for.
+#
+# Google Scholar numbers: copy from https://scholar.google.com/citations?user=r_dDWXYAAAAJ
+# and update scholar_as_of. Leave blank to hide the line.
+scholar_citations:
+scholar_h_index:
+scholar_as_of:   # e.g. "2026-11"
+
+# Counted from _bibliography/papers.bib (update when adding papers).
+publications: 11
+first_author: 8   # first or co-first author
+
+# Journals you review for are read from the "Academic Service" section of _data/cv.yml.
+
+featured_in:
+  - name: China Daily
+    name_zh: 中国日报
+    url: https://cnews.chinadaily.com.cn/a/202607/09/WS6a4f6069a310d709c2fbcae0.html
+  - name: China.com Technology
+    name_zh: 中华网科技
+    url: https://tech.china.com/articles/20260716/202607161918090.html

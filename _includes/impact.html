@@ -1,0 +1,38 @@
+{%- assign impact = site.data.impact -%}
+{%- assign reviewer_count = 0 -%}
+{%- for section in site.data.cv -%}
+  {%- if section.title == "Academic Service" -%}
+    {%- for block in section.contents -%}
+      {%- for item in block.items -%}
+        {%- if item contains "Peer Reviewer" -%}{%- assign reviewer_count = reviewer_count | plus: 1 -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+<div class="impact-summary">
+  <ul class="impact-list">
+    {%- if impact.scholar_citations and impact.scholar_citations != "" %}
+    <li>
+      <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener noreferrer">
+        <span class="lang-content lang-inline" data-lang="en">{{ impact.scholar_citations }} citations{% if impact.scholar_h_index %}, h-index {{ impact.scholar_h_index }}{% endif %} on Google Scholar</span><span class="lang-content lang-inline" data-lang="zh">Google Scholar 引用 {{ impact.scholar_citations }} 次{% if impact.scholar_h_index %}，h-index {{ impact.scholar_h_index }}{% endif %}</span></a>{% if impact.scholar_as_of %} <span class="impact-asof">({{ impact.scholar_as_of }})</span>{% endif %}
+    </li>
+    {%- endif %}
+    <li>
+      <span class="lang-content lang-inline" data-lang="en">{{ impact.publications }} publications, {{ impact.first_author }} as first or co-first author</span><span class="lang-content lang-inline" data-lang="zh">发表论文 {{ impact.publications }} 篇，其中第一/共同第一作者 {{ impact.first_author }} 篇</span>
+    </li>
+    {%- if reviewer_count > 0 %}
+    <li>
+      <a href="{{ '/cv/' | relative_url }}"><span class="lang-content lang-inline" data-lang="en">Peer reviewer for {{ reviewer_count }} journals, including Landscape and Urban Planning and Building and Environment</span><span class="lang-content lang-inline" data-lang="zh">担任 {{ reviewer_count }} 本期刊审稿人，包括 Landscape and Urban Planning、Building and Environment</span></a>
+    </li>
+    {%- endif %}
+    {%- if impact.featured_in %}
+    <li>
+      <span class="lang-content lang-inline" data-lang="en">Research covered by</span><span class="lang-content lang-inline" data-lang="zh">研究曾获报道：</span>
+      {% for outlet in impact.featured_in -%}
+        <a href="{{ outlet.url }}" target="_blank" rel="noopener noreferrer"><span class="lang-content lang-inline" data-lang="en">{{ outlet.name }}</span><span class="lang-content lang-inline" data-lang="zh">{{ outlet.name_zh | default: outlet.name }}</span></a>{% unless forloop.last %}<span class="lang-content lang-inline" data-lang="en">{% if forloop.rindex == 2 %} and {% else %}, {% endif %}</span><span class="lang-content lang-inline" data-lang="zh">、</span>{% endunless %}
+      {%- endfor %}
+      <a class="impact-more" href="{{ '/press/' | relative_url }}"><span class="lang-content lang-inline" data-lang="en">(all press)</span><span class="lang-content lang-inline" data-lang="zh">（全部报道）</span></a>
+    </li>
+    {%- endif %}
+  </ul>
+</div>

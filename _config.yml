@@ -174,7 +174,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 12 # number of news items to show on homepage (leave blank to show all)
+  limit: 6 # number of news items to show on homepage (leave blank to show all)
 
 latest_posts:
   enabled: true

@@ -48,6 +48,11 @@ layout: default
           </div>
         </article>
 
+          <!-- Impact summary -->
+          {% if site.data.impact -%}
+            {%- include impact.html %}
+          {%- endif %}
+
           <!-- Social -->
           {%- if page.social %}
             <div class="social">
@@ -65,6 +70,18 @@ layout: default
               </div>
 
             </div>
+          {%- endif %}
+
+          <!-- Selected papers -->
+          {% if page.selected_papers -%}
+            <h4 style="margin-top: 32px;"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">{% if page.bilingual %}<span class="lang-content lang-inline" data-lang="en">selected publications</span><span class="lang-content lang-inline" data-lang="zh">精选论文</span>{% else %}selected publications{% endif %}</a></h4>
+            {%- include selected_papers.html %}
+          {%- endif %}
+
+          <!-- News -->
+          {% if page.news and site.announcements.enabled -%}
+            <h4 style="margin-top: 20px;"><a href="{{ '/news/' | relative_url }}" style="color: inherit;">{% if page.bilingual %}<span class="lang-content lang-inline" data-lang="en">news</span><span class="lang-content lang-inline" data-lang="zh">动态</span>{% else %}news{% endif %}</a></h4>
+            {%- include news.html limit=true %}
           {%- endif %}
 
          <!-- Add Featured Research Slider -->
@@ -92,6 +109,12 @@ layout: default
            </div>
          </div>
          {% endif %}
+
+          <!-- Latest posts -->
+          {% if page.latest_posts -%}
+            <h4 style="margin-top: 20px;"><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">{% if page.bilingual %}<span class="lang-content lang-inline" data-lang="en">latest posts</span><span class="lang-content lang-inline" data-lang="zh">最新文章</span>{% else %}latest posts{% endif %}</a></h4>
+            {%- include latest_posts.html %}
+          {%- endif %}
 
          <!-- Add Gallery Slider -->
          {% if page.gallery.enabled and site.data.gallery.events.size > 0 %}
@@ -343,24 +366,6 @@ layout: default
            });
          </script>
          {% endif %}
-
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h4 style="margin-top: 20px;"><a href="{{ '/news/' | relative_url }}" style="color: inherit;">{% if page.bilingual %}<span class="lang-content lang-inline" data-lang="en">news</span><span class="lang-content lang-inline" data-lang="zh">动态</span>{% else %}news{% endif %}</a></h4>
-            {%- include news.html limit=true %}
-          {%- endif %}
-
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h4 style="margin-top: 20px;"><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">{% if page.bilingual %}<span class="lang-content lang-inline" data-lang="en">latest posts</span><span class="lang-content lang-inline" data-lang="zh">最新文章</span>{% else %}latest posts{% endif %}</a></h4>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h4 style="margin-top: 40px;"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">{% if page.bilingual %}<span class="lang-content lang-inline" data-lang="en">selected publications</span><span class="lang-content lang-inline" data-lang="zh">精选论文</span>{% else %}selected publications{% endif %}</a></h4>
-            {%- include selected_papers.html %}
-          {%- endif %}
 
           <!-- Visitor Statistics -->
           {% if page.visitor_stats.enabled %}
