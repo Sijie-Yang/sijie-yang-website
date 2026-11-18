@@ -1,0 +1,14 @@
+{%- comment -%} Sub-navigation for the blog section. include.active: essays | notes | elsewhere {%- endcomment -%}
+{%- assign notes_count = site.data.notes | size -%}
+{%- assign social_count = site.data.social_posts | size -%}
+{%- if notes_count > 0 or social_count > 0 or include.active != "essays" -%}
+<nav class="blog-subnav" aria-label="Blog sections">
+  <a href="{{ '/blog/' | relative_url }}"{% if include.active == "essays" %} class="active" aria-current="page"{% endif %}><span class="lang-content lang-inline" data-lang="en">essays</span><span class="lang-content lang-inline" data-lang="zh">文章</span></a>
+  {%- if notes_count > 0 or include.active == "notes" %}
+  <a href="{{ '/blog/notes/' | relative_url }}"{% if include.active == "notes" %} class="active" aria-current="page"{% endif %}><span class="lang-content lang-inline" data-lang="en">notes</span><span class="lang-content lang-inline" data-lang="zh">札记</span></a>
+  {%- endif -%}
+  {%- if social_count > 0 or include.active == "elsewhere" %}
+  <a href="{{ '/blog/elsewhere/' | relative_url }}"{% if include.active == "elsewhere" %} class="active" aria-current="page"{% endif %}><span class="lang-content lang-inline" data-lang="en">elsewhere</span><span class="lang-content lang-inline" data-lang="zh">社交动态</span></a>
+  {%- endif %}
+</nav>
+{%- endif -%}

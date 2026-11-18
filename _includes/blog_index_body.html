@@ -1,24 +1,7 @@
 {% assign include_hidden = include.include_hidden | default: false %}
 
-{% assign blog_name_size = site.blog_name | size %}
-{% assign blog_description_size = site.blog_description | size %}
-
-{% if blog_name_size > 0 or blog_description_size > 0 %}
-<div class="header-bar">
-  {% if site.bilingual.enabled and site.blog_name_zh %}
-  <h2 class="lang-content" data-lang="en">{{ site.blog_name }}</h2>
-  <h2 class="lang-content" data-lang="zh">{{ site.blog_name_zh }}</h2>
-  {% else %}
-  <h2>{{ site.blog_name }}</h2>
-  {% endif %}
-  {% if site.bilingual.enabled and site.blog_description_zh %}
-  <h3 class="lang-content" data-lang="en">{{ site.blog_description }}</h3>
-  <h3 class="lang-content" data-lang="zh">{{ site.blog_description_zh }}</h3>
-  {% else %}
-  <h3>{{ site.blog_description }}</h3>
-  {% endif %}
-</div>
-{% endif %}
+{% include blog_header.html %}
+{% unless include_hidden %}{% include blog_subnav.html active="essays" %}{% endunless %}
 
 {% include blog_tag_category_list.html include_hidden=include_hidden %}
 {% include admin_meta_filter_list.html include_hidden=include_hidden %}

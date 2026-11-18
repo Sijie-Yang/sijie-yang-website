@@ -1,0 +1,63 @@
+---
+layout: default
+title: notes
+permalink: /blog/notes/
+description: Short takes on podcasts, articles and papers worth sharing.
+---
+
+<div class="post">
+  {% include blog_header.html %}
+  {% include blog_subnav.html active="notes" %}
+
+  <p class="blog-section-intro">
+    <span class="lang-content lang-inline" data-lang="en">Short takes on podcasts, articles and papers I found worth passing on.</span>
+    <span class="lang-content lang-inline" data-lang="zh">值得转给你的播客、文章与论文，附上我的简短点评。</span>
+  </p>
+
+  {% assign notes = site.data.notes | sort: "date" | reverse %}
+  {% if notes.size == 0 %}
+    <p class="blog-empty">No notes yet.</p>
+  {% endif %}
+  {% assign notes_by_year = notes | group_by_exp: "n", "n.date | date: '%Y'" %}
+  {% for year_group in notes_by_year %}
+  <section class="blog-year-section">
+    <h3 class="blog-year-heading">{{ year_group.name }}</h3>
+    <ul class="post-list post-list-compact note-list">
+      {% for note in year_group.items %}
+      {% case note.type %}
+        {% when "podcast" %}{% assign icon = "fa-solid fa-podcast" %}{% assign label_zh = "播客" %}
+        {% when "paper" %}{% assign icon = "fa-regular fa-file-lines" %}{% assign label_zh = "论文" %}
+        {% when "book" %}{% assign icon = "fa-solid fa-book" %}{% assign label_zh = "书" %}
+        {% when "video" %}{% assign icon = "fa-solid fa-play" %}{% assign label_zh = "视频" %}
+        {% when "talk" %}{% assign icon = "fa-solid fa-microphone-lines" %}{% assign label_zh = "讲座" %}
+        {% else %}{% assign icon = "fa-regular fa-newspaper" %}{% assign label_zh = "文章" %}
+      {% endcase %}
+      <li class="post-list-entry note-entry">
+        <time class="post-list-date" datetime="{{ note.date | date_to_xmlschema }}">{{ note.date | date: '%b %-d' }}</time>
+        <div class="post-list-body">
+          <div class="note-source">
+            <i class="{{ icon }} fa-fw" aria-hidden="true"></i>
+            <span class="note-type"><span class="lang-content lang-inline" data-lang="en">{{ note.type | default: "article" }}</span><span class="lang-content lang-inline" data-lang="zh">{{ label_zh }}</span></span>
+            {%- if note.source %} · {{ note.source }}{% endif -%}
+            {%- if note.author %} · {{ note.author }}{% endif %}
+          </div>
+          <h3 class="post-list-title">
+            <a href="{{ note.url }}" target="_blank" rel="noopener">{{ note.title }}<i class="fa-solid fa-arrow-up-right-from-square note-ext" aria-hidden="true"></i></a>
+          </h3>
+          {% if note.take_zh %}
+          <div class="note-take lang-content" data-lang="en">{{ note.take | markdownify }}</div>
+          <div class="note-take lang-content" data-lang="zh">{{ note.take_zh | markdownify }}</div>
+          {% else %}
+          <div class="note-take">{{ note.take | markdownify }}</div>
+          {% endif %}
+          {% if note.quote %}<blockquote class="note-quote">{{ note.quote }}</blockquote>{% endif %}
+          {% if note.tags and note.tags.size > 0 %}
+          <p class="post-list-meta note-tags">{% for tag in note.tags %}<span>#{{ tag }}</span>{% unless forloop.last %} &nbsp;{% endunless %}{% endfor %}</p>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>

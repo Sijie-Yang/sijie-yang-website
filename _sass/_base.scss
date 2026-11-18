@@ -1622,3 +1622,136 @@ nav[data-toggle="toc"] {
     color: var(--global-hover-color);
   }
 }
+
+// Blog section sub-navigation (essays · notes · elsewhere)
+.blog-subnav {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0.25rem 0 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  font-size: 0.95rem;
+
+  a {
+    color: var(--global-text-color-light);
+    text-decoration: none;
+    padding: 0.35rem 0;
+    margin-bottom: -1px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+
+    &.active {
+      color: var(--global-text-color);
+      border-bottom-color: var(--global-theme-color);
+    }
+  }
+}
+
+.blog-section-intro {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 1rem;
+
+  a {
+    color: var(--global-text-color);
+    white-space: nowrap;
+    &:hover { color: var(--global-theme-color); }
+  }
+}
+
+.blog-empty {
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
+// Notes stream and selected social posts
+.post-list-compact.note-list .post-list-entry,
+.post-list-compact.social-list .post-list-entry {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  & + .post-list-entry {
+    border-top: 1px dashed var(--global-divider-color);
+  }
+}
+
+.note-source {
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.15rem;
+
+  .note-type {
+    text-transform: uppercase;
+  }
+}
+
+.note-list .post-list-title .note-ext {
+  font-size: 0.6em;
+  margin-left: 0.35em;
+  vertical-align: 0.2em;
+  color: var(--global-text-color-light);
+}
+
+.note-take {
+  margin-top: 0.35rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.note-quote {
+  margin: 0.5rem 0 0;
+  padding: 0 0 0 0.75rem;
+  border-left: 2px solid var(--global-divider-color);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
+.note-tags span {
+  white-space: nowrap;
+}
+
+.social-body {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 0.35rem;
+
+  .social-text {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .social-thumb {
+    flex: 0 0 132px;
+
+    img {
+      width: 132px;
+      height: 88px;
+      object-fit: cover;
+      border-radius: 3px;
+      border: 1px solid var(--global-divider-color);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .social-thumb {
+      flex-basis: 96px;
+      img { width: 96px; height: 64px; }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+---
+layout: default
+title: elsewhere
+permalink: /blog/elsewhere/
+description: Selected posts from LinkedIn and X.
+---
+
+<div class="post">
+  {% include blog_header.html %}
+  {% include blog_subnav.html active="elsewhere" %}
+
+  <p class="blog-section-intro">
+    <span class="lang-content lang-inline" data-lang="en">Selected posts from</span>
+    <span class="lang-content lang-inline" data-lang="zh">精选动态，来自</span>
+    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    <span class="lang-content lang-inline" data-lang="en">and</span><span class="lang-content lang-inline" data-lang="zh">与</span>
+    <a href="https://x.com/{{ site.twitter_username }}" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i> X</a>.
+    <span class="lang-content lang-inline" data-lang="en">Follow there for everything else.</span>
+    <span class="lang-content lang-inline" data-lang="zh">更多内容欢迎关注。</span>
+  </p>
+
+  {% assign posts = site.data.social_posts | sort: "date" | reverse %}
+  {% if posts.size == 0 %}
+    <p class="blog-empty">Nothing here yet.</p>
+  {% endif %}
+  {% assign posts_by_year = posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+  {% for year_group in posts_by_year %}
+  <section class="blog-year-section">
+    <h3 class="blog-year-heading">{{ year_group.name }}</h3>
+    <ul class="post-list post-list-compact social-list">
+      {% for item in year_group.items %}
+      <li class="post-list-entry social-entry">
+        <time class="post-list-date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%b %-d' }}</time>
+        <div class="post-list-body">
+          <div class="note-source">
+            {% if item.platform == "x" %}
+              <i class="fa-brands fa-x-twitter fa-fw" aria-hidden="true"></i> X · @{{ site.twitter_username }}
+            {% else %}
+              <i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i> LinkedIn
+            {% endif %}
+          </div>
+          <div class="social-body{% if item.image %} has-image{% endif %}">
+            <p class="social-text">{{ item.text | strip | strip_html | newline_to_br }}</p>
+            {% if item.image %}
+            <a class="social-thumb" href="{{ item.url }}" target="_blank" rel="noopener"><img src="{{ item.image | relative_url }}" alt="" loading="lazy"></a>
+            {% endif %}
+          </div>
+          <p class="post-list-meta">
+            <a href="{{ item.url }}" target="_blank" rel="noopener">
+              <span class="lang-content lang-inline" data-lang="en">Read on {% if item.platform == "x" %}X{% else %}LinkedIn{% endif %}</span><span class="lang-content lang-inline" data-lang="zh">在 {% if item.platform == "x" %}X{% else %}LinkedIn{% endif %} 查看全文</span>
+              <i class="fa-solid fa-arrow-right fa-xs"></i>
+            </a>
+          </p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>
