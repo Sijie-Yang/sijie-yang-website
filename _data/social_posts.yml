@@ -1,0 +1,14 @@
+# Selected posts from LinkedIn and X, shown at /blog/elsewhere/.
+# Neither LinkedIn nor X offers a reliable public feed for static sites, so posts are
+# curated here by hand: paste the link and the first lines of the post.
+#
+# - date: 2026-10-28
+#   platform: linkedin        # linkedin | x
+#   url: https://www.linkedin.com/posts/...   (… → "Copy link to post")
+#   text: >                   # the post text, or its first few lines
+#     Two inspiring visits to the NUS Urban Analytics Lab this October…
+#   image: /assets/img/social/2026-10-lab-visits.jpg   # optional thumbnail
+#
+# The "elsewhere" tab on the blog page appears once this list has at least one entry.
+
+[]

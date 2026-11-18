@@ -1,0 +1,22 @@
+# Notes — short takes on podcasts, articles, papers and talks.
+# Shown at /blog/notes/, grouped by year, newest first (sorted by date automatically).
+#
+# To add a note, copy this block to the top of the list and fill it in.
+# Only date, type, title, url and take are required.
+#
+# - date: 2026-11-18
+#   type: podcast            # podcast | article | paper | book | video | talk
+#   title: "Episode or article title"
+#   source: "Show / outlet / journal"
+#   author: "Host or author"  # optional
+#   url: https://example.com/...
+#   take: >                   # your comment, 1–4 sentences; Markdown works
+#     What stuck with me, and why it matters for cities / research.
+#   take_zh: >                # optional Chinese version, shown when 中文 is selected
+#     中文短评。
+#   quote: "One line worth keeping."   # optional
+#   tags: [urban ai, careers]          # optional
+#
+# The "notes" tab on the blog page appears once this list has at least one entry.
+
+[]
