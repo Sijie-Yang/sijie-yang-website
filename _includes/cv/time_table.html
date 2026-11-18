@@ -11,6 +11,15 @@
         {% endif %}
 
         <div class="cv-main-content">
+          {% if entry.logos %}
+          <div class="cv-entry-with-logo">
+            {% if content.logo %}
+            <img class="cv-logo" src="{{ content.logo | prepend: '/assets/img/cv-logos/' | relative_url }}" alt="" loading="lazy">
+            {% else %}
+            <span class="cv-logo" aria-hidden="true"></span>
+            {% endif %}
+            <div class="cv-entry-body">
+          {% endif %}
             {% if content.title %}
             <h6 class="title font-weight-bold">
               {% if site.bilingual.enabled and content.title_zh %}
@@ -110,6 +119,10 @@
               {% endfor %}
               </div>
             {% endif %}
+          {% if entry.logos %}
+            </div>
+          </div>
+          {% endif %}
         </div>
       </li>
     {% endfor %}
