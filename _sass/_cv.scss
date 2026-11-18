@@ -465,3 +465,33 @@ ul.timeline li::before {
     backdrop-filter: none;
   }
 }
+/* Institution logos in Education / Experience */
+.cv-entry-with-logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.cv-entry-with-logo .cv-logo {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-top: 0.1rem;
+}
+
+.cv-entry-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+@media (max-width: 576px) {
+  .cv-entry-with-logo {
+    gap: 0.6rem;
+  }
+
+  .cv-entry-with-logo .cv-logo {
+    width: 32px;
+    height: 32px;
+  }
+}
