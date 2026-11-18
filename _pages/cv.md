@@ -4,7 +4,8 @@ permalink: /cv/
 title: cv
 title_zh: 简历
 nav: true
-nav_order: 5
+nav_order: 1
+nav_pinned: true # shown right after About in the nav bar
 bilingual: true
 default_lang: en
 cv_pdf_cn: 250902_杨斯捷_简历.pdf  
