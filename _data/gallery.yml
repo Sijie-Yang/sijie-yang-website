@@ -31,6 +31,23 @@
 #         caption_zh: "与同事交流"
 
 events:
+  - date: "2026-10-28"
+    title: "Koichi Ito's PhD graduation dinner"
+    title_zh: "Koichi Ito 的博士毕业聚餐"
+    category: "personal"
+    images:
+      - image: "261028_1.jpg"
+        caption: "Koichi Ito's PhD graduation dinner"
+        caption_zh: "Koichi Ito 的博士毕业聚餐"
+      - image: "261028_2.jpg"
+        caption: "Koichi Ito's PhD graduation dinner"
+        caption_zh: "Koichi Ito 的博士毕业聚餐"
+      - image: "261028_3.jpg"
+        caption: "Koichi Ito's PhD graduation dinner"
+        caption_zh: "Koichi Ito 的博士毕业聚餐"
+      - image: "261028_4.jpg"
+        caption: "Koichi Ito's PhD graduation dinner"
+        caption_zh: "Koichi Ito 的博士毕业聚餐"
   - date: "2026-10-26"
     title: "Nan Bai (TU Delft) visited our lab"
     title_zh: "代尔夫特理工大学 Nan Bai 访问实验室"
